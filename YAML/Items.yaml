@@ -1,867 +1,866 @@
----
-- 
+- !!null 'null'
 - !ruby/object:RPG::Item
-  description: ＨＰを50ポイント回復する。
-  name: きずぐすり
-  consumable: true
-  occasion: 0
-  icon_index: 192
-  price: 50
-  scope: 7
-  animation_id: 37
-  note: ''
-  speed: 0
-  id: 1
-  features: []
-  effects:
+  'description': 'ＨＰを50ポイント回復する。'
+  'name': 'きずぐすり'
+  'consumable': !!bool 'true'
+  'occasion': !!int '0'
+  'icon_index': !!int '192'
+  'price': !!int '50'
+  'scope': !!int '7'
+  'animation_id': !!int '37'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '1'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 11
-    data_id: 0
-    value1: 0.0
-    value2: 50.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '11'
+    'data_id': !!int '0'
+    'value1': !!float '0.0'
+    'value2': !!float '50.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: ＨＰを100ポイント回復する。
-  name: 特上きずぐすり
-  consumable: true
-  occasion: 0
-  icon_index: 192
-  price: 200
-  scope: 7
-  animation_id: 37
-  note: ''
-  speed: 0
-  id: 2
-  features: []
-  effects:
+  'description': 'ＨＰを100ポイント回復する。'
+  'name': '特上きずぐすり'
+  'consumable': !!bool 'true'
+  'occasion': !!int '0'
+  'icon_index': !!int '192'
+  'price': !!int '200'
+  'scope': !!int '7'
+  'animation_id': !!int '37'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '2'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 11
-    data_id: 1
-    value1: 0.0
-    value2: 100.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '11'
+    'data_id': !!int '1'
+    'value1': !!float '0.0'
+    'value2': !!float '100.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: "マリーが好きな花。\r\n使用すると最大APが20増加する。"
-  name: 花
-  consumable: true
-  occasion: 0
-  icon_index: 205
-  price: 1000
-  scope: 11
-  animation_id: 37
-  note: ''
-  speed: 0
-  id: 3
-  features: []
-  effects:
+  'description': 'マリーが好きな花。  使用すると最大APが20増加する。'
+  'name': '花'
+  'consumable': !!bool 'true'
+  'occasion': !!int '0'
+  'icon_index': !!int '205'
+  'price': !!int '1000'
+  'scope': !!int '11'
+  'animation_id': !!int '37'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '3'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 42
-    data_id: 1
-    value1: 20.0
-    value2: 0.0
+    'code': !!int '42'
+    'data_id': !!int '1'
+    'value1': !!float '20.0'
+    'value2': !!float '0.0'
   - !ruby/object:RPG::UsableItem::Effect
-    code: 12
-    data_id: 0
-    value1: 0.0
-    value2: 20.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '12'
+    'data_id': !!int '0'
+    'value1': !!float '0.0'
+    'value2': !!float '20.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: "ホーネットの持つ針。\r\n解毒剤の材料として珍重される。"
-  name: 毒針
-  consumable: false
-  occasion: 3
-  icon_index: 326
-  price: 60
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 4
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+  'description': 'ホーネットの持つ針。  解毒剤の材料として珍重される。'
+  'name': '毒針'
+  'consumable': !!bool 'false'
+  'occasion': !!int '3'
+  'icon_index': !!int '326'
+  'price': !!int '60'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '4'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: "スライムの体液。\r\n潤滑油などの材料に用いられる。"
-  name: スライムエキス
-  consumable: false
-  occasion: 3
-  icon_index: 209
-  price: 40
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 5
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+  'description': 'スライムの体液。  潤滑油などの材料に用いられる。'
+  'name': 'スライムエキス'
+  'consumable': !!bool 'false'
+  'occasion': !!int '3'
+  'icon_index': !!int '209'
+  'price': !!int '40'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '5'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: 毒状態を治療する。
-  name: 毒消し
-  consumable: true
-  occasion: 0
-  icon_index: 194
-  price: 30
-  scope: 7
-  animation_id: 40
-  note: ''
-  speed: 0
-  id: 6
-  features: []
-  effects:
+  'description': '毒状態を治療する。'
+  'name': '毒消し'
+  'consumable': !!bool 'true'
+  'occasion': !!int '0'
+  'icon_index': !!int '194'
+  'price': !!int '30'
+  'scope': !!int '7'
+  'animation_id': !!int '40'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '6'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 2
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '22'
+    'data_id': !!int '2'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: 状態異常を治療する。
-  name: 万能薬
-  consumable: true
-  occasion: 0
-  icon_index: 194
-  price: 90
-  scope: 7
-  animation_id: 41
-  note: ''
-  speed: 0
-  id: 7
-  features: []
-  effects:
+  'description': '状態異常を治療する。'
+  'name': '万能薬'
+  'consumable': !!bool 'true'
+  'occasion': !!int '0'
+  'icon_index': !!int '194'
+  'price': !!int '90'
+  'scope': !!int '7'
+  'animation_id': !!int '41'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '7'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 2
-    value1: 1.0
-    value2: 0.0
+    'code': !!int '22'
+    'data_id': !!int '2'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
   - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 3
-    value1: 1.0
-    value2: 0.0
+    'code': !!int '22'
+    'data_id': !!int '3'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
   - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 4
-    value1: 1.0
-    value2: 0.0
+    'code': !!int '22'
+    'data_id': !!int '4'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
   - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 5
-    value1: 1.0
-    value2: 0.0
+    'code': !!int '22'
+    'data_id': !!int '5'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
   - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 6
-    value1: 1.0
-    value2: 0.0
+    'code': !!int '22'
+    'data_id': !!int '6'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
   - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 7
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '22'
+    'data_id': !!int '7'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: "キラキラと光る鉱石。\r\n高値で買い取ってもらえる。"
-  name: 鉱石
-  consumable: false
-  occasion: 3
-  icon_index: 342
-  price: 400
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 8
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+  'description': 'キラキラと光る鉱石。  高値で買い取ってもらえる。'
+  'name': '鉱石'
+  'consumable': !!bool 'false'
+  'occasion': !!int '3'
+  'icon_index': !!int '342'
+  'price': !!int '400'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '8'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: "5ターンの間\r\n攻撃力を上げる。"
-  name: 力のルーン
-  consumable: true
-  occasion: 2
-  icon_index: 228
-  price: 800
-  scope: 11
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 9
-  features: []
-  effects:
+  'description': '5ターンの間  攻撃力を上げる。'
+  'name': '力のルーン'
+  'consumable': !!bool 'true'
+  'occasion': !!int '2'
+  'icon_index': !!int '228'
+  'price': !!int '800'
+  'scope': !!int '11'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '9'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 2
-    value1: 5.0
-    value2: 0.0
+    'code': !!int '31'
+    'data_id': !!int '2'
+    'value1': !!float '5.0'
+    'value2': !!float '0.0'
   - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 2
-    value1: 5.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '31'
+    'data_id': !!int '2'
+    'value1': !!float '5.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: "コウモリの羽。\r\n呪術の触媒や薬の材料に使われる。"
-  name: コウモリの羽
-  consumable: false
-  occasion: 3
-  icon_index: 327
-  price: 80
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 10
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+  'description': 'コウモリの羽。  呪術の触媒や薬の材料に使われる。'
+  'name': 'コウモリの羽'
+  'consumable': !!bool 'false'
+  'occasion': !!int '3'
+  'icon_index': !!int '327'
+  'price': !!int '80'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '10'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: "辛口で大人の味わい。\r\n体が火照って攻撃力アップ。"
-  name: お酒
-  consumable: true
-  occasion: 1
-  icon_index: 220
-  price: 150
-  scope: 7
-  animation_id: 43
-  note: ''
-  speed: 0
-  id: 11
-  features: []
-  effects:
+  'description': '辛口で大人の味わい。  体が火照って攻撃力アップ。'
+  'name': 'お酒'
+  'consumable': !!bool 'true'
+  'occasion': !!int '1'
+  'icon_index': !!int '220'
+  'price': !!int '150'
+  'scope': !!int '7'
+  'animation_id': !!int '43'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '11'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 2
-    value1: 10.0
-    value2: 0.0
+    'code': !!int '31'
+    'data_id': !!int '2'
+    'value1': !!float '10.0'
+    'value2': !!float '0.0'
   - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 2
-    value1: 10.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '31'
+    'data_id': !!int '2'
+    'value1': !!float '10.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: 戦闘不能を回復する。
-  name: きつけぐすり
-  consumable: true
-  occasion: 0
-  icon_index: 192
-  price: 80
-  scope: 9
-  animation_id: 42
-  note: ''
-  speed: 0
-  id: 12
-  features: []
-  effects:
+  'description': '戦闘不能を回復する。'
+  'name': 'きつけぐすり'
+  'consumable': !!bool 'true'
+  'occasion': !!int '0'
+  'icon_index': !!int '192'
+  'price': !!int '80'
+  'scope': !!int '9'
+  'animation_id': !!int '42'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '12'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 1
-    value1: 1.0
-    value2: 0.0
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
   - !ruby/object:RPG::UsableItem::Effect
-    code: 11
-    data_id: 1
-    value1: 0.3
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '11'
+    'data_id': !!int '1'
+    'value1': !!float '0.3'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: "山賊のアジトで見つけた剣。\r\nノエルに届けよう。"
-  name: 剣
-  consumable: false
-  occasion: 3
-  icon_index: 147
-  price: 0
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 13
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 2
-  repeats: 1
-  tp_gain: 0
+  'description': '山賊のアジトで見つけた剣。  ノエルに届けよう。'
+  'name': '剣'
+  'consumable': !!bool 'false'
+  'occasion': !!int '3'
+  'icon_index': !!int '147'
+  'price': !!int '0'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '13'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '2'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: "ジョニー秘蔵のエロ本。\r\n内容は妹モノ。"
-  name: エロ本
-  consumable: false
-  occasion: 3
-  icon_index: 230
-  price: 0
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 14
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 2
-  repeats: 1
-  tp_gain: 0
+  'description': 'ジョニー秘蔵のエロ本。  内容は妹モノ。'
+  'name': 'エロ本'
+  'consumable': !!bool 'false'
+  'occasion': !!int '3'
+  'icon_index': !!int '230'
+  'price': !!int '0'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '14'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '2'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: 仲間にあげると好感度が上がる。
-  name: プレゼント
-  consumable: false
-  occasion: 3
-  icon_index: 259
-  price: 0
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 15
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 2
-  repeats: 1
-  tp_gain: 0
+  'description': '仲間にあげると好感度が上がる。'
+  'name': 'プレゼント'
+  'consumable': !!bool 'false'
+  'occasion': !!int '3'
+  'icon_index': !!int '259'
+  'price': !!int '0'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '15'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '2'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: "世界一希少な宝石。\r\n"
-  name: ミラクルストーン
-  consumable: true
-  occasion: 3
-  icon_index: 191
-  price: 0
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 16
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 2
-  repeats: 1
-  tp_gain: 0
+  'description': '世界一希少な宝石。'
+  'name': 'ミラクルストーン'
+  'consumable': !!bool 'true'
+  'occasion': !!int '3'
+  'icon_index': !!int '191'
+  'price': !!int '0'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '16'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '2'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: 最高の武具の材料となる石。
-  name: ジョージアルマジロ鉱石
-  consumable: true
-  occasion: 3
-  icon_index: 300
-  price: 0
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 17
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 2
-  repeats: 1
-  tp_gain: 0
+  'description': '最高の武具の材料となる石。'
+  'name': 'ジョージアルマジロ鉱石'
+  'consumable': !!bool 'true'
+  'occasion': !!int '3'
+  'icon_index': !!int '300'
+  'price': !!int '0'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '17'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '2'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: 敵を毒状態にする。
-  name: 強力毒薬
-  consumable: true
-  occasion: 3
-  icon_index: 218
-  price: 0
-  scope: 2
-  animation_id: 50
-  note: ''
-  speed: 0
-  id: 18
-  features: []
-  effects:
+  'description': '敵を毒状態にする。'
+  'name': '強力毒薬'
+  'consumable': !!bool 'true'
+  'occasion': !!int '3'
+  'icon_index': !!int '218'
+  'price': !!int '0'
+  'scope': !!int '2'
+  'animation_id': !!int '50'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '18'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 26
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 2
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '21'
+    'data_id': !!int '26'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '2'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: "見るものの心を癒やす。\r\nプレゼントにどうぞ。"
-  name: 花束
-  consumable: true
-  occasion: 3
-  icon_index: 261
-  price: 300
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 19
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+  'description': '見るものの心を癒やす。  プレゼントにどうぞ。'
+  'name': '花束'
+  'consumable': !!bool 'true'
+  'occasion': !!int '3'
+  'icon_index': !!int '261'
+  'price': !!int '300'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '19'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: "柑橘系の香り。\r\nプレゼントにどうぞ。"
-  name: 香水
-  consumable: true
-  occasion: 3
-  icon_index: 261
-  price: 300
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 20
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+  'description': '柑橘系の香り。  プレゼントにどうぞ。'
+  'name': '香水'
+  'consumable': !!bool 'true'
+  'occasion': !!int '3'
+  'icon_index': !!int '261'
+  'price': !!int '300'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '20'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: "キレイなイヤリング。\r\nプレゼントにどうぞ。"
-  name: イヤリング
-  consumable: true
-  occasion: 3
-  icon_index: 261
-  price: 300
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 21
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+  'description': 'キレイなイヤリング。  プレゼントにどうぞ。'
+  'name': 'イヤリング'
+  'consumable': !!bool 'true'
+  'occasion': !!int '3'
+  'icon_index': !!int '261'
+  'price': !!int '300'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '21'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: "キレイな髪飾り。\r\nプレゼントにどうぞ。"
-  name: 髪飾り
-  consumable: true
-  occasion: 3
-  icon_index: 261
-  price: 300
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 22
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+  'description': 'キレイな髪飾り。  プレゼントにどうぞ。'
+  'name': '髪飾り'
+  'consumable': !!bool 'true'
+  'occasion': !!int '3'
+  'icon_index': !!int '261'
+  'price': !!int '300'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '22'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: "HPを200ポイント回復する。\r\n旅の必需品。"
-  name: 保存食
-  consumable: true
-  occasion: 0
-  icon_index: 261
-  price: 300
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 23
-  features: []
-  effects:
+  'description': 'HPを200ポイント回復する。  旅の必需品。'
+  'name': '保存食'
+  'consumable': !!bool 'true'
+  'occasion': !!int '0'
+  'icon_index': !!int '261'
+  'price': !!int '300'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '23'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 11
-    data_id: 1
-    value1: 0.0
-    value2: 200.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '11'
+    'data_id': !!int '1'
+    'value1': !!float '0.0'
+    'value2': !!float '200.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: ''
-  name: ぬいぐるみ
-  consumable: true
-  occasion: 0
-  icon_index: 0
-  price: 300
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 24
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+  'description': ''
+  'name': 'ぬいぐるみ'
+  'consumable': !!bool 'true'
+  'occasion': !!int '0'
+  'icon_index': !!int '0'
+  'price': !!int '300'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '24'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: ''
-  name: ハンカチ
-  consumable: true
-  occasion: 0
-  icon_index: 0
-  price: 0
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 25
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+  'description': ''
+  'name': 'ハンカチ'
+  'consumable': !!bool 'true'
+  'occasion': !!int '0'
+  'icon_index': !!int '0'
+  'price': !!int '0'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '25'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: ''
-  name: 砥石
-  consumable: true
-  occasion: 0
-  icon_index: 0
-  price: 0
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 26
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+  'description': ''
+  'name': '砥石'
+  'consumable': !!bool 'true'
+  'occasion': !!int '0'
+  'icon_index': !!int '0'
+  'price': !!int '0'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '26'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: ＭＰを50ポイント回復する。
-  name: 栄養剤
-  consumable: true
-  occasion: 0
-  icon_index: 193
-  price: 250
-  scope: 7
-  animation_id: 37
-  note: ''
-  speed: 0
-  id: 27
-  features: []
-  effects:
+  'description': 'ＭＰを50ポイント回復する。'
+  'name': '栄養剤'
+  'consumable': !!bool 'true'
+  'occasion': !!int '0'
+  'icon_index': !!int '193'
+  'price': !!int '250'
+  'scope': !!int '7'
+  'animation_id': !!int '37'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '27'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 12
-    data_id: 0
-    value1: 0.0
-    value2: 50.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '12'
+    'data_id': !!int '0'
+    'value1': !!float '0.0'
+    'value2': !!float '50.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: 全員のＨＰとＭＰを全回復する。
-  name: 女神の雫
-  consumable: true
-  occasion: 0
-  icon_index: 197
-  price: 1000
-  scope: 8
-  animation_id: 39
-  note: ''
-  speed: 0
-  id: 28
-  features: []
-  effects:
+  'description': '全員のＨＰとＭＰを全回復する。'
+  'name': '女神の雫'
+  'consumable': !!bool 'true'
+  'occasion': !!int '0'
+  'icon_index': !!int '197'
+  'price': !!int '1000'
+  'scope': !!int '8'
+  'animation_id': !!int '39'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '28'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 12
-    data_id: 0
-    value1: 1.0
-    value2: 0.0
+    'code': !!int '12'
+    'data_id': !!int '0'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
   - !ruby/object:RPG::UsableItem::Effect
-    code: 11
-    data_id: 0
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '11'
+    'data_id': !!int '0'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: ４ターンの間、味方全体のＨＰが徐々に回復する。
-  name: 精霊の雫
-  consumable: true
-  occasion: 1
-  icon_index: 215
-  price: 500
-  scope: 8
-  animation_id: 38
-  note: ''
-  speed: 0
-  id: 29
-  features: []
-  effects:
+  'description': '４ターンの間、味方全体のＨＰが徐々に回復する。'
+  'name': '精霊の雫'
+  'consumable': !!bool 'true'
+  'occasion': !!int '1'
+  'icon_index': !!int '215'
+  'price': !!int '500'
+  'scope': !!int '8'
+  'animation_id': !!int '38'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '29'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 28
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '21'
+    'data_id': !!int '28'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: ''
-  name: ''
-  consumable: true
-  occasion: 0
-  icon_index: 0
-  price: 0
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 30
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+  'description': ''
+  'name': ''
+  'consumable': !!bool 'true'
+  'occasion': !!int '0'
+  'icon_index': !!int '0'
+  'price': !!int '0'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '30'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'

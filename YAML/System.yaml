@@ -1,126 +1,126 @@
---- !ruby/object:RPG::System
-elements:
+!ruby/object:RPG::System
+'elements':
 - ''
-- 物理
-- 吸収
-- 炎
-- 氷
-- 雷
-- 水
-- 大地
-- 風
-- 神聖
-- 暗黒
-start_y: 6
-airship: !ruby/object:RPG::System::Vehicle
-  start_y: 0
-  bgm: !ruby/object:RPG::BGM {name: Airship, volume: 100, pitch: 100}
-  start_x: 0
-  character_index: 3
-  character_name: Vehicle
-  start_map_id: 0
-test_battlers:
+- '物理'
+- '吸収'
+- '炎'
+- '氷'
+- '雷'
+- '水'
+- '大地'
+- '風'
+- '神聖'
+- '暗黒'
+'start_y': !!int '6'
+'airship': !ruby/object:RPG::System::Vehicle
+  'start_y': !!int '0'
+  'bgm': !ruby/object:RPG::BGM {'name': 'Airship', 'volume': !!int '100', 'pitch': !!int '100'}
+  'start_x': !!int '0'
+  'character_index': !!int '3'
+  'character_name': 'Vehicle'
+  'start_map_id': !!int '0'
+'test_battlers':
 - !ruby/object:RPG::System::TestBattler
-  actor_id: 1
-  level: 1
-  equips:
-  - 1
-  - 46
-  - 0
-  - 1
-  - 0
-_: 7829367
-edit_map_id: 187
-battle_end_me: !ruby/object:RPG::ME
-  name: Victory1
-  pitch: 100
-  volume: 100
-party_members:
-- 1
-start_x: 7
-ship: !ruby/object:RPG::System::Vehicle
-  start_y: 0
-  bgm: !ruby/object:RPG::BGM {name: Ship, volume: 100, pitch: 100}
-  start_x: 0
-  character_index: 1
-  character_name: Vehicle
-  start_map_id: 0
-battler_hue: 0
-sounds:
-- !ruby/object:RPG::SE {name: 【システムSE】カーソル移動音05, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: 【システムSE】ボタン音05, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: 【システムSE】ボタン音04, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: Buzzer1, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: Equip1, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: 【システムSE】カーソル移動音03, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: 【システムSE】カーソル移動音04, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: 【システムSE】ボタン音03, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: Run, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: Attack3, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: Damage4, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: Collapse1, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: Collapse3, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: Collapse4, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: Damage5, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: Collapse2, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: Recovery, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: Miss, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: Evasion1, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: Evasion2, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: Reflection, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: Shop, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: Item3, pitch: 100, volume: 80}
-- !ruby/object:RPG::SE {name: Item3, pitch: 100, volume: 80}
-variables:
-- 
-- OP
-- 現在AP
-- 現在HP
-- 変数ウインドウ用
-- 花畑
-- 噴水
-- 現在所持金
-- 修行
-- 祈り回数
-- 潜入
-- スライム退治
-- ジョニー会話数
-- 宝石鉱山
-- 残り日数
-- ノエル好感度
-- 温泉
-- ジョニーとマリー
-- 道場破り
-- 手料理
-- 盗賊
-- 聖剣1
-- 毒草
-- ザウバー
-- 4章
-- みらくる
-- 粘る回数
-- 旅行
-- ノエル会話パターン
-- じゃんけん勝敗
-- 組み合わせ
-- ランダム
-- 戦闘速度
-- 武具開発費
-- スワップ回数
-- 主人公レベル
-- ジョニーレベル
-- 2章進行度
-- ノエル終了
-- カーソル位置
+  'actor_id': !!int '1'
+  'level': !!int '1'
+  'equips':
+  - !!int '1'
+  - !!int '46'
+  - !!int '0'
+  - !!int '1'
+  - !!int '0'
+'_': !!int '7829367'
+'edit_map_id': !!int '187'
+'battle_end_me': !ruby/object:RPG::ME
+  'name': 'Victory1'
+  'pitch': !!int '100'
+  'volume': !!int '100'
+'party_members':
+- !!int '1'
+'start_x': !!int '7'
+'ship': !ruby/object:RPG::System::Vehicle
+  'start_y': !!int '0'
+  'bgm': !ruby/object:RPG::BGM {'name': 'Ship', 'volume': !!int '100', 'pitch': !!int '100'}
+  'start_x': !!int '0'
+  'character_index': !!int '1'
+  'character_name': 'Vehicle'
+  'start_map_id': !!int '0'
+'battler_hue': !!int '0'
+'sounds':
+- !ruby/object:RPG::SE {'name': '【システムSE】カーソル移動音05', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': '【システムSE】ボタン音05', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': '【システムSE】ボタン音04', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': 'Buzzer1', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': 'Equip1', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': '【システムSE】カーソル移動音03', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': '【システムSE】カーソル移動音04', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': '【システムSE】ボタン音03', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': 'Run', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': 'Attack3', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': 'Damage4', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': 'Collapse1', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': 'Collapse3', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': 'Collapse4', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': 'Damage5', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': 'Collapse2', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': 'Recovery', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': 'Miss', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': 'Evasion1', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': 'Evasion2', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': 'Reflection', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': 'Shop', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': 'Item3', 'pitch': !!int '100', 'volume': !!int '80'}
+- !ruby/object:RPG::SE {'name': 'Item3', 'pitch': !!int '100', 'volume': !!int '80'}
+'variables':
+- !!null 'null'
+- 'OP'
+- '現在AP'
+- '現在HP'
+- '変数ウインドウ用'
+- '花畑'
+- '噴水'
+- '現在所持金'
+- '修行'
+- '祈り回数'
+- '潜入'
+- 'スライム退治'
+- 'ジョニー会話数'
+- '宝石鉱山'
+- '残り日数'
+- 'ノエル好感度'
+- '温泉'
+- 'ジョニーとマリー'
+- '道場破り'
+- '手料理'
+- '盗賊'
+- '聖剣1'
+- '毒草'
+- 'ザウバー'
+- '4章'
+- 'みらくる'
+- '粘る回数'
+- '旅行'
+- 'ノエル会話パターン'
+- 'じゃんけん勝敗'
+- '組み合わせ'
+- 'ランダム'
+- '戦闘速度'
+- '武具開発費'
+- 'スワップ回数'
+- '主人公レベル'
+- 'ジョニーレベル'
+- '2章進行度'
+- 'ノエル終了'
+- 'カーソル位置'
 - ''
-- 日の出
-- ランダム
-- 回想用
-- 現在X
-- 現在Y
-- 現在向き
-- 現在マップ
-- 主人公の名前
+- '日の出'
+- 'ランダム'
+- '回想用'
+- '現在X'
+- '現在Y'
+- '現在向き'
+- '現在マップ'
+- '主人公の名前'
 - ''
 - ''
 - ''
@@ -171,7 +171,7 @@ variables:
 - ''
 - ''
 - ''
-- 自動ページ変数
+- '自動ページ変数'
 - ''
 - ''
 - ''
@@ -181,60 +181,60 @@ variables:
 - ''
 - ''
 - ''
-- 選択肢続きから
+- '選択肢続きから'
 - ''
-- クリア後タイトル
-battle_bgm: !ruby/object:RPG::BGM {name: 【BGM】陵辱系Hシーン【ベースが主役1】, volume: 70, pitch: 100}
-version_id: 10796098
-start_map_id: 1
-battler_name: Skeleton
-magic_number: 77696160
-switches:
-- 
-- 木の棒
-- 鍋
-- 酒
-- ジョニーと話す
-- オーク
-- 主人公攻撃役
-- 時間切れ
-- マリー救出
-- ノエルと話す
-- マリーと話す
-- ジョニーと話す
-- 宝石鉱山
-- 温泉敗北
-- 温泉まんじゅう
-- 道場破り
-- 次クエスト解放
-- 道場ご褒美
-- 聖剣
-- 毒草
-- 奪還
-- 川
-- 旅館終わり
-- 主人公勝ち
-- 装備メニュー消し
-- スワップ許可
-- 話さない
-- クリア済み
-- パイズリ
-- ノエル汎用
-- 消す
-- 花束オン
-- 香水オン
-- イヤリングオン
-- 髪飾りオン
-- 保存食オン
-- 盗賊拒否
-- 期限切れ
-- 武具ゲット
-- 武具発生
-- 毒発生
-- 毒挑戦済み
-- 着替え
-- 日の出
-- 消し
+- 'クリア後タイトル'
+'battle_bgm': !ruby/object:RPG::BGM {'name': '【BGM】陵辱系Hシーン【ベースが主役1】', 'volume': !!int '70', 'pitch': !!int '100'}
+'version_id': !!int '10796098'
+'start_map_id': !!int '1'
+'battler_name': 'Skeleton'
+'magic_number': !!int '77696160'
+'switches':
+- !!null 'null'
+- '木の棒'
+- '鍋'
+- '酒'
+- 'ジョニーと話す'
+- 'オーク'
+- '主人公攻撃役'
+- '時間切れ'
+- 'マリー救出'
+- 'ノエルと話す'
+- 'マリーと話す'
+- 'ジョニーと話す'
+- '宝石鉱山'
+- '温泉敗北'
+- '温泉まんじゅう'
+- '道場破り'
+- '次クエスト解放'
+- '道場ご褒美'
+- '聖剣'
+- '毒草'
+- '奪還'
+- '川'
+- '旅館終わり'
+- '主人公勝ち'
+- '装備メニュー消し'
+- 'スワップ許可'
+- '話さない'
+- 'クリア済み'
+- 'パイズリ'
+- 'ノエル汎用'
+- '消す'
+- '花束オン'
+- '香水オン'
+- 'イヤリングオン'
+- '髪飾りオン'
+- '保存食オン'
+- '盗賊拒否'
+- '期限切れ'
+- '武具ゲット'
+- '武具発生'
+- '毒発生'
+- '毒挑戦済み'
+- '着替え'
+- '日の出'
+- '消し'
 - ''
 - ''
 - ''
@@ -289,10 +289,10 @@ switches:
 - ''
 - ''
 - ''
-- 変数ウインドウ表示
-- 誤選択防止
+- '変数ウインドウ表示'
+- '誤選択防止'
 - ''
-- セーブ判定
+- 'セーブ判定'
 - ''
 - ''
 - ''
@@ -309,108 +309,108 @@ switches:
 - ''
 - ''
 - ''
-- 戦闘スキップ
+- '戦闘スキップ'
 - ''
-gameover_me: !ruby/object:RPG::ME
-  name: Gameover1
-  pitch: 100
-  volume: 100
-game_title: 愛する人が他の男にヤラれたり親友夫婦とスワッピングしたり嫁を他の男に抱かせるお話
-title_bgm: !ruby/object:RPG::BGM {name: ややアダルトな日常風, volume: 80, pitch: 100}
-terms: !ruby/object:RPG::System::Terms
-  params:
-  - 最大ＨＰ
-  - 最大ＭＰ
-  - 攻撃力
-  - 防御力
-  - 魔法力
-  - 魔法防御
-  - 敏捷性
-  - 運
-  etypes:
-  - 武器
-  - 盾
-  - 頭
-  - 身体
-  - 装飾品
-  commands:
-  - 戦う
-  - 逃げる
-  - 攻撃
-  - 防御
-  - アイテム
-  - スキル
-  - 装備
-  - ステータス
-  - 並び替え
-  - セーブ
-  - ゲーム終了
+'gameover_me': !ruby/object:RPG::ME
+  'name': 'Gameover1'
+  'pitch': !!int '100'
+  'volume': !!int '100'
+'game_title': '愛する人が他の男にヤラれたり親友夫婦とスワッピングしたり嫁を他の男に抱かせるお話'
+'title_bgm': !ruby/object:RPG::BGM {'name': 'ややアダルトな日常風', 'volume': !!int '80', 'pitch': !!int '100'}
+'terms': !ruby/object:RPG::System::Terms
+  'params':
+  - '最大ＨＰ'
+  - '最大ＭＰ'
+  - '攻撃力'
+  - '防御力'
+  - '魔法力'
+  - '魔法防御'
+  - '敏捷性'
+  - '運'
+  'etypes':
+  - '武器'
+  - '盾'
+  - '頭'
+  - '身体'
+  - '装飾品'
+  'commands':
+  - '戦う'
+  - '逃げる'
+  - '攻撃'
+  - '防御'
+  - 'アイテム'
+  - 'スキル'
+  - '装備'
+  - 'ステータス'
+  - '並び替え'
+  - 'セーブ'
+  - 'ゲーム終了'
   - ''
-  - 武器
-  - 防具
-  - 大事なもの
-  - 装備変更
-  - 最強装備
-  - 全て外す
-  - ニューゲーム
-  - コンティニュー
-  - シャットダウン
-  - タイトルへ
-  - やめる
+  - '武器'
+  - '防具'
+  - '大事なもの'
+  - '装備変更'
+  - '最強装備'
+  - '全て外す'
+  - 'ニューゲーム'
+  - 'コンティニュー'
+  - 'シャットダウン'
+  - 'タイトルへ'
+  - 'やめる'
   - ''
-  basic:
-  - レベル
-  - Lv
-  - ＨＰ
-  - HP
-  - ＭＰ
-  - MP
-  - ＡＰ
-  - AP
-test_troop_id: 1
-boat: !ruby/object:RPG::System::Vehicle
-  start_y: 0
-  bgm: !ruby/object:RPG::BGM {name: Ship, volume: 100, pitch: 100}
-  start_x: 0
-  character_index: 0
-  character_name: Vehicle
-  start_map_id: 0
-skill_types:
+  'basic':
+  - 'レベル'
+  - 'Lv'
+  - 'ＨＰ'
+  - 'HP'
+  - 'ＭＰ'
+  - 'MP'
+  - 'ＡＰ'
+  - 'AP'
+'test_troop_id': !!int '1'
+'boat': !ruby/object:RPG::System::Vehicle
+  'start_y': !!int '0'
+  'bgm': !ruby/object:RPG::BGM {'name': 'Ship', 'volume': !!int '100', 'pitch': !!int '100'}
+  'start_x': !!int '0'
+  'character_index': !!int '0'
+  'character_name': 'Vehicle'
+  'start_map_id': !!int '0'
+'skill_types':
 - ''
-- 特技
-- 魔法
-weapon_types:
+- '特技'
+- '魔法'
+'weapon_types':
 - ''
-- 斧
-- 爪
-- 槍
-- 剣
-- 刀
-- 弓
-- 短剣
-- 槌
-- 杖
-- 銃
-armor_types:
+- '斧'
+- '爪'
+- '槍'
+- '剣'
+- '刀'
+- '弓'
+- '短剣'
+- '槌'
+- '杖'
+- '銃'
+'armor_types':
 - ''
-- 一般防具
-- 魔法防具
-- 軽装防具
-- 重装防具
-- 小型盾
-- 大型盾
-currency_unit: Ｇ
-window_tone: !ruby/object:Tone {r: -34.0, g: 0.0, b: 68.0, a: 0.0}
-japanese: true
-opt_draw_title: false
-opt_use_midi: false
-opt_transparent: true
-opt_followers: false
-opt_slip_death: false
-opt_extra_exp: false
-opt_display_tp: false
-battleback1_name: Grassland
-battleback2_name: Grassland
-title1_name: たいとる
-title2_name: ''
-opt_floor_death: false
+- '一般防具'
+- '魔法防具'
+- '軽装防具'
+- '重装防具'
+- '小型盾'
+- '大型盾'
+'currency_unit': 'Ｇ'
+'window_tone': !ruby/object:Tone {'r': !!float '-34.0', 'g': !!float '0.0', 'b': !!float '68.0', 'a': !!float '0.0'}
+'japanese': !!bool 'true'
+'opt_draw_title': !!bool 'false'
+'opt_use_midi': !!bool 'false'
+'opt_transparent': !!bool 'true'
+'opt_followers': !!bool 'false'
+'opt_slip_death': !!bool 'false'
+'opt_extra_exp': !!bool 'false'
+'opt_display_tp': !!bool 'false'
+'battleback1_name': 'Grassland'
+'battleback2_name': 'Grassland'
+'title1_name': 'たいとる'
+'title2_name': ''
+'opt_floor_death': !!bool 'false'
