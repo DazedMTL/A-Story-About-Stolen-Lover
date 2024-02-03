@@ -1,0 +1,613 @@
+--- !ruby/object:RPG::Map
+parallax_name: ''
+height: 20
+events:
+  1: !ruby/object:RPG::Event
+    id: 1
+    name: EV001
+    x: 8
+    y: 12
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ヒロイン
+        character_index: 0
+        direction: 4
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 3
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, マリー服笑顔, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &1 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [わー キレイなお花だね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *1}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [マリーは山歩きを満喫しているようだ]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &2 !ruby/object:RPG::MoveCommand {code: 19, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*2]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - -1
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &3 !ruby/object:RPG::MoveCommand {code: 16, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*3]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, マリー服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *1}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ごめんね 本当はノエルさんと来たかったでしょ？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 102, p: [[マリーと一緒で楽しい, ノエルと離れてドキドキしてる], 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [0, マリーと一緒で楽しい]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服笑顔, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [本当？ ならよかった！]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [1, ノエルと離れてドキドキしてる]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服笑顔, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [えへへ 楽しんでくれてるならいいんだけど]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [ヘンタイさんだね～♡]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 404, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, マリー服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: […………]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &4 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [これが一番 ジョニーがドキドキして楽しんでくれるかなって]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *4}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ジョニーね 私に性癖の話を打ち明ける時]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [すごく苦しそうだったんだ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *4}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私を傷つけるかもって考えてたんだと思う]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *4}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [でも 嘘を付きたくないからって]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [全部 正直に話してくれたんだ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *4}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [最初は意味わかんなかったけどね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *4}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私の裸を他人に見せたいとか……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私と誰かがエッチしてるのを見たいとか……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 102, p: [[断ろうと思わなかった？, ひどい話だ], 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [0, 断ろうと思わなかった？]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服呆れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [そりゃ思ったよー！]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [なんでそんなことしなきゃいけないのって！]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [1, ひどい話だ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服笑顔, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: &5 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['同じことを奥さんにさせてる\N[1]が言っても']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [説得力がないんですけどー？]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服呆れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *5}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [ジョニーとは昔から似た者同士だったけど]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [性癖まで似るなんてね……]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 404, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, マリー服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &6 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['でもまあ……\N[1]が相手だったから……']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *6}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あー それなら別にいいかなって思ったんだ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *6}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [他の人だと絶対無理だけどね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\N[1]と \N[1]が選んだ奥さんなら']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私にとっては家族だもん]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *6}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['まあ感覚的にはジョニーが第1亭主で \N[1]が第2亭主']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルさんが第2夫人みたいな？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *6}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [まあ そんな感じだからさ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [これからもよろしくね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それと…… 改めて 引き受けてくれてありがとね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ジョニーも喜んでるわ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 102, p: [[自分のためでもある, お礼は口だけ？], 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [0, 自分のためでもある]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服笑顔, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [あー そーだったね]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [持ちつ持たれつだね]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服挑発, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [2, マリー照れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: &7 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: […………]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *7}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [このまま なんにもしないで帰るのもありだけど……]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *7}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [やっぱ そういうのって態度でバレると思わない？]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *7}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [ちょっとだけ……]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *7}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [なにか あったほうが……そういう空気が出るんじゃないかな]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 117, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *7}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [マリーが近づいてくる]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *7}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [膝を折り 股間に顔を寄せ 腕を伸ばしてきた]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *7}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [その細い指がズボンのチャックを引く]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [1, お礼は口だけ？]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服挑発, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [2, マリー照れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: &8 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [えー……なに そのいやらしい言い方は]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *8}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [他のお礼……してほしいの？]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *8}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [うーん……]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *8}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [やっぱ駄目♡]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 117, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *8}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [そう言うと マリーが眼前でしゃがみ込み]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [ズボンのチャックに手をかけてきた]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服挑発, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [2, マリー照れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *8}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [ん？ なに？]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [駄目って言ったのにって？]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *8}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [口以外のお礼は駄目って言ったんだよ♡]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [だから……]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *8}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [今から お口でお礼するから ね♡]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 117, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 404, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '022', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [1, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, true]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: BGM ふたり, volume: 70, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ジジジ……とチャックが下ろされ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [隙間かに手が入り込んでくる]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &9 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [さすがに お日様の下で丸出しはマズイよね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [脱がさないでするね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [もぞもぞとパンツの中で指が動き回る]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そして竿を掴むと 優しくさすりながら]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [外へと導き出した]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ペニスがチャックの隙間から表に出される]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [風があたって その部分だけがひんやりとした]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [早くしないと 誰か来ちゃうかもね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [どことなく興奮を抑えきれない様子で]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [マリーがすばやく手コキする]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [見る見るペニスが勃起していき]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [八分ほど大きくなったところで 一気に咥え込んだ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, 022b, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はむっ んっ んっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ちゅるるっ♡ ぺろ ぺちょっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いきなり奥まで咥えたかと思うと 舌を使って]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [全体をペロペロと舐め回しながら吸い付く]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [持てる技を全て駆使した強力なフェラだった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [朝にされたフェラよりも雑ではあったが]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [早くイカせるために特化した動きは]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [単純な快感をグイグイと引き出していく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ちゅばっ ちゅばっ♡ んふっ♡ んぼっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はー はー♡ イッて♡ はやくイッて♡ ちゅぼぼぼっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [しゃぶっているうちに 自分も興奮してきたのか]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [マリーの瞳が徐々にトロンとしてくる]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [早く強く動いていただけだったのが 熱のこもった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ネットリしたフェラに変化していく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それでも周囲を気にしてか いまいち集中しきれず]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [チラチラと横目で確認しながらしゃぶり続けた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &10 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [んふっ♡ ぼっ♡ おっ♡ んもっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *10}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [唾液と先走りを舐め取り混ぜ合わせ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ごくごくと飲み下しながら 激しく頭を上下させる]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *10}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [兄弟同然の親友の妻の痴態に ペニスも硬度を増して応える]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それがまた マリーを興奮させた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, 022a, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *10}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [（か 固い……それに また大きくなってる♡）]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *10}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [（はやくイッてほしいのに こんなにされたら]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [こっちが参っちゃうよう♡）]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *10}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [舌を押し返してくる肉棒の感触が]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [独特の鼻奥にツンと来るニオイが]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ドンドンとマリーの意識をフェラに集中させていく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *10}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [エラを必死に舐め回し 隙間なくピッタリ咥えると]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ペニスを根本から引っ張るように吸いながら頭を上げ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [唇で絞り上げる]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &11 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [玉を揉み 根元を手で押さえながら 何度も何度も繰り返し]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [熱心に吸いまくる]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *11}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [吸った後は ベロベロと舌を高速で動かしつつ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [やはり唇をすぼめて飲み込んでいった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, 022b, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *11}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [じゅるるるっ♡ ふーっ♡ ふーっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [れろれろれろ♡ ちゅぼぼぼっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *11}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [熱のこもったフェラに 野外である緊張感が]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [興奮を加速させ いつもよりも早く限界が訪れた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）①, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 224, p: [!ruby/object:Color {r: 255.0, g: 255.0, b: 255.0, a: 255.0}, 60, true]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, 022c, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &12 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [んっ！ んーっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *12}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ん……んぐ……んぐっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *12}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [うっとり鼻で大きく息をしながら出された精液を]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [胃に流し込むマリー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *12}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その目はペニスだけを見つめ もはや周囲のことなど]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [気にする素振りもなかった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, マリー服笑顔, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, マリー照れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &13 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [う……うーん ちょっとハメを外しちゃったね あはは……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *13}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あんなに熱中するつもりじゃなかったのに]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [誰もこなくてよかった……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *13}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: […………]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 102, p: [[ここまでしなくても, ジョニーのため？], 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [0, ここまでしなくても]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服呆れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: &14 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [うーん……そうかなあ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [でも やっぱりしたほうがいいと思うんだ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *14}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [私からすることに意味があるっていうか……]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [1, ジョニーのため？]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服笑顔, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [うん……えへへ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [もしかして残念？ 自分のためじゃないのかって]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 404, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, マリー服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &15 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ジョニー なんだかずっと遠慮してるんだもの]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *15}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [自分が言い出しっぺのくせにね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [……だからかな？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *15}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [こっちは もう普通にやる気なのに]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [本当は無理してるんじゃないかって 心の中で]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [思ってくれてるんだ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *15}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [だから いいんだよって]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ジョニーのしたいこと 出来るんだよって]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *15}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そうわかってもらいたいと思ったんだ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, マリー照れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *15}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルさんにも相談して 朝からフェラなんか]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [しちゃったりしてね♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *15}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: […………もしかして やりすぎた？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 102, p: [[そんなことはない, ちょっと置いていかれた], 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [0, そんなことはない]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服笑顔, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [よかったー いきなりだったから]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [変に思われないか心配だったんだ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [1, ちょっと置いていかれた]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服不安, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['うっ……なによう……\N[1]だって']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [言い出しっぺの側のくせに～！]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 404, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, マリー服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [とにかく するって決めたんだから すればいいの！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\N[1]も ちょっと遠慮してるでしょ！']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [もう！ こんなときまでリードしなきゃいけないなんて]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [男でしょ！ しっかりしなさい！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &16 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私もノエルさんも 二人の望みならいいかって]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [結構軽く引き受けてるんだから そっちもそのくらいの]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [気持ちでいいんだよ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *16}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私たちは4人でひとつの家族でいいじゃない ねっ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あ あと神父様がお父さんね♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 102, p: [[あくまで二組の家族, でないと, 興奮の, 度合いが違う], 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [0, あくまで二組の家族]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [1, でないと]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [2, 興奮の]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [3, 度合いが違う]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 404, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, マリー服不安, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そ……そこはこだわりがあるんだ……ま まあ うん]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['わかったよ うちと \N[1]の家族のプレイね あはは……']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その妙なこだわりはいまだによくわかんない……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルさんは そういうトコも わかってるみたいだけど……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, マリー服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [やっぱり経験値の差なのかなー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ジョニーとしかしたことないからなあ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 102, p: [[神父様ともした, これからわかる], 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [0, 神父様ともした]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服笑顔, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [2, マリー照れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [あのとき すぐに失神しちゃったから……あはは]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [1, これからわかる]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服挑発, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [2, マリー照れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [そうなんだ……教え込まれちゃうんだ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [うわあ……覚悟しとかないと]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 404, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, マリー服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &17 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あ そろそろ帰らないと 暗くなっちゃうね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *17}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [晩御飯は何かなー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ほら 行きましょ！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [16]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+parallax_sx: 0
+bgm: !ruby/object:RPG::BGM {name: c_shrine, volume: 70, pitch: 100}
+tileset_id: 14
+encounter_step: 30
+width: 20
+data: !ruby/object:Table
+  dim: 3
+  x: 20
+  y: 20
+  z: 4
+  data:
+  - 0e00 0e00 0e00 0e04 0e26 0b80 0b2c 0ca8 0ca6 0b10 0b00 0b18 0b88 0b68 0b78 0e10 0e00 0e00 0e18 0b70
+  - 0e00 0e00 0e04 0e26 0b82 0b63 0b75 0b8d 0b22 0b01 0b00 0b06 0b2d 0b88 0b79 0e10 0e00 0e00 0e18 0b70
+  - 0e00 0e00 0e18 0b2e 0b88 0b68 0b78 0b22 0b01 0b00 0b00 0b18 0b5b 0b55 0b80 0e28 0e08 0e00 0e18 0b70
+  - 0e00 0e00 0e18 0b8a 0b2a 0b72 0b86 0b12 0b1c 0b0c 0b1c 0b1e 0b25 0b50 0b80 0b2a 0e10 0e00 0e18 0b70
+  - 0e1c 0e08 0e18 0b80 0b2c 0b80 0b2b 0b27 0caa 0b20 0ca2 0ca4 0b20 0b50 0b80 0b2c 0e10 0e00 0e18 0b70
+  - 0b84 0e10 0e18 0b89 0b76 0b7a 0b5a 0cab 0c9b 0b20 0c90 0c98 0b20 0b5c 0b8c 0e22 0e01 0e04 0e26 0b70
+  - 0b86 0e28 0e19 0b2e 0b70 0b78 0b50 0b2a 0ca0 0b2c 0c90 0c98 0b2c 0b8a 0b2a 0e10 0e00 0e18 0b2a 0b70
+  - 0e24 0b8a 0e29 0e25 0b70 0b78 0b50 0b20 0c91 0c95 0c9d 0c99 0b83 0b87 0b20 0e10 0e04 0e26 0b20 0b70
+  - 0e18 0b71 0b84 0e2c 0b70 0b78 0b5c 0b20 0c90 0c98 0b8a 0ca0 0b80 0b2b 0b1b 0e10 0e18 0b23 0b27 0b70
+  - 0e18 0b88 0b6a 0b74 0b65 0b86 0b22 0b1a 0ca8 0c99 0b80 0cac 0b71 0b84 0b2c 0e10 0e18 0b20 0b82 0b61
+  - 0e02 0e24 0b88 0b68 0b78 0b22 0b01 0b18 0b5a 0ca0 0b71 0b74 0b65 0b86 0e22 0e05 0e26 0b20 0b70 0b60
+  - 0e00 0e18 0b2e 0b70 0b78 0b12 0b1c 0b19 0b5c 0ca0 0b88 0b7c 0b79 0b2a 0e10 0e18 0b22 0b1a 0b70 0b60
+  - 0e00 0e02 0e24 0b70 0b78 0b20 0b5a 0b29 0b2d 0c91 0c94 0ca4 0b80 0b2c 0e10 0e18 0b12 0b26 0b70 0b60
+  - 0e00 0e00 0e18 0b70 0b78 0b20 0b59 0b5d 0ca2 0c81 0c84 0ca6 0b71 0b84 0e10 0e18 0b2c 0b82 0b61 0b60
+  - 0e1c 0e08 0e18 0b88 0b79 0b2c 0b8a 0b2a 0ca8 0c9c 0c99 0b2e 0b70 0b78 0e12 0e26 0b82 0b61 0b60 0b60
+  - 0b2d 0e10 0e02 0e24 0b89 0b76 0b7a 0b11 0b15 0b2d 0ca0 0b5a 0b70 0b78 0e20 0b2a 0b70 0b60 0b60 0b60
+  - 0b84 0e28 0e08 0e18 0b2a 0b70 0b78 0b28 0b26 0ca2 0c9a 0b50 0b70 0b78 0e20 0b20 0b70 0b64 0b7c 0b7c
+  - 0b78 0b2e 0e10 0e18 0b20 0b70 0b62 0b84 0ca2 0c81 0c98 0b5c 0b72 0b86 0e20 0b20 0b70 0b78 0b23 0b21
+  - 0b62 0b84 0e28 0e19 0b2c 0b72 0b7c 0b79 0c92 0c9c 0c99 0b2a 0b80 0e23 0e27 0b2c 0b72 0b86 0b20 0b82
+  - 0b60 0b62 0b84 0e11 0e24 0b80 0b2a 0b80 0ca0 0b2a 0ca0 0b20 0b80 0e20 0b2a 0b82 0b7a 0b22 0b1a 0b70
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0118 0119 011a 0000 0005 0000 0000 0000 0026 0027 0000 0005 000a 0000 0025 0000 0000 0000 0000
+  - 0025 0120 0121 0122 0025 000a 0000 0000 0000 002e 002f 0000 0006 0000 0025 002d 0118 0119 011a 0000
+  - 002d 0128 0129 012a 002d 0005 0005 0000 0000 0000 0016 0026 0027 0025 002d 0000 0120 0121 0122 0000
+  - 0000 0130 0131 0132 0026 0027 0005 0000 0000 0000 0000 002e 002f 002d 0000 0000 0128 0129 012a 0000
+  - 0026 0027 0000 0000 002e 002f 0000 0000 0000 0000 0000 0000 0025 0000 000a 0025 0130 0131 0132 0000
+  - 002e 002f 0000 000f 0000 0118 0119 011a 0000 0000 0000 0000 002d 0026 0027 002d 0000 0000 0000 0000
+  - 0000 0000 0000 0000 000a 0120 0121 0122 0000 0000 0000 0000 0000 002e 002f 0000 0000 0000 0026 0027
+  - 0118 0119 011a 0026 0027 0128 0129 012a 0000 0000 0000 0026 0027 0000 000f 0000 0000 0000 002e 002f
+  - 0120 0121 0122 002e 002f 0130 0131 0132 0000 0000 0000 002e 002f 0118 0119 011a 0000 0000 0002 0000
+  - 0128 0129 012a 0025 0000 0026 0027 0000 0000 0000 0000 0000 0000 0120 0121 0122 0000 0000 0000 0000
+  - 0130 0131 0132 002d 0000 002e 002f 0000 0000 0000 0000 0025 0005 0128 0129 012a 0000 0026 0027 0000
+  - 0000 0000 0118 0119 011a 0014 0000 0000 0000 0000 0000 002d 0002 0130 0131 0132 0000 002e 002f 0000
+  - 0000 0000 0120 0121 0122 0000 0000 0006 0000 0000 0000 0000 0026 0027 0000 0000 0025 0002 0000 0000
+  - 0026 0027 0128 0129 012a 0025 0000 0000 0000 0000 0000 0000 002e 002f 0000 0000 002d 0000 0118 0119
+  - 002e 002f 0130 0131 0132 002d 0000 0000 0000 0000 0000 0026 0027 0025 0000 0025 0000 0000 0120 0121
+  - 0000 0000 0000 0000 0000 0007 0000 0000 0000 0000 0000 002e 002f 002d 0000 002d 0026 0027 0128 0129
+  - 0000 0000 0118 0119 011a 0025 0000 0014 0000 0000 0000 0025 000f 0000 0000 0000 002e 002f 0130 0131
+  - 0000 0000 0120 0121 0122 002d 0000 0000 0000 0000 0000 002d 0000 0026 0027 0000 0000 0000 0000 0000
+  - 0000 0000 0128 0129 012a 0005 0118 0119 011a 0000 0000 0026 0027 002e 002f 0000 0000 0118 0119 011a
+  - 0000 0000 0130 0131 0132 0025 0120 0121 0122 0000 0000 002e 002f 0025 0025 0026 0027 0120 0121 0122
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+bgs: !ruby/object:RPG::BGS {name: '', volume: 80, pitch: 100}
+parallax_loop_y: false
+autoplay_bgm: true
+encounter_list: []
+autoplay_bgs: false
+parallax_show: false
+scroll_type: 0
+parallax_loop_x: false
+disable_dashing: false
+parallax_sy: 0
+display_name: ''
+specify_battleback: false
+note: ''
+battleback1_name: ''
+battleback2_name: ''

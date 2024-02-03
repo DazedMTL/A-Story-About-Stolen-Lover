@@ -1,0 +1,548 @@
+--- !ruby/object:RPG::Map
+parallax_name: ''
+height: 20
+events:
+  2: !ruby/object:RPG::Event
+    id: 2
+    name: ノエル
+    x: 11
+    y: 7
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ノエル
+        character_index: 0
+        direction: 2
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: true
+      priority_type: 1
+      trigger: 3
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &1 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ジョニー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [じゃあ 今夜は俺が女子部屋で寝るんで]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [師匠はこっちでごゆっくり！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, マリー服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *1}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [うふふふ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 1
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: false
+          list:
+          - &2 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &3 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &4 !ruby/object:RPG::MoveCommand {code: 39, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*3]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*4]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 3
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &5 !ruby/object:RPG::MoveCommand {code: 2, parameters: []}
+          - &6 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &7 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &8 !ruby/object:RPG::MoveCommand {code: 39, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*5]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*6]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*7]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*8]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 213, p: [2, 6, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [こういうことが 楽しくて仕方ないって感じだな]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [若いということか]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - -1
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &9 !ruby/object:RPG::MoveCommand {code: 18, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*9]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &10 !ruby/object:RPG::MoveCommand {code: 17, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*10]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 102, p: [[抱きしめる], 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [0, 抱きしめる]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 241, p: [!ruby/object:RPG::BGM {name: BGM ふたり, volume: 70, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [2, ノエル照れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: &11 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [な なんだ いきなりびっくりするだろう]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *11}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [ノエルは目をそらしてうつむいている]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [抵抗する気配はないが 体がこわばっているようだ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [2, ノエル照れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [……………慣れていないだけだ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [すぐにおさまる]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [気遣うように言うと こちらの胸に頭を乗せて]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [体を預けてきた]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [2, ノエル照れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [あのときの君は本当に……白馬に乗った王子様のようだった]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [……こんな 柄にも無いことを私が言うとはな]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [まともな恋など したことがなかったからな]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [私は ひどく うろたえていただろう]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [ようやく]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [この気持ちに 素直に向き合えるようになってきたよ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: &12 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [さりとて 今更ジョニーたちのように]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [盛り上がれる歳でもない]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *12}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [つまらん女だぞ 私は]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *12}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [……………]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *12}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [彼女の言葉に耳を傾けつつ抱きしめ続ける]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 404, p: []}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &13 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*13]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &14 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルが不意に立ち上がった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [何かを決意したような 何かを吹っ切ったような]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それでいて どこか寂しげな……そんな目をしている]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *14}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [よし 私も腹を決めたぞ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &15 !ruby/object:RPG::MoveCommand {code: 2, parameters: []}
+          - &16 !ruby/object:RPG::MoveCommand {code: 2, parameters: []}
+          - &17 !ruby/object:RPG::MoveCommand {code: 2, parameters: []}
+          - &18 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &19 !ruby/object:RPG::MoveCommand {code: 18, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*15]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*16]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*17]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*18]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*19]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - -1
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &20 !ruby/object:RPG::MoveCommand {code: 2, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*20]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, ノエル照れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [君の気持ちに応えようじゃないか]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [師匠として 女を教えてやる]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 102, p: [[師匠として？, それじゃ嫌だ], 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [0, 師匠として？]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [そうだ その程度のことだと思えばいい]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [君は若い やり直すチャンスがたくさんある]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [失敗を恐れることはない]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: &21 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [女選びだってそうだ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [失敗したと思ったら やり直せばいい]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *21}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [だが その練習を他の子にさせるのは気の毒だ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *21}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [私でやればいい]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [いつでも別れを受け入れる]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *21}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [一度経験すれば 次からはもっといい恋愛ができる]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [1, それじゃ嫌だ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: &22 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [君には経験が不足している]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [だから私なんかに引っかかる]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *22}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [もっと同世代の 君にふさわしい子と出会う日が来る]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *22}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [私のことは その子とのための練習台と思え]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *22}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [いい子が見つかったら 遠慮なく言ってくれ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [私はすぐに 君の前から姿を消そう]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 404, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &23 !ruby/object:RPG::MoveCommand {code: 2, parameters: []}
+          - &24 !ruby/object:RPG::MoveCommand {code: 2, parameters: []}
+          - &25 !ruby/object:RPG::MoveCommand {code: 18, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*23]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*24]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*25]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [さあ 来い]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 102, p: [[行かない], 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [0, 行かない]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 213, p: [-1, 5, false]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 404, p: []}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - -1
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &26 !ruby/object:RPG::MoveCommand {code: 2, parameters: []}
+          - &27 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &28 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &29 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &30 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &31 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &32 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &33 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Open1, pitch: 100, volume: 80}]}
+          - &34 !ruby/object:RPG::MoveCommand {code: 39, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*26]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*27]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*28]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*29]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*30]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*31]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*32]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*33]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*34]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: Close1, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 211, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 201, p: [0, 86, 7, 9, 8, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  1: !ruby/object:RPG::Event
+    id: 1
+    name: ジョニー
+    x: 8
+    y: 11
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: 相棒
+        character_index: 0
+        direction: 8
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: true
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  3: !ruby/object:RPG::Event
+    id: 3
+    name: マリー
+    x: 9
+    y: 11
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ヒロイン
+        character_index: 0
+        direction: 8
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: true
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+parallax_sx: 0
+bgm: !ruby/object:RPG::BGM {name: 【BGM】のんびりした感じアウトボード, volume: 70, pitch: 100}
+tileset_id: 13
+encounter_step: 30
+width: 20
+data: !ruby/object:Table
+  dim: 3
+  x: 20
+  y: 20
+  z: 4
+  data:
+  - 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1704 171c 171c 171c 171c 171c 171c 171c 171c 171c 1708 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1718 1912 1912 1912 1912 1912 1912 1912 1912 1912 1710 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1718 1918 1918 1918 1918 1918 1918 1918 1918 1918 1710 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1718 0b52 0b44 0b44 0b45 0b51 0b51 0b51 0b51 0b5d 1710 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1718 0b40 0b30 0b30 0b48 0e82 0e74 0e74 0e74 0e84 1710 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1718 0b40 0b30 0b30 0b48 0e70 0e60 0e60 0e60 0e78 1710 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1718 0b40 0b30 0b30 0b48 0e70 0e60 0e60 0e60 0e78 1710 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1718 0b40 0b30 0b30 0b48 0e88 0e7c 0e7c 0e7c 0e86 1710 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1718 0b40 0b30 0b30 0b32 0b44 0b44 0b44 0b44 0b54 1710 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1718 0b58 0b4c 0b4c 0b3c 0b4c 0b4c 0b4c 0b4c 0b56 1710 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1702 1714 1714 1724 0b5c 1722 1714 1714 1714 1714 1701 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1700 1700 1702 1714 1701 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0c7b 0c7d 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0182 0000 0022 0000 0183 0189 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 002a 0000 018b 0000 015c 0171 0172 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 01e8 01e8 0000 0000 0000 0000 0164 0179 017a 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 01f0 01f0 0000 0000 0000 0101 0101 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 01f8 01f8 0000 0000 0000 0000 0224 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0105 0106 0107 0000 0000 0102 0102 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 010d 010e 010f 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 01ee 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 01f6 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+bgs: !ruby/object:RPG::BGS {name: '', volume: 80, pitch: 100}
+parallax_loop_y: false
+autoplay_bgm: true
+encounter_list: []
+autoplay_bgs: false
+parallax_show: false
+scroll_type: 0
+parallax_loop_x: false
+disable_dashing: false
+parallax_sy: 0
+display_name: ''
+specify_battleback: false
+note: ''
+battleback1_name: ''
+battleback2_name: ''

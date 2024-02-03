@@ -1,0 +1,280 @@
+--- !ruby/object:RPG::Map
+parallax_name: ''
+height: 20
+events:
+  1: !ruby/object:RPG::Event
+    id: 1
+    name: EV001
+    x: 6
+    y: 7
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: People2
+        character_index: 3
+        direction: 2
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 3
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【店主】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いらっしゃい]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 118, p: [１]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 102, p: [[武器を鍛える, 道具を買う, プレゼントを買う, 帰る], 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [0, 武器を鍛える]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 111, p: [1, 33, 0, 4, 1]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [【店主】]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [これ以上強くは出来ないよ]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 119, p: [１]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 411, p: []}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [【店主】]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\V[33]000Gで武器の性能をアップさせるよ\$']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 102, p: [[やる, やらない], 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 402, p: [0, やる]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 111, p: [1, 33, 0, 1, 0]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 111, p: [7, 1000, 0]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 125, p: [1, 0, 1000]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: [【店主】]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: [まいどあり]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 221, p: []}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 250, p: [!ruby/object:RPG::SE {name: Item2, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 127, p: [20, 0, 0, 2, false]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 127, p: [50, 0, 0, 1, false]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 319, p: [1, 0, 20]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 319, p: [3, 0, 20]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 319, p: [2, 0, 50]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 222, p: []}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 122, p: [33, 33, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 119, p: [１]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 411, p: []}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: [【店主】]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: [お金が足りないよ]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 119, p: [１]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 412, p: []}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 412, p: []}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 111, p: [1, 33, 0, 2, 0]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 111, p: [7, 2000, 0]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: [【店主】]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: [まいどあり]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 125, p: [1, 0, 2000]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 221, p: []}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 250, p: [!ruby/object:RPG::SE {name: Item2, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 127, p: [21, 0, 0, 2, false]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 127, p: [51, 0, 0, 1, false]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 319, p: [1, 0, 21]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 319, p: [3, 0, 21]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 319, p: [2, 0, 51]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 222, p: []}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 122, p: [33, 33, 0, 0, 3]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 119, p: [１]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 411, p: []}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: [【店主】]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: [お金が足りないよ]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 119, p: [１]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 412, p: []}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 412, p: []}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 111, p: [1, 33, 0, 3, 0]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 111, p: [7, 3000, 0]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 125, p: [1, 0, 3000]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: [【店主】]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: [まいどあり]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 221, p: []}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 250, p: [!ruby/object:RPG::SE {name: Item2, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 127, p: [22, 0, 0, 2, false]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 127, p: [52, 0, 0, 1, false]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 319, p: [1, 0, 22]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 319, p: [3, 0, 22]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 319, p: [2, 0, 52]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 222, p: []}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 122, p: [33, 33, 0, 0, 4]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 119, p: [１]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 411, p: []}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: [【店主】]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: [お金が足りないよ]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 119, p: [１]}
+      - !ruby/object:RPG::EventCommand {i: 5, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 412, p: []}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 412, p: []}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 402, p: [1, やらない]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 119, p: [１]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 404, p: []}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 412, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [1, 道具を買う]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 355, p: ['$game_system.shop_buy_category = [:item]']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 655, p: ['$game_system.shop_sell_category = [:item] ']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 302, p: [0, 1, 0, 0, false]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 605, p: [0, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 605, p: [0, 11, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 605, p: [0, 12, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [2, プレゼントを買う]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 355, p: ['$game_system.shop_buy_category = [:item]']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 655, p: ['$game_system.shop_sell_category = [:item] ']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 302, p: [0, 19, 0, 0, false]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 605, p: [0, 20, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 605, p: [0, 21, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 605, p: [0, 22, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 605, p: [0, 23, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 119, p: [１]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [3, 帰る]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 117, p: [5]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 404, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+parallax_sx: 0
+bgm: !ruby/object:RPG::BGM {name: '', volume: 100, pitch: 100}
+tileset_id: 13
+encounter_step: 30
+width: 20
+data: !ruby/object:Table
+  dim: 3
+  x: 20
+  y: 20
+  z: 4
+  data:
+  - 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790
+  - 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790
+  - 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790
+  - 1790 1790 1790 1790 1794 17ac 17ac 17ac 17ac 17ac 17ac 17ac 17ac 17ac 1798 1790 1790 1790 1790 1790
+  - 1790 1790 1790 1790 17a8 1942 1942 1942 1942 1942 1942 1942 1942 1942 17a0 1790 1790 1790 1790 1790
+  - 1790 1790 1790 1790 17a8 1948 1948 1948 1948 1948 1948 1948 1948 1948 17a0 1790 1790 1790 1790 1790
+  - 1790 1790 1790 1790 17a8 0b22 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b24 17a0 1790 1790 1790 1790 1790
+  - 1790 1790 1790 1790 17a8 0b10 0b00 0b00 0b00 0b00 0b00 0b00 0b00 0b18 17a0 1790 1790 1790 1790 1790
+  - 1790 1790 1790 1790 17a8 0b10 0b00 0b00 0b00 0b00 0b00 0b00 0b00 0b18 17a0 1790 1790 1790 1790 1790
+  - 1790 1790 1790 1790 17a8 0b10 0b00 0b00 0b00 0b00 0b00 0b00 0b00 0b18 17a0 1790 1790 1790 1790 1790
+  - 1790 1790 1790 1790 17a8 0b10 0b00 0b00 0b00 0b00 0b00 0b00 0b00 0b18 17a0 1790 1790 1790 1790 1790
+  - 1790 1790 1790 1790 17a8 0b10 0b00 0b00 0b00 0b00 0b00 0b00 0b00 0b18 17a0 1790 1790 1790 1790 1790
+  - 1790 1790 1790 1790 17a8 0b28 0b0c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b26 17a0 1790 1790 1790 1790 1790
+  - 1790 1790 1790 1790 1792 17b4 0b2c 17b2 17a4 17a4 17a4 17a4 17a4 17a4 1791 1790 1790 1790 1790 1790
+  - 1790 1790 1790 1790 1790 1792 17a4 1791 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790
+  - 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790
+  - 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790
+  - 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790
+  - 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790
+  - 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0c7a 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0c70 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0c7b 0c71 0c71 0c77 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0260 0261 029b 029c 026f 026d 0265 0264 026c 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0275 0259 0276 0262 02c5 02c6 0290 0291 0292 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 027d 0000 027e 0000 02cd 02ce 0298 0299 029a 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 02a0 02a1 02a2 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0263 0000 0000 0000 0000 02aa 02ab 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 02ac 0000 0000 0000 0000 02b2 02b3 0000 0282 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 02b4 0000 0000 0000 0000 02ba 02bb 0000 028a 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 02bc 0000 0000 0000 0000 02a8 02a9 0000 0281 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 02b0 02b1 0000 0289 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+bgs: !ruby/object:RPG::BGS {name: '', volume: 80, pitch: 100}
+parallax_loop_y: false
+autoplay_bgm: false
+encounter_list: []
+autoplay_bgs: false
+parallax_show: false
+scroll_type: 0
+parallax_loop_x: false
+disable_dashing: false
+parallax_sy: 0
+display_name: ''
+specify_battleback: false
+note: ''
+battleback1_name: ''
+battleback2_name: ''

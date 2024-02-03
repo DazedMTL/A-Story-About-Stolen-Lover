@@ -1,0 +1,2102 @@
+--- !ruby/object:RPG::Map
+parallax_name: ''
+height: 25
+events:
+  1: !ruby/object:RPG::Event
+    id: 1
+    name: マリー
+    x: 10
+    y: 9
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ヒロイン
+        character_index: 0
+        direction: 6
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: true
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  3: !ruby/object:RPG::Event
+    id: 3
+    name: ノエル
+    x: 10
+    y: 8
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ノエル
+        character_index: 0
+        direction: 6
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: true
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  4: !ruby/object:RPG::Event
+    id: 4
+    name: EV004
+    x: 20
+    y: 17
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: '!Door1'
+        character_index: 4
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: false
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 1
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: Open1, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &1 !ruby/object:RPG::MoveCommand {code: 17, parameters: []}
+          - &2 !ruby/object:RPG::MoveCommand {code: 15, parameters: [3]}
+          - &3 !ruby/object:RPG::MoveCommand {code: 18, parameters: []}
+          - &4 !ruby/object:RPG::MoveCommand {code: 15, parameters: [3]}
+          - &5 !ruby/object:RPG::MoveCommand {code: 19, parameters: []}
+          - &6 !ruby/object:RPG::MoveCommand {code: 37, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*3]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*4]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*5]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*6]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - -1
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: true
+          wait: true
+          list:
+          - &7 !ruby/object:RPG::MoveCommand {code: 12, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*7]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: Move, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 201, p: [0, 93, 20, 17, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  5: !ruby/object:RPG::Event
+    id: 5
+    name: EV005
+    x: 32
+    y: 17
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: '!Door1'
+        character_index: 4
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: false
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 1
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: Open1, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &8 !ruby/object:RPG::MoveCommand {code: 17, parameters: []}
+          - &9 !ruby/object:RPG::MoveCommand {code: 15, parameters: [3]}
+          - &10 !ruby/object:RPG::MoveCommand {code: 18, parameters: []}
+          - &11 !ruby/object:RPG::MoveCommand {code: 15, parameters: [3]}
+          - &12 !ruby/object:RPG::MoveCommand {code: 19, parameters: []}
+          - &13 !ruby/object:RPG::MoveCommand {code: 37, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*8]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*9]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*10]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*11]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*13]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - -1
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: true
+          wait: true
+          list:
+          - &14 !ruby/object:RPG::MoveCommand {code: 12, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*14]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: Move, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 201, p: [0, 93, 20, 17, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  6: !ruby/object:RPG::Event
+    id: 6
+    name: EV006
+    x: 9
+    y: 17
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: '!Door1'
+        character_index: 4
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: false
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 1
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: Open1, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &15 !ruby/object:RPG::MoveCommand {code: 17, parameters: []}
+          - &16 !ruby/object:RPG::MoveCommand {code: 15, parameters: [3]}
+          - &17 !ruby/object:RPG::MoveCommand {code: 18, parameters: []}
+          - &18 !ruby/object:RPG::MoveCommand {code: 15, parameters: [3]}
+          - &19 !ruby/object:RPG::MoveCommand {code: 19, parameters: []}
+          - &20 !ruby/object:RPG::MoveCommand {code: 37, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*15]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*16]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*17]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*18]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*19]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*20]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - -1
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: true
+          wait: true
+          list:
+          - &21 !ruby/object:RPG::MoveCommand {code: 12, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*21]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: Move, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 201, p: [0, 93, 20, 17, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  2: !ruby/object:RPG::Event
+    id: 2
+    name: 神父
+    x: 11
+    y: 9
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: People2
+        character_index: 0
+        direction: 4
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: true
+      priority_type: 1
+      trigger: 3
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: BGM 甘い香り, volume: 70, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, マリー服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &22 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父様 今夜はよろしくおねがいします]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *22}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はい しっかりとお務めを果たさせていただきます]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *22}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: […………]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *22}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルさん 緊張されているようですね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あっ いや……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [（落ち着け ただの儀式だ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [不貞を働くわけではない……むしろその逆）]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [（ザウバーや……他の男との過去を]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [清算してくれるんだ……）]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ラーム教の神父は 初夜権の行使には慣れています]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [決して 不快な思いはさせませんから]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *22}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [は はい]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *22}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [では はじめましょうか]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *22}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふたりとも 衣服を脱いで ベッドへどうぞ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, マリー服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はーい]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 1
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &23 !ruby/object:RPG::MoveCommand {code: 41, parameters: [ヒロイン裸, 0]}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*23]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 1
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &24 !ruby/object:RPG::MoveCommand {code: 2, parameters: []}
+          - &25 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &26 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &27 !ruby/object:RPG::MoveCommand {code: 3, parameters: []}
+          - &28 !ruby/object:RPG::MoveCommand {code: 3, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*24]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*25]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*26]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*27]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*28]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ん………]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルは ためらいがちに上着に手をかけ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [服を脱いでいった]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 3
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &29 !ruby/object:RPG::MoveCommand {code: 41, parameters: [ノエル裸, 0]}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*29]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル裸普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &30 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふう……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *30}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [どうぞ ベッドへ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *30}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父が促す]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その態度は普段と変わらず柔和で いやらしい下心なども]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いっさい感じられなかった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル裸普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *30}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [（まあ……そうでなければ こんなに信頼されていないか）]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 3
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &31 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &32 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &33 !ruby/object:RPG::MoveCommand {code: 3, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*31]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*32]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*33]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル裸普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [（この歳になると もう女の裸程度では]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [何も感じなかったりするのだろうか？）]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父を見ると 目を閉じ 精神を集中するように]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [なにかの文言を唱えている]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その姿からは神聖な雰囲気がにじみ出ていた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &34 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父の佇まいに ノエルの心に燻っていた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [抵抗感が薄れていく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *34}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そして 神聖な儀式に参加するのだという自覚が芽生え]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [居住まいを正した]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &35 !ruby/object:RPG::MoveCommand {code: 3, parameters: []}
+          - &36 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &37 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &38 !ruby/object:RPG::MoveCommand {code: 17, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*35]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*36]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*37]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*38]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [おまたせしました]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &39 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [これより ラーム神の名において 初夜権を行使いたします]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *39}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [花嫁は 明日の日の出まで この部屋を出ることなく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [眠ることなく 神の代行者たる 私に奉仕しなければいけません]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, マリー裸呆れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *39}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [えーっ 眠っちゃ駄目なの？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *39}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そうですね 出来れば]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神の精を受ければ受けるほど]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [厚い加護を受けられるのです]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *39}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ですから 一晩中 精をねだるのが 花嫁の作法とされています]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [とはいえ まあ……眠たくなってしまったら]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [仕方がないでしょう]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, マリー裸笑顔, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *39}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あー よかった～……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *39}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ところで 二人は性行為の経験は……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル裸普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *39}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [……何度……か……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, マリー裸普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [もうジョニーとしちゃった……えへへ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル裸普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *39}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [夫としたことでも 姦通の罪になるのですか？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [初夜の儀式を終えるまでは]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あなたは神の妻ですから……後の夫といえどそうなります]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &40 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [姦通をした者は 特に神への奉仕を行わなければ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いけません]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, マリー裸普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [奉仕？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *40}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [まず 女性は膣を使わずに 神父を2回射精させなければ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いけません]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *40}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そして 出された精を飲み干したあとで]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [自ら秘所を開いて 神に挿入を請う必要があります]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル裸呆れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そんな 卑猥なことを……？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [真剣に神を愛することを証明しなければいけません]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, マリー裸普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そこまでしないと信用出来ないなんて]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神様ってヤキモチ焼きなんだ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふふふ そうですね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [とても愛情の深いお方ですから]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, マリー裸普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [浮気してごめんなさい]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [愛してるのは神様だけよ ってエッチすればいいんですね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [よーし はやく始めましょう 神父様！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルの頭に とある不安がよぎる]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル裸呆れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *40}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [（2回射精させると言っても……ふたりだから4回？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父様に それだけの能力があるのだろうか……？）]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *40}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [まずは 私のペニスに奉仕をお願いします]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父が服を脱ぎ その一物を見せた時]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルの不安は 驚きとともに彼方へ消えてしまった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル裸普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, ノエル照れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [（な……なんて……）]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &41 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [大きい]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それはノエルが今まで見てきた中でも]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ひと目でわかるほど 群を抜いて大きいペニスだった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダランと股間に垂れ下がっている姿は]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [赤黒く光る巨大ナマコのようにも見えた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そのグロテスクなモノに ノエルもマリーも]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [目が離せなくなってしまった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, マリー裸呆れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, マリー照れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父様 すっごい大きい……！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [初夜権を行使するために鍛えていますからね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [まだまだ 若いものには負けませんよ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, マリー裸普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いや……これ ジョニーとは比べ物になんない……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [マリーが苦笑いを浮かべる]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルも夫のものを思い浮かべ 同じことを思った]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル裸呆れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [（これは……ふたりまとめて相手をするのも頷ける……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [日々の鍛錬のたまものか）]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [感心するのはかまいませんが]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私は まだ勃起もしていませんよ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ハッとして ノエルとマリーが顔を見合わせる]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, マリー裸挑発, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [じゃ……しよっか]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル裸睨み, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ん…………]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [二人は互いに遠慮しながらも ゆっくりと神父に にじり寄り]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [徐々にペニスに近づいていった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, 009, 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [1, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, true]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [後ろから見ると 神父の股間に跪いているような格好で]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [二人が密着する]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そして 互いの頬がくっつくと同時に]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ペニスの目の前に到達した]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, 009a, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルとマリー ふたりの裸の花嫁の鼻腔を]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ムワッとした神父のペニスのニオイがくすぐる]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [すんすん……はぁ……ここのニオイは一緒なんだね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [すー……はー……すー……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [どこかトロンとした目でマリーがつぶやく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [つぶやきながら 何度も鼻を鳴らしてニオイを吸い込んだ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [こういうの うう～ なんか つい嗅いじゃうんだよね……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [えへへ……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルも その気持ちは わかるような気がした]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ペニスのニオイには 身体を痺れさせ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [疼かせる効果があると 彼女は知っていた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [すんすん……ん……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [（これは儀式なんだ 必要なことだけすればいい）]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [冷静に言い聞かせる]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [しかし それを見透かしたかのように]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父が声をかけた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルさん 今夜のあなたは神の妻です]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [妻として 愛する夫にするように]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私に奉仕していただかなければいけません]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [これは心の問題だ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [適当に誤魔化し やり過ごしたとして その後の村での生活で]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その後ろめたさは常についてまわるだろう]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [今夜一晩だけ……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [身も心も神父に捧げれば あとは夫と何ら後ろめたさを]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [感じることなく過ごしていける]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [（…………今夜だけか……）]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [（……腹をくくるか）]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *41}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ここに来て ようやく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [完全にノエルは覚悟を決めた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &42 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [わかりました……今から私は あなたの妻となります……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *42}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [真剣な表情で神父を見つめると 愛を誓いながら]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [唇をペニスに向ける]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あなたが私のものに戻った時 私はあなたを]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [人の子に預けましょう]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *42}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [誓いのキスを]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *42}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [促され……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *42}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルは ペニスの先端に口づけた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &43 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そして ついばむようなキスの雨を降らせる]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, 009b, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *43}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [んっ ちゅっ ちゅばっ ちゅっちゅっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *43}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [わ わ……あ……なんかニオイがきつくなってきた……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *43}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [性臭が一気に広がっていく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [正面からそれを吸い込んだマリーは 頭がクラっとして]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [一瞬地面がグラついた気がした]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *43}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [マリー あなたも私の妻になるのですよ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *43}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あ はいっ わかりました！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *43}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルと違って とくに大きな決心などもなく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ごくごく当たり前のことと言うように マリーが頷いた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *43}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そして ノエルが吸い付いているペニスの]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [空いている場所を探し 舌を這わせていく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [れろ……ぇろ……れ～ろっ……どうれふか？ 旦那様♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *43}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [舌を大きく伸ばして ベタッと竿に貼り付けるようにして]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [顔を上下に動かし 舐めあげる]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *43}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [狭い空間内で ノエルとマリーは懸命にペニスに奉仕を続けた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &44 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルが口をすぼめて亀頭を咥え 舌でチロチロと舐める下で]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [マリーが玉袋を手で優しく揉みながら 竿に吸い付き]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [甘噛する]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [花嫁のタッグによる奉仕で ペニスは首長竜が]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [頭をもたげるようにして グイグイと天井に向けて]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そそり立っていく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [完全に勃起した時 その長さはノエルたちの顔に等しく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [太さは二の腕と見紛うばかりだった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はーっ……はーっ……すごい……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [う うん……これ 本当にオチンチンなの？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [またも驚きが隠せない二人 ペニスにまぶされた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [自分たちの唾液が光を反射して 淫靡に輝くさまを]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [惚けた顔でただ眺めている]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [でも……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [これなら ふたりでしやすいよね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そう言って ペニスの片側に寄るマリー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルはその意図を察し 反対側に回る]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [太いペニスを挟んで 二人の顔が向き合った]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ペニスの影に隠れて 互いの顔が半分ほどしか見えない]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [すごいな……これは……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [またふたりでペロペロしちゃお♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [両サイドから同時に舌を這わせた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [アイスキャンデーを舐めるように ペニスを舐める]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふむ……これは刺激的な光景ですが……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [少しもどかしいですね……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [自分の股間に花嫁二人が熱心に舌を這わせる姿は]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [脳天に響くエロスを醸し出していたが]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いかんせん 物理的な刺激は ほとんどなかった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [この太さとなると……咥え込むのも難しい]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [舐めるくらいしか……ん……ちろちろ……♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そうだ ノエルさん オッパイを使ったら？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [胸か……これだけ大きいと挟みがいがありそうだ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [4, 009c, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルが豊満な胸を突き出し ペニスを挟み込む]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [弾き返されそうな硬さを胸に感じながら]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [強引に押し返して こすりつける]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [うわ～！ どっちもすごい迫力！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [じゃあ私はこっちで……はむっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [胸からはみ出た亀頭をマリーの口が咥える]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [二人がかりのパイズリフェラは はじめて神父のペニスに]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ジンジンとした痺れを感じさせた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [う むっ いいですよ それはいい]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [もう少し続けてください]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [リクエストに応え 神父の反応を見ながら]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [少しずつ力加減などを変えながら 刺激を与え続ける]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [胸を力いっぱい押さえつけながらのパイズリは]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [かなりの腕力を要し 戦士として鍛えたノエルですら]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [息を切らせた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &45 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はあ はあ はあっ……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [玉の汗を浮かべながら ペニスをこすり続けるノエル]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [一方で 負担の少ないマリーは 手も積極的に使いだした]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ん♡ ん♡ ちゅばっ ちゅっ れろれろ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *45}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [亀頭を吸いながら 空いた手で玉を揉み さらに乳首を弄る]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &46 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [う う……うっ もうすぐ出そうですよ……！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *46}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父の声を聞き 二人がスパートに入った]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それまで以上に速度を上げ 動きを激しくする]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *46}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はあっ はあっ っく ふうっ うっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *46}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ん♡ ちゅばっ♡ ちゅぼっ♡ はぷっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [くっ うう！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）①, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 224, p: [!ruby/object:Color {r: 255.0, g: 255.0, b: 255.0, a: 255.0}, 60, true]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &47 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ドバっと 音がしそうな勢いで大量の精液が噴き出した]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *47}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ん♡ んん～～！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [んくっ んっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *47}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [放たれた精液は ほとんどが亀頭を咥えていたマリーの口内に]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [向かったが 一部受け止めきれなかった分が ノエルの胸を]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [白く汚した]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *47}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふう……ふう……さあ 飲み干してください]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [愛する夫の精液です]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [5, 009d, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *47}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ん……ふう……♡ ごくっ……ふう……♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *47}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [頬を大きく膨らませたマリーが]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [少しずつ口の中に溜まった精液を飲み下していく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *47}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ぷはーっ！ はー……はー♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [すっごいいっぱい……けほっ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [喉に絡んで……んっ んんっ！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *47}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そしてノエルも]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *47}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ぺろ……ぺちゃ……ん……こくっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *47}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [胸を持ち上げると 口元を近づけ こびりついた精液を]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [舐め取っていく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *47}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [わー……ノエルさん エッチだー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [こんなことをしたのは 初めてだよ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [どうですか？ 精液を飲んだ感想は]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はい……ネバネバして苦くて……まだ お腹の中で]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [形を保ったまま漂っているみたいです]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [身体が……熱くて……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [もっと 飲みたいです……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &48 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その答えに 神父が満足気に微笑む]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *48}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いいでしょう]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あと1回 飲んでもらわなくてはなりませんからね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *48}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父様のオチンチン まだまだ元気だし]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [連続で出来そう]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *48}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [もちろんです]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [さあ 次はどのように私を喜ばせてくれるのですか]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *48}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父が足を広げてペニスを見せつける]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &49 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルさん もう1回胸で……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いや……もう腕が上がらない]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [え～っ じゃあどうしたら……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふむ……なら こういうのはどうだ？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルがマリーに耳打ちすると マリーは嬉しいような]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [困ったような 複雑な表情で騒ぎ出した]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [えー！ ノエルさん大胆！ そんなのしたことないよ～！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\N[1]にも いつもそんなことしてるの？']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いや～ん エッチすぎるよ～♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [い いや……彼にはしたことはないぞ こんなこと！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それにマリー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [今の私たちは神父様の妻なんだ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\N[1]やジョニーの話を出すと 旦那様が嫉妬してしまうぞ']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルが目配せすると 神父も苦笑して頭をかいた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神を嫉妬させるとは罪深い人です]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ほらマリー 怒られてしまったぞ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はぁい ごめんなさい……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふたりとも 本気で沈んでいるわけではない]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [むしろ怪しい笑みを浮かべながら 神父に近づく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふむ……？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父様……お顔を……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [べーってしてください べーって♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, 010a, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父の差し出した舌を ふたりが舐める]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [んっ♡ れろれろ♡ あ あは♡ はぶっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ん♡ ちゅっちゅっちゅっ♡ あっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ひとしきり舌を絡ませ合うと 次はノエルが]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父の舌を吸って 濃厚なディープキスに移った]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [唾液を交換して飲み干し 歯や歯茎 舌など]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [口内中を激しく愛撫する]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [次は私の番だよ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ぷはっ と ノエルから解放されると すかさずマリーが]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [唇を……いや 口全体で覆いかぶせるようにして]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父の顔の下半分を舐め回した]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [んふふ～♡ ぺろぺろ～♡ れろれろれろ～♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ん んんっ！？ んぶっ！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [激しいキスだな だが私もキスなら負けんぞ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [再び選手交代 ノエルと神父の濃厚なキスが繰り広げられる]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '010', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そしてふたりはキスをしながら 手でペニスをしごいていた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *49}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルの提案したキス手コキ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [まるで本当の夫にするかのように 愛情のこもった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [キスは 神父の興奮を煽り 手コキの快感を倍増させた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &50 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父様 キスもお上手なんですね♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [では 次はこちらにキスを……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *50}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルが体勢を変え]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父の顔に自らの股間を持っていく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *50}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そして ペニスにむしゃぶりついた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [マリーもそれに倣う]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '011', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *50}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シックスナインの形になった3人は]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それぞれの性器を貪るように舐めあった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *50}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [んっ じゅるるるっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふーっ♡ あっ♡ そこっ♡ いいっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ああっ 神父さまっ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私のも舐めてください♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふうう…… こんなにも美しくも淫らな蕾が]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふたつも並べられて……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *50}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父の舌が 指が ノエルとマリーの秘所を]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いやらしく的確に攻め立てる]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *50}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あっ♡ うっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [二人がかりなのに……すごいっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *50}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [やっ♡ あっあっ♡ イカされちゃう♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *50}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私もまた出そうですよ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [もう少し頑張ってください]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *50}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ん♡ んふっ ふぐっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *50}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はーっ はーっ♡ れろっ じゅるっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *50}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [うっ！ 来た……出るっ！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）①, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 224, p: [!ruby/object:Color {r: 255.0, g: 255.0, b: 255.0, a: 255.0}, 60, true]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &51 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [2度めの射精は ふたりの顔にシャワーのように降り注いだ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, 011b, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *51}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [や や～ん ベタベタ～！ 量が多すぎるよ～♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *51}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はあ……はあ……ん……ちゅっ……んくっ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, 011c, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, 011d, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *51}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [手のひらで 顔にかかった精液をかき集めて 口に運ぶ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [直接かけられただけあって 1回目よりも大量だった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *51}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [(んぐっ……飲みにくい……ほとんど固形物だ……)]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, 011a, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [濃厚すぎて喉を通らない精液を 唾液でなんとか押し流し]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [腹に収める]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [もはやそれだけで一作業と言えるものだった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *51}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はーっ……はーっ……はーっ……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *51}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [全部飲めたようですね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はい……神父様の精液……すべて飲み干しました]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *51}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [よろしい ふたりとも どうやら私に奉仕する気持ちに]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [偽りはないようですね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *51}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [では……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *51}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父が 2回の射精を経て なお萎むことのないペニスを]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [突き出して宣告する]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *51}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あなたがたは 神の妻の身でありながら]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神の許しなく 処女を失った]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神は嘆き悲しんでいます]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *51}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [反省し 許しを得なければいけません]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そして 神の愛を このペニスを挿入してくださいと]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [懇願するのです]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &52 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふたりが地に伏し 深々と頭を下げた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '012', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そして 後悔と反省の言葉を紡ぎ出した]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [申し訳ございません……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私は あなたの妻でありながら 他の男と寝ました]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それは いつ どこで 誰と行ったのです？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はじめては……5年前 私の師であり 育ての親である]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ザウバーという男が 相手でした]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ザウバーは 私を押さえつけ 無理やり犯しました]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その男の精を流し込まれたのですか？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はい……何度も……犯され 中に出されました]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それから2年間……毎日のように抱かれ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あの男の好みに合うように しつけられました……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それ以外には ないのですか？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いえ……ザウバーの元を離れて以降も……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [仕事のため……お金のために この身を男たちに晒しました]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ほとんどは 口や 手で射精させたり……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [身体を触らせる程度のことでしたが……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [中には セックスを要求され……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [仕方なく応じたこともありました]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [なぜ応じたのです？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それは……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ザウバーに犯され続けた身体には 交渉の道具にする]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [程度の価値しか無いと 考えたからです]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あなたの身体は神のもの]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [決してあなたが安く見積もっていいものではありません]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あなたには 唯一無二の尊い価値があるのです]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [申し訳……ありません……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [しかし まだありますね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あなたが私を裏切り 身体を重ねたことが]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [……………はい]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['私は……\N[1]ともセックスをしました']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それは何故です]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [彼を……愛して……いたからです……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [どれだけの頻度で行いましたか？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [初めて結ばれてから……ほとんど毎日する日が]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [2ヶ月ほど続きました……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [2ヶ月間 毎日ですか？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はい……2ヶ月の間 毎日セックスしました]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [クエストを受けた日は 夜 帰ってから……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [何も予定のない日は 朝 起きてから]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [翌日の朝まで ずっとセックスしました]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [なんという……神に申し訳ないと思わなかったのですか？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [思い……ます……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あなたを差し置いて 他の男とセックスをしたことを]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [心から反省しています]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あなたが今 愛しているのは誰です？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あなたです]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ザウバーでもなく 他の男でもなく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\N[1]でもなく……？']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [は…………い……っ……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [過去にセックスをした男たちのことなど]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [今はもう なんとも思ってはいません！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あなただけです]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私が愛するのは セックスしたいと思うのは]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私の膣内に挿れてほしいのは]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父様のものだけです！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [どうかお願いします……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私のおマンコに……神父様のおチンポをお恵みください]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [射精してください！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父様の精液を 注ぎ込んでほしいのです！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *52}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [額が擦り切れそうなほど 地面に擦りつけて懇願する]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &54 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私のペニス以外には 価値がないと言い切るのですね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あなたに比べれば 他のものなど……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [どうか 誓いのキスをお受けください]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, 012a, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &53 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルは 神父の足の指に口づけ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [1本1本丁寧にしゃぶっていく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *53}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [指の隙間も 愛おしそうに舌でねぶり]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [最後にもう一度 真心を込めたキスをした]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *54}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [うむ……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あなたが 再び私を心から愛するという誓い]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [たしかに聞き届けました]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &55 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ああっ……！ ありがとうございます……！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ええ よくぞここまで]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ご立派です]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父は それまでのサディスティックなやり取りからは]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [想像もできないような 優しい笑顔を浮かべて]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルを労うと 次にマリーに向き直った]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [では マリー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あなたも私以外とセックスをしましたね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はい……ごめんなさい]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ジョニーとしました……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [鬼気迫る勢いだったノエルと違い]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [マリーは いたずらを咎められた犬のように頭を垂れた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふむ ジョニーと初めてしたのは？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [えーと……たしか……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [付き合うことになって 2週間めくらい……？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [デートをしてたら だんだんとラブホテルとかがある]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [道に入っていって……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それで あっ これってエッチする気だなって思って……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [引き返そうとは思わなかったのですか？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私も興味があったから……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そのままついていきました]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それで部屋についたら いきなり押し倒されて……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そのまま……オチンチンを挿れられました]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [避妊はしなかったのですか？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はい……そのときは……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あ でも 2回目からは ちゃんとコンドームをつけて]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [セックスしましたよ！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それに ジョニーってお口が好きみたいで]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [最後はお口で出すことも多かったし……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それでも神への裏切りです]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ごめんなさい……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [後悔していますか？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はい！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ジョニーのオチンチンを 先に挿れられて ごめんなさい！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私は神父様のものなのに……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [だから 今までのエッチをなかったことにするくらい]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父様のオチンチンで 上書きしてください！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あなたの膣を 私のペニスの形に変えられたいというのですね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はい！ 神父様のおっきいオチンチンを挿れられたら]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [きっと 神父様専用のおマンコになっちゃいます！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私専用になっていいのですか？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [だって私 神父さまの妻だもん♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [愛する旦那様の専用おマンコなのは 当たり前です！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [お願いします！ ジョニーのことなんか忘れます！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [もう一度 私を神父様のものにしてください！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [マリーも ノエルと同じく深々と頭を下げた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ややノリが明るかったが だからこそ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [裏表のない素直な気持ちが見て取れた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [うむ……いいでしょう]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あなたが過ちを犯したのは ジョニー一人だけ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [何かの気の迷いだったのでしょうね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [では 今を持って あなたも再び私のものとして]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [扱ってあげましょう]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あ ありがとうございます！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [では……神として 夫として]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あなたたちに精を注いであげましょう]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [さあ 広げなさい]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '013', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [指で秘所を広げ 神父に見せつける]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そこは すでに しとどに濡れ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ペニスを欲してパクパクと開いていた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父がノエルの元へ歩み寄る]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そして彼女の秘所にペニスを押し付け]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [先走り汁と愛液を混じり合わせる]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ああっ♡ お願いします！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [おチンポを 精液を……ください……！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私への愛を絶えず囁き続けなさい]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [グッとペニスを押し込んでいく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [メリメリッと肉を掻き分け 腟内が蹂躙されていく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 挿入する時の音1, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, 013a, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, 013c, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あっ！ あ……あーーーーっ！！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [絶叫が響いた かつてない太さ 長さ 硬さのペニスが]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [柔肉を巻き込みながら 膣内で暴れまわっている]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: ピストングチュ音多め（中速）１６回, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [痛みはほとんどない 興奮によって快感だけが湧き上がる]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルは神父の腰に足を絡ませ 抱きつきながら]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [押し寄せる快感に耐えた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あっ あっ あーっ！ くうううっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [愛してます♡ 愛しています♡ 神父様♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そして神父に言われたとおりに愛の言葉を投げかける]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [自分の腕ほどもあるペニスを挿入され かき回され]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ただただ 膨大な快感だけを享受する]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '014', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いいいっ おおっ おおおおっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, 014a, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルの口が神父のキスで塞がれる]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [力強く抱き合いながら 懸命に腰を振った]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふっ んっ♡ はーっ♡ はーっ♡ 素敵です♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [好き♡ 好きぃ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [下腹部が ポコッとペニスの形に膨らんでいた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: ピストングチュ音多め（低速）１０回, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, 013g, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そんな状態でも ノエルは腰を振り快楽にもだえ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父への愛の言葉を紡いだ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ザウバーとやらは これほどの快感を与えてくれましたか？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ブンブンと首を振るノエル]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['では\N[1]は どうですか？']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [今度は ノエルからの情熱的なキスで答える]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [じっくり ネットリと唇を吸い]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [もはや お互いの口内で舌が触れない場所はなかった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はーっ はーっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父様を愛しています♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私はあなたのものです]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [この唇も おマンコも 心も すべて神父様に捧げます]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [貪るようなキス]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [唇 首筋 鎖骨と 届く範囲全てに吸い付いた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その間も腰を振り続け ペニスを扱きたてる]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ザウバーに仕込まれた技も駆使して 膣内を収縮させ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [搾り取ろうとした]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: ピストングチュ音多め（高速）５回, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あなたのおチンポだけ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [好き♡ 愛してる♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [愛の言葉は神父の興奮も これ以上無いほど煽った]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [加えて 鍛えられた肉体による積極的な性奉仕]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ペニスにかかる刺激も尋常ではなかった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [うっ くうっ なんと激しい……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: ピストングチュ音多め（高速）２０回, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [パンパンと激しく肉がぶつかりあう音が響く]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルは腰を振りながら時折小さく強く痙攣した]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [イキながら動いているのだ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [イク瞬間に膣内のペニスにかかる圧力が]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父の限界を早めていく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父様♡ 出してください♡ 精液を私の中に♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いっぱい注ぎ込んでください♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *55}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [うううっ で 出る！ くあああっ！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）①, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 224, p: [!ruby/object:Color {r: 255.0, g: 255.0, b: 255.0, a: 255.0}, 60, true]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, 014c, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, 013h, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &56 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルの膣内で 神父のペニスが膨らみ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [爆発するように 大量のザーメンが吐き出された]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *56}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [子宮は一瞬にしてザーメンで満たされ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [逆流した分がブリュブリュと音を立てて]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [膣外へ排出されていく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *56}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はー……はー♡ はー……♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [すごい……子宮……満タン……♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [こ こんなに注ぎ込まれたことなど……ない……♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [し 信じられない……♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &57 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふー……ふー……うっ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *57}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ブルっと体を震わせ 最後の一滴まで出し尽くす]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *57}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [これで 神の精があなたの中に注ぎ込まれました]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *57}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あなたはもう 神の妻であり]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [今までの過ちは すべて許されたのです]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *57}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はあ……はあ……ありがとうございます 神父様]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ん……♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, 014b, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *57}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルは清々しい気持ちで 神父に感謝の口づけをした]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [――数時間後]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '015', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &58 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [' あっ…………あっ………♡']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *58}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [眠っている……というより 気絶しているマリーを]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父のペニスが貫いている]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [初夜のうちは部屋を出ず 神父と過ごさなければいけない]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その決まりを守り 3人は適度の休憩を入れながら交わり続けた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &59 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [しかし体力の劣るマリーは ついに力尽き]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [意識を失ってしまったのだった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *59}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [マリーにペニスを突き立てながら ノエルに尻穴を舐めさせる]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [もはや ノエルの舌が触れていない場所は どこにもなかった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [うっ……！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）①, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 224, p: [!ruby/object:Color {r: 255.0, g: 255.0, b: 255.0, a: 255.0}, 60, true]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, 015a, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [何度めかの射精 すでにマリーの子宮に ザーメンを流し込む]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [スペースはなかった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [注いだ端から溢れてこぼれ落ちた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &60 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふう……そろそろ夜明けですね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *60}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [大仕事を終えた達成感をにじませながら 神父が呟く]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *60}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [15年のブランクは やはりありましたね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [こんなに疲れるとは……うっ ノエルさん そんなに奥まで……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '016', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *60}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ぷはっ……はー♡ はー♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それでも信じがたいものです]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私だけでも6度も射精されたのですから……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *60}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルは 当たり前のことのように スムーズにペニスを咥え]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [舌で付着したザーメンを舐め取っていく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *60}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [すでに何度も何度も繰り返した行為だった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [始めてみた時は驚いた巨大なペニスも]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [すっかり当たり前のものとして見ていた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *60}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ペニスを上から下まで 360度舐め回すと それだけで両頬に]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [溜めきれないくらいのザーメンがすくい取れた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, 016a, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *60}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [くちゅくちゅと撹拌し 神父の前で口を開けて見せる]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *60}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そして目尻を妖艶に傾けると 音を立てて飲み干した]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, 016b, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *60}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [んぐっ♡ ぶはっ♡ はーっ はーっ げぷっ♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [思わずゲップが漏れるが これも何度も繰り返したので]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [もう恥ずかしさも薄れてしまった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, 016c, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &61 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はい♡ きれいになりました♡]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *61}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そう言いながら 手でペニスをしごく]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [本気の手コキだ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *61}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [射精するたび こうやって刺激して絶え間なく勃起させ続けた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *61}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [すなわち まだセックスを続けようという意思表示でもある]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [41, 41, 0, 0, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 242, p: [2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *61}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [しかし神父は 窓の外を見て 首を振った]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父さま？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: BGM  Symbol, volume: 70, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *61}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルさん どうやら 初夜はもうおしまいのようですよ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [えっ……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルも 窓の外を見る]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [光が差し込んでいた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [少しずつ しかし確実に 朝日が登ってきていた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &62 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [夜が明けた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *62}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あなたたちは 立派に神の妻の務めを果たしました]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [すー……すー……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [娘を見つめる父親のように目を細めながら]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [マリーの髪を撫でつつ 神父が続ける]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神の代行者として あなた達二人に]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [夫と性交することを 許します]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *62}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [おめでとう……お幸せに]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル裸普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &63 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神父様……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *63}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [よくがんばりましたね]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ラーム教徒ではないあなたには 辛かったでしょう]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル裸普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *63}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いえ……神父様が良くしてくださったおかげです]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &64 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: […………昨夜のことは 人と神との出来事です]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *64}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あなたが何を言い 何をしたとしても]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [神が許した時点で それは正しいことです]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *64}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ですから 何も引きずる必要はありません]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [堂々と胸を張って 夫を愛するのです]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *63}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【神父】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['…………\N[1]を よろしくおねがいします']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル裸普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [………はい！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *63}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [夢から覚めたような気分だった]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *63}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [つい先程まで 激しく求めあい 交わった相手が]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [今はひとりの父親にしか見えない]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル裸普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *63}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [（儀式……だからか？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あんなに乱れてしまったのに 嫌な気持ちがまったくない）]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['これで 村の一員として \N[1]と生きていける']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [これからの生活への期待が 心に溢れた]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [16]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  7: !ruby/object:RPG::Event
+    id: 7
+    name: EV007
+    x: 10
+    y: 4
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: true
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 41
+        variable_value: 1
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 9
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  8: !ruby/object:RPG::Event
+    id: 8
+    name: EV008
+    x: 10
+    y: 5
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: true
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 41
+        variable_value: 1
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 17
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  9: !ruby/object:RPG::Event
+    id: 9
+    name: EV009
+    x: 10
+    y: 6
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: true
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 41
+        variable_value: 1
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 25
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+parallax_sx: 0
+bgm: !ruby/object:RPG::BGM {name: '', volume: 100, pitch: 100}
+tileset_id: 13
+encounter_step: 30
+width: 40
+data: !ruby/object:Table
+  dim: 3
+  x: 40
+  y: 25
+  z: 4
+  data:
+  - 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1704 171c 171c 171c 171c 171c 171c 171c 1708 1700 1700 1704 171c 171c 171c 171c 171c 171c 171c 1708 1700 1700 1700 1704 171c 171c 171c 171c 171c 171c 171c 1708 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1718 1882 1882 1882 1882 1882 1882 1882 1710 1700 1700 1718 1882 1882 1882 1882 1882 1882 1882 1710 1700 1700 1700 1718 1882 1882 1882 1882 1882 1882 1882 1710 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1718 1888 1888 1888 1888 1888 1888 1888 1710 1700 1700 1718 1888 1888 1888 1888 1888 1888 1888 1710 1700 1700 1700 1718 1888 1888 1888 1888 1888 1888 1888 1710 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1718 0b22 0b14 0b24 0d02 0cf4 0cf4 0d04 1710 1700 1700 1718 0b22 0b14 0b24 0d02 0cf4 0cf4 0d04 1710 1700 1700 1700 1718 0b22 0b14 0b24 0d02 0cf4 0cf4 0d04 1710 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1718 0b10 0b00 0b18 0cf0 0ce0 0ce0 0cf8 1710 1700 1700 1718 0b10 0b00 0b18 0cf0 0ce0 0ce0 0cf8 1710 1700 1700 1700 1718 0b10 0b00 0b18 0cf0 0ce0 0ce0 0cf8 1710 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1718 0b10 0b00 0b18 0d08 0cfc 0cfc 0d06 1710 1700 1700 1718 0b10 0b00 0b18 0d08 0cfc 0cfc 0d06 1710 1700 1700 1700 1718 0b10 0b00 0b18 0d08 0cfc 0cfc 0d06 1710 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1718 0b10 0b00 0b02 0b14 0b14 0b14 0b24 1710 1700 1700 1718 0b10 0b00 0b02 0b14 0b14 0b14 0b24 1710 1700 1700 1700 1718 0b10 0b00 0b02 0b14 0b14 0b14 0b24 1710 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1718 0b10 0b00 0b00 0b00 0b00 0b00 0b18 1710 1700 1700 1718 0b10 0b00 0b00 0b00 0b00 0b00 0b18 1710 1700 1700 1700 1718 0b10 0b00 0b00 0b00 0b00 0b00 0b18 1710 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1718 0b10 0b00 0b00 0b00 0b00 0b00 0b18 1710 1700 1700 1718 0b10 0b00 0b00 0b00 0b00 0b00 0b18 1710 1700 1700 1700 1718 0b10 0b00 0b00 0b00 0b00 0b00 0b18 1710 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1718 0b10 0b00 0b00 0b00 0b00 0b00 0b18 1710 1700 1700 1718 0b10 0b00 0b00 0b00 0b00 0b00 0b18 1710 1700 1700 1700 1718 0b10 0b00 0b00 0b00 0b00 0b00 0b18 1710 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1718 0b28 0b1c 0b1c 0b0c 0b1c 0b1c 0b26 1710 1700 1700 1718 0b28 0b1c 0b1c 0b0c 0b1c 0b1c 0b26 1710 1700 1700 1700 1718 0b28 0b1c 0b1c 0b0c 0b1c 0b1c 0b26 1710 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1702 1714 1714 1724 0b2c 1722 1714 1714 1701 1700 1700 1702 1714 1714 1724 0b2c 1722 1714 1714 1701 1700 1700 1700 1702 1714 1714 1724 0b2c 1722 1714 1714 1701 1700 1700 1700
+  - 171c 171c 171c 171c 171c 171c 171c 171c 171e 1721 171d 171c 171c 171c 171c 171c 171c 171c 171c 171e 1721 171d 171c 171c 171c 171c 171c 171c 171c 171c 171c 171e 1721 171d 171c 171c 1708 1700 1700 1700
+  - 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1882 1710 1700 1700 1700
+  - 1888 1888 1888 1888 1888 1888 1888 1888 1888 0600 1888 1888 1888 1888 1888 1888 1888 1888 1888 1888 0600 1888 1888 1888 1888 1888 1888 1888 1888 1888 1888 1888 0600 1888 1888 1888 1710 1700 1700 1700
+  - 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b14 0b24 1710 1700 1700 1700
+  - 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b1c 0b26 1710 1700 1700 1700
+  - 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1714 1701 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700
+  - 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700 1700
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0dfe 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0dfb 0dfd 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0dfb 0dfd 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0132 0130 0183 0112 000a 0111 0000 0000 0000 0000 0000 0133 0130 0183 0000 000a 018a 0000 0000 0000 0000 0000 0000 0130 0130 0183 0189 000a 0000 0113 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 013a 0138 018b 0000 0012 01e8 01e8 0000 0000 0000 0000 013b 0138 018b 0000 0012 01ea 0000 0000 0000 0000 0000 0000 0138 0138 018b 0000 0012 01ea 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0142 0140 0000 0000 0000 01f0 01f0 0000 0000 0000 0000 0143 0140 0000 0000 0000 01f2 0000 0000 0000 0000 0000 0000 0140 0140 0000 0000 0000 01f2 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0148 0000 0000 0000 0000 01f8 01f8 0000 0000 0000 0000 0148 0000 0000 0000 0000 01fa 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 01fa 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0150 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0150 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0158 0000 0000 0000 0000 0100 0000 0000 0000 0000 0000 0158 0000 0000 0000 0000 0100 0100 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0100 0100 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0160 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0160 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0148 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0100 0000 0000 0000 0000 0000 0285 0000 0000 0000 0000 0100 0100 0000 0000 0000 0000 0000 0150 0000 0000 0000 0000 0100 0100 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 01ef 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 028d 0000 0000 0000 0000 0000 01ed 0000 0000 0000 0000 0000 0158 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 01f7 0000 0000 0000 0000 0000 0123 0000 0000 0000 0000 0185 0000 0000 0000 0000 0000 01f5 0000 0000 0000 0000 0000 0160 0000 0000 0000 0000 0000 01fe 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0193 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0193 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0193 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+bgs: !ruby/object:RPG::BGS {name: '', volume: 80, pitch: 100}
+parallax_loop_y: false
+autoplay_bgm: false
+encounter_list: []
+autoplay_bgs: false
+parallax_show: false
+scroll_type: 0
+parallax_loop_x: false
+disable_dashing: false
+parallax_sy: 0
+display_name: ''
+specify_battleback: false
+note: ''
+battleback1_name: ''
+battleback2_name: ''

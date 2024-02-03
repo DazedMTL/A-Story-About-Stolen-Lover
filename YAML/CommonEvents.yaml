@@ -1,0 +1,1821 @@
+---
+- 
+- !ruby/object:RPG::CommonEvent
+  trigger: 2
+  name: HPAP表示
+  switch_id: 1
+  list:
+  - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [2, 2, 0, 3, 3, 1, 3]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [3, 3, 0, 3, 3, 1, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  id: 1
+- !ruby/object:RPG::CommonEvent
+  trigger: 0
+  name: 修行敗北
+  switch_id: 1
+  list:
+  - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 249, p: [!ruby/object:RPG::ME {name: Gameover1, pitch: 100, volume: 100}]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 201, p: [0, 21, 11, 10, 2, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 313, p: [0, 0, 1, 1]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 314, p: [0, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  id: 2
+- !ruby/object:RPG::CommonEvent
+  trigger: 2
+  name: タイムアウト
+  switch_id: 5
+  list:
+  - !ruby/object:RPG::EventCommand {i: 0, c: 111, p: [3, 0, 1]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 249, p: [!ruby/object:RPG::ME {name: Gameover1, pitch: 100, volume: 100}]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 223, p: [!ruby/object:Tone {r: 85.0, g: 68.0, b: 68.0, a: 170.0}, 120, true]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 353, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  id: 3
+- !ruby/object:RPG::CommonEvent
+  trigger: 0
+  name: 戦闘前説明
+  switch_id: 1
+  list:
+  - !ruby/object:RPG::EventCommand {i: 0, c: 111, p: [0, 8, 1]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [2, 2, 1]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: &1 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [スキルを使ったり 攻撃をするごとにAPを消費します]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [防御することで回復することができます]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *1}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [戦闘が長引くと 残り時間がどんどん減っていきます]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [バランスを考えて戦いましょう]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [2, 2, 0]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [8, 8, 0]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  id: 4
+- !ruby/object:RPG::CommonEvent
+  trigger: 0
+  name: 宿屋に戻る
+  switch_id: 1
+  list:
+  - !ruby/object:RPG::EventCommand {i: 0, c: 249, p: [!ruby/object:RPG::ME {name: Inn, pitch: 100, volume: 100}]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 211, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 314, p: [0, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 201, p: [0, 41, 10, 9, 8, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [14, 14, 2, 0, 1]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  id: 5
+- !ruby/object:RPG::CommonEvent
+  trigger: 0
+  name: 宿屋に戻る3章
+  switch_id: 1
+  list:
+  - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 314, p: [0, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 211, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 201, p: [0, 69, 10, 9, 8, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  id: 6
+- !ruby/object:RPG::CommonEvent
+  trigger: 0
+  name: ノエルとセックス
+  switch_id: 1
+  list:
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '033', 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ほう……]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &2 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [露出した下半身を見せつけると]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルの視線はペニスの一点に注がれ 感嘆の声をあげた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *2}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [膨張率も 硬さも……すんすん……ニオイのキツさも]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [今までとは全く違う♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *2}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私がジョニーに抱かれたときのことを思い出して]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [こんなになっているのか？]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *2}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [すごいな……人体の神秘だ……ふふふ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *2}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [感心しながら勃起したペニスに頬ずりするノエル]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [スリスリと擦りつけた後には カウパーが付着していた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *2}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そのまま手を使わずにペニスを口まで持っていき]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [舌で竿の根元から舐めあげる]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *2}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ん………っ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *2}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [すごく興奮しているな んっ……♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [味も濃い気がするぞ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  id: 7
+- !ruby/object:RPG::CommonEvent
+  trigger: 0
+  name: フェラ1
+  switch_id: 1
+  list:
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &3 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [しゃぶってほしいのか？]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [かまわないぞ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *3}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルが口を大きく開けて ペニスを咥えようと試みる]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [が 寸前でとどまって首をかしげる]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *3}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ん もっと大きく口を開けないと入らないな……]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あんまり見るな 行儀の良いことじゃないからな]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *3}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そして今度は限界まで大きく口を開いて]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ペニスを咥えこんでいった]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, 033a, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *3}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [亀頭が 竿が 温かい汁気に包まれていく]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *3}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [半分ほど飲み込んだところで 動きが止まる]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *3}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [口の中の空気とともに ペニスを吸いながら]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ゆっくり頭を後ろに下げていく]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *3}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [……う……ず……ずずずずっ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *3}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [先端が吸われ 引っ張られる感覚とともに]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ゆっくりとペニスが抜かれていく]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *3}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [亀頭だけ口に含んだ状態になると]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [舌で器用に舐め回し]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [またゆっくりとペニスを飲み込む]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, 033b, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *3}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [れろれろっ♡ んむ……むっ……ちゅぼぼっ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *3}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふーっ♡ ふーっ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *3}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [荒い鼻息がペニスにかかり ぬくもりを感じる]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その後も 同じように繰り返し出し入れが行われるが]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [舌の動きや 吸い付き加減など 毎回変化に富み]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [まったく飽きることなく楽しめた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [スローテンポだが 口内の感触をじっくりと味わうことが出来る]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [極上のフェラだ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, 033c, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &4 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ん♡ じゅるるるるっ♡ ん～～♡ もごもご……♡ んぼっ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *4}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [唇をすぼめて 出口を小さくした上で]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [思い切り吸いながらペニスを抜かせる]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &5 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [唇でエラが扱かれる快感とともに]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ぽんっという音がして唾液まみれとなったペニスが]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [久しぶりに空気にさらされた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *5}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はー♡ はー♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [顎が疲れるな……♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *5}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [んぐ……んっ……ぷはぁ……♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [口の中がチンポの味とニオイで充満してしまった♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *5}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [だが まだ足りない♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ん……ちゅ～っ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *5}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ペニスにキスの雨を振らせ ペロペロと舐めていく]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *5}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [全体を唾液でコーティングするように]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ひとつの舐め残しさえなくすべく ペニスを傾け操作して]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あらゆる場所に舌を這わせた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふふふ お返しだ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私の口をチンポ味にしたのだから 君のチンポは]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [私の唾液の味に変えてやったぞ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 102, p: [[ジョニーにもしたの？, 聞かない], 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [0, ジョニーにもしたの？]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [たくさん舐めて しゃぶって 射精させたぞ]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [こんなに太く硬くはなかったがな♡]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [ん？ 喜んでいるのか？]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [だが 長さは向こうのほうが上だな]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: &6 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [すごいぞ 喉の奥の粘膜を亀頭でこそがれるほどだ]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [それに 硬さがそれほどでもないということは]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [柔軟に曲げられるということだ]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *6}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [ノエルは自分の喉の中程を指差す]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [男性で言えば喉仏のある辺りだ]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *6}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [根元まで咥えると このあたりまで]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [チンポが侵入してくるんだ]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *6}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [突っ張ったエラが喉の内側をカリカリ引っ掻いてな]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [最初は吐き気がして大変だった]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *6}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [でも 何度も飲まされるうちに それが快感になってきて]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [喉で感じられるようになったよ♡]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *6}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [……君のチンポではここまで届かないから]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [私を喉でイカせるのは ジョニーだけの特権だな]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [1, 聞かない]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 404, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '034', 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルが大きく体勢を変える]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [尻をこちらの顔に向けて体の上に覆いかぶさってきた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &7 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そして再び大口を開けてペニスを咥える]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [今度は浅い位置での速さ重視のフェラだった]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *7}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [んっ♡ んっ♡ ちゅばっ♡ ちゅっ♡ んんっ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *7}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [亀頭付近を高速で舐め回しながら 手で竿を擦る]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [美しいはずの細くしなやかな指先が ひどく卑猥に見えた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [れろれろれろ♡ ん～～～♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &8 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はあ はあ……ふふふ なぶりがいのあるチンポだ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *8}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [んっ……う……ん……じゅるるるる……]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *8}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [再度 奥まで飲み込む]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [先端が喉に当たる感触がした]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *8}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふううっ♡ ふーーっ♡ んぶっ♡ うっ……んぐっ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *8}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [亀頭が喉をつき ノエルがえずく]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [しかし それによって大量の唾液が分泌され]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ネットリとペニスに絡みついてくる]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *8}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [さらに喉の締りによってペニスが扱かれ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [これまでより さらに強い快感が湧き上がってきた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &9 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルの腕が腰にまわされ ぎゅっと抱きしめられた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そのまま激しく頭を前後に振ってディープスロートが]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [行われる]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *9}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [うっ……おごっ お……んっ んぼっ おっ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *9}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [幾度となく喉奥をつくペニス]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [強烈な喉の締りと 大量の唾液を撹拌する感触]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [んぼっ ぼっ おごっ♡ おおっ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &10 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [何度めかの喉の収縮に亀頭が巻き込まれた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルは激しい嘔吐感に耐え ペニスを締め上げる]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *10}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [腰が引けそうな快感が迸り たまらず精液が吐き出された]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）①, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 224, p: [!ruby/object:Color {r: 255.0, g: 255.0, b: 255.0, a: 255.0}, 60, true]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, 034a, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &11 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ぐっ……！ ん……ごっ……ごっ……おっ……♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ごほっ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *11}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [むせ返り いくらか吹き出しながらも]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [出された精液を嚥下していくノエル]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *11}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その顔は涙と鼻水 吐いた精液でドロドロになっていた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *11}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ズルルッと 精液と唾液で溢れた口内を通って]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ペニスが引き抜かれる]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *11}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ボタボタッと白濁液がこぼれ落ちた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ゲホゲホとノエルが激しく咳をするたび]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [精液が細かく飛び散った]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *11}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それでも口に手のひらを当て 口内に残った分を飲み干す]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *11}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はー……はー……げほっ げほっ！]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *11}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [んぐ………んっ……ふう……ふう……]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *11}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [チンポで突かれた上に このゼリーのような精液は]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [さすがにキツイぞ……んぐっ……！]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [喉がイガイガする……んっ……]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *11}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はー……はー……つばを飲み込んだくらいでは]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [どうにもならないな……んぐっ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [明日の朝は 何を食べても精液の味しかしないな]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  id: 8
+- !ruby/object:RPG::CommonEvent
+  trigger: 0
+  name: 愛撫1
+  switch_id: 1
+  list:
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '036', 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &12 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルの膝裏から足を持ち上げる]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [身体を折りたたむように曲げさせると]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [胸にくっつきそうなほどに押し上げた膝を左右に開かせた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [性器どころか尻の穴まで丸見えとなる屈辱的な体勢だ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ちょうどオシメを取り替えるときのようにも見える]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *12}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [局部がクパッっと開かれて 内部のピンク色が見える]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ヌラヌラと揺らめくように光を反射して]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [愛液が分泌されていることを示した]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ヒクヒクと肉ひだが震え とろりとしたたる蜜が尻穴まで]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [流れていく様は 得も言われぬいやらしさを醸し出した]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その淫らな光景にしばらく目を奪われていると]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルから非難の声が上がった]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [……見ているだけで楽しいのか？]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *12}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [こんな格好をさせられて ただ見られているだけというのは]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [さすがに恥ずかしいぞ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, 036b, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [抗議を受けて まずは性器の周辺に指を這わせる]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ぷくっと膨らんだ大陰唇に沿うように]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ピースの形に指を広げ 押し当てる]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &13 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そして左右の大陰唇を同時に擦りつけた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *13}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [んっ♡ あ……ぁ……♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, 036c, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *13}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [指を回すようにさすって クニュクニュと刺激したり]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ピースを閉じたり開いたりして 大陰唇を開閉させる]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [くっつき 離れる度に 愛液が糸を引いた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *13}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [性器の外までじゅわっと愛液が滴ると]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それをすくい取ってクリトリスに塗りつける]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, 036a, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *13}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふっ♡ あっ♡ そこっ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [クリトリスは彼女の弱点のひとつだ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ややこぶりなそれは 普段は包皮につつまれ隠されている]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *13}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [軽く摘んで引っ張ったり ピンと弾いたりしていると]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [徐々にクリトリスが大きく膨らみ 包皮の先端が剥けてきた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *13}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ああぁ……♡ う うまくなったな♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [絶妙な力加減だ……気持ちいい……♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *13}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [うっとりして称賛するノエル]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &14 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [クリトリスの根元を支え 包皮を指で挟んで剥いていく]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ぴゅっと愛液がほとばしった]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *14}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルは全身にじっとりと汗をかき]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [性器は快楽を欲するようにパクパクと口を開けた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *14}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ズル剥けとなったクリトリスを少し強めに愛撫する]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [詰めでカリカリと引っ掻いたり 摘んでこねくり回すと]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [また大量の淫水が排出された]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *14}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [い……い……っ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ひいっ……！]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *14}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [歯をカチカチと鳴らして快感に耐えるノエル]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [身体に力が入り こわばっている]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふと見ると その力み具合によって肛門が盛り上がったり]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [また沈み込んだりと動いている]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, 036e, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その過程で肛門に流れ込んだ愛液と空気が混ざりあい]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [鼻ちょうちんのように膨らんだ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, 036d, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &15 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [クリトリスをひとしきり攻め終えると 膣に指を挿入する]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [挿れた途端 膣肉が指を噛みちぎらん勢いでキュッと締まった]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *15}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あっ♡ 指♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *15}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ザラザラコリコリした肉の粒が指にまとわりつく]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルの膣内には このような粒が多数存在し]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [侵入者を迎え撃ってくる]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [4, 036f, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *15}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [無数の肉の粒に絡め取られると 少し動くだけで]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ザラッとした感触に強大な快感を覚える]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [抜き差ししようものなら 肉のブラシでペニス全体を]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [擦られるようなものだ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *15}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いま 指に吸い付いてくる感触は]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その快感を思い出させるには十分だった]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *15}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [理性が保てなくなりそうなほど]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [股間が張り詰めていたが なんとか愛撫に集中する]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [4, 036g, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *15}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [指を2本から3本に増やし 膣内で広げ 届く場所すべてを]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [かき回す]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *15}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あっ♡ いいっ♡ 色んな場所に当たって……♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *15}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あちこち触られるのは好きだぞ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [触れられない部分があると 寂しくなる]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *15}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [でも そろそろ……]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *15}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [言わんとすることを察し Gスポットを擦る]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *15}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [うんっ♡ そうだ そこを もっと♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *15}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [んっ♡ もう少し右……あっ そこだ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そこが弱いんだ あっ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *15}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [新たに教えてもらった場所を頭に刻み込みながら]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [指の腹で撫でるように刺激する]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *15}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [は……あ……んああっ！]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *15}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルの身体がブルっと震えて硬直した]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [やや遅れて潮が噴出される]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [失禁と見紛うほどの長い排泄だった]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *15}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はー……はー♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [良かったぞ……♡ またひとつ弱点を知られてしまったな♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  id: 9
+- !ruby/object:RPG::CommonEvent
+  trigger: 0
+  name: 正常位
+  switch_id: 1
+  list:
+  - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [12]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '037', 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\N[1]……もう……挿れてくれ♡']}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [君のチンポが欲しいんだ……♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &16 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [内腿を愛液でトロトロにしたノエルが]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [自ら性器を広げて懇願した]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その後ろに立ち]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ペニスの位置を微調整する]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, 037a, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *16}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いきり立つペニスの先端を膣口にあてがい]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [上下に擦りつけ 愛液を掬うようにして塗りつける]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *16}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [亀頭が光を反射して輝くほど愛液まみれになると]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ヌプっと膣内に侵入させていく]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *16}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [入り口を越える際に 肉をかき分ける抵抗があったが]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [中に入れてしまうと あとは引きずり込まれるように]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [奥まで飲み込まれていった]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 挿入する時の音1, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, 038, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *16}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あっ♡ あーっ♡ 来た♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *16}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [下腹部から伝わってくる甘い痺れを じんわりと噛み締めつつ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルは意識して膣を動かし ペニスを歓待する]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *16}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [キュキュキュッと膣肉がペニスにまとわりつき蠕動した]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &17 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [快感に打ち震えるノエルよりだったが]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [鍛えているだけあって足腰は頑丈だ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *17}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [むしろこちらのほうが耐えきれずに 前のめりになって]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [彼女の背中にもたれかかってしまう]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *17}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ぐっとお互いの顔が近づき]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [どちらともなく唇を重ね合わせ 激しく舌を吸いあった]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, 038b, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [んっ んちゅっ んふぅっ 好き 好きぃ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: ピストングチュ音多め（低速）１０回, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [激しくも甘えん坊な愛情表現を受けながら]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [膣内をこれでもかとかきまわす]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *16}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ザラザラの肉の粒がエラに引っかかり]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [熱のこもった柔肉に圧迫マッサージを受けると]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [腰が砕けそうな快感がもたらされた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *16}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [グポグポという音が聞こえてきそうなほど]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [膣がポンプのように激しく収縮し 四方八方から]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ペニスを揉みほぐされる]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *16}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それは今まで味わったことのない はじめての動きだった]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [快感と驚きが顔に出て 嬉しいようなひきつるような]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [なんとも微妙な表情になる]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, 038c, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *16}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [うん？ 何を驚いているんだ？]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [これは前にも……んっ してやっただろう？]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 102, p: [[はじめてだ, 他の人なのでは……], 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [0, はじめてだ]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: &18 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [んっ んっ♡ そんなはずは……っく♡]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [2, 038d, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *18}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [下腹部に力を込めていきりながら 記憶を引っ張り出す]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [はじめは怪訝な顔をしていたのが しばらくすると]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [あっ と 小さな声をあげた]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [2, 038e, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *18}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [すまん……ジョニーにしてやったんだった]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *18}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [薄々感づいてはいたが こうして面と向かって言われると]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [ゾクリと背筋が震えた]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [2, 038c, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *18}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [あっ♡ 中でグッと反応したぞ]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [ふふふ♡]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [1, 他の人なのでは……]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [2, 038d, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [んっ ふっ ふっ……♡ 何を言ってる？ そんなわけが……]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: &19 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [腹が凹んだり膨らんだりして いきみ具合が見て取れる]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [ノエルは話しながらも膣の動きを緩めず]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [むしろ加速させながら 記憶の齟齬を正そうとする]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [2, 038c, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *19}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [確か これをしてやった日は その前に口と胸で1回ずつ――]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *19}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [やがて ハッキリと思い出したらしいが]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [見る見る表情が引きつっていった]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [2, 038e, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *19}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [すまない……君ではなかった……]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *19}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [思い出した あの日はジョニーが物凄く興奮していて]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [2発ヌイてやっても ちっともひるまなかったんだ]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *19}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [いつもよりチンポが硬くなっていて 3回目だから持続力も]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [すごくて……]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [何度もイカされて……悔しくなって ついこの技を]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [使ったんだった]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 404, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &20 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あのときは 私も連続でイカされてたから]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [意識が朦朧としていたんだ 記憶違いだったよ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *20}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [身体がカッと熱くなる]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ジョニーがこの技を受けてどんなに気持ちよかったか]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [夫も知らない妻の性技を味わったことに]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [優越感を抱いたに違いない]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *20}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そう思うと ビリビリ痺れるペニスの快感を押してでも]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [膣内をぐちゃぐちゃにかき回したくなった]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: ピストングチュ音多め（高速）２０回, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, 038a, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, 038f, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *20}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [んぐっ♡ あっ♡ は 激しすぎるっ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *20}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [頭が真っ白になりそうな快楽の渦を振りほどき]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [激情に任せたピストンを繰り出す]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *20}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [技術もなにもない 届く範囲すべてにペニスを打ち付け]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [擦り付けるだけの行為だ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [3]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, 039b, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *20}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [くっ♡ ああっ！ いいっ 気持ちいいっ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &21 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [突く場所を変える度にノエルの反応も変化した]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [無意識のうちに いい反応が帰ってくる場所を重点的に攻める]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *21}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [おおっ 奥 奥にっ♡ 届いてる♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *21}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [子宮口の近辺を攻めると ノエルの声色が変わり]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [余裕がなくなっていく]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *21}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [経験豊富なノエルは ボルチオでも十分に快感を得られた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [どころか お気に入りの場所のひとつだった]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: ピストングチュ音多め（低速）１０回, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *21}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ああ～～っ いいっ♡ もっと♡ もっとしてくれっ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *21}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [連続ピストンを続けているうちに 肉体的な限界が来て]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ペースが落ち着いてくると いろいろと考える余裕が出てきた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いつだったかノエルに言われたことを思い出す]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ここは気持ち良い場所だが マリーとするときは]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あまり感じないかもしれないと忠告されたのだ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *21}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ボルチオは開発するのに経験を要すると]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *21}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その面倒もなく 開発済みの熟れた身体を]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [最初から楽しめるというのは 普通なら幸運と]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [捉えるかもしれないが]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *21}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それだけ彼女の身体を仕上げた男たちがいるという事実に]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [激しく興奮もした]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &22 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その時の興奮が蘇る]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [どうあがいても 過去には戻れない]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルのセックスの経験は消えることはない]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [普段は気にもとめない些細なことだ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *22}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [だがセックスの最中は別だ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あえて意識することで より興奮できた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *22}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [パンパンと腰を打ち付け 膣奥を抉る]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [激しく飛び散る液体が顔にまで届いた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *22}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いぐっ♡ くっ♡ ひぐうっ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *22}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルはだらしなく口を開き 嬉しそうに声を上げて]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [快感を享受している]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *22}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そんな状況でも 膣を締めるのを忘れていない]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [意識してやっていると言うより 勝手に動いているのだと]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [教えてもらった その経験の深さに興奮する]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *22}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [厚い肉の感触に包まれ 細かいヒダヒダに]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ゾリゾリとエラを削られ 肉体の快感も高まっていく]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *22}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [再び余裕がなくなり 必死で腰を動かす]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [無意識の意識に浮かぶのは ジョニーや見知らぬ過去の男たち]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *22}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それら全員を蹴散らして 自分がノエルを喘がせている事実]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いま この極上の女は自分のペニスだけを求めている]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *22}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [興奮と快感の限界がやってきた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [下半身から射精の合図が脳に送られる]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *22}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [だが 合図が脳に届く前に身体が動き]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [射精のために最も奥までペニスをねじ込んだ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [3]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, 039c, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）①, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 224, p: [!ruby/object:Color {r: 255.0, g: 255.0, b: 255.0, a: 255.0}, 60, true]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &23 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [尿道を精液がギュルルッと駆け上がり]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [勢いよく噴射された]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *23}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [身じろぎひとつ出来ず固まったまま 射精の快感に浸る]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, 039, 0, 0, 0, 0, 100, 100, 0, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [1, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, true]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *23}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ああ……♡ カラカラの子宮に君の精液が溜まっていく♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [もっと もっと注いでくれ♡ もっと飲みたい♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *23}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [最後の一滴まであますことなく出し切り]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ようやく一息つくことが出来た]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *23}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふふ……いっぱい出たな]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *23}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あの技を食らって あれだけ動けるなんて凄いぞ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ジョニーは すぐに固まってしまって]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そのまま射精してしまったんだからな]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, 039a, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *23}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [君の方が上だな ふふふ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *23}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [本心かお世辞なのか ともかく悪い気はしなかった]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [なにより最高に気持ちいい射精が出来たおかげで]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [心が晴れ晴れとし とても幸せな気分になれたのだった]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [12]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  id: 10
+- !ruby/object:RPG::CommonEvent
+  trigger: 0
+  name: ノエルと会話
+  switch_id: 1
+  list:
+  - !ruby/object:RPG::EventCommand {i: 0, c: 121, p: [31, 35, 1]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 111, p: [8, 19]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [31, 31, 0]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 111, p: [8, 20]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [32, 32, 0]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 111, p: [8, 21]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [33, 33, 0]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 111, p: [8, 22]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [34, 34, 0]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 111, p: [8, 23]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [35, 35, 0]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 111, p: [1, 15, 0, 5, 4]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [なんだ？ 暇つぶしの相手なら他を当たってくれ]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 111, p: [1, 15, 0, 10, 4]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [ん 暇なら少し話すか？]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [1, 15, 0, 15, 4]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: &24 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [君はよく私のところに来るな……]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: *24}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [いや 別に構わないぞ]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [君と話すのは 私も結構楽しいからな]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 231, p: [2, ノエル照れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: ['遅いぞ\N[1]']}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [今日は来ないかと思ってしまったじゃないか]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 102, p: [[世間話をする, プレゼントを渡す], 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [0, 世間話をする]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 111, p: [1, 15, 0, 5, 4]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [当たり障りの無い話をした]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 250, p: [!ruby/object:RPG::SE {name: Sound1, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [ちょっとだけ好感度が上がった]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 122, p: [15, 15, 1, 0, 1]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [1, 15, 0, 10, 4]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [楽しい会話が出来た]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 250, p: [!ruby/object:RPG::SE {name: Sound1, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [ちょっとだけ好感度が上がった]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 122, p: [15, 15, 1, 0, 1]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [時間が経つのも忘れ話に熱中した]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 250, p: [!ruby/object:RPG::SE {name: Sound1, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [ちょっとだけ好感度が上がった]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 122, p: [15, 15, 1, 0, 1]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [1, プレゼントを渡す]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [どうやって好感度を上げますか？]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 102, p: [[愛の言葉を贈る, '花束を贈るif(s[31]) ', '香水を贈るif(s[32]) ', 'イヤリングを贈るif(s[33]) '], 0]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [0, 愛の言葉を贈る]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [1, 15, 0, 5, 4]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 231, p: [1, ノエル服睨み, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [……………君は熱でもあるのか？]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 235, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 250, p: [!ruby/object:RPG::SE {name: Down3, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [視線が冷たい]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [不真面目だと思われてしまったようだ]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 111, p: [1, 15, 0, 10, 4]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [大人をからかうんじゃない]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [まったく……]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 235, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 250, p: [!ruby/object:RPG::SE {name: Sound1, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [そこそこ喜んでくれたようだ]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [好感度が上がった]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 122, p: [15, 15, 1, 0, 1]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 111, p: [1, 15, 0, 15, 2]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 231, p: [1, ノエル服睨み, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 231, p: [2, ノエル照れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 101, p: &25 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: [………誰にでもこんな事を言っているんじゃないだろうな？]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 101, p: *25}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: [まったく……]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 235, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 235, p: [2]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 250, p: [!ruby/object:RPG::SE {name: Sound1, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: [まんざらでもないようだ]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: [好感度が上がった]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 122, p: [15, 15, 1, 0, 1]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 231, p: [1, ノエル服エロ, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 231, p: [2, ノエル照れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: […………]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 101, p: &26 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: [熱い視線が向けられている]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 101, p: *26}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: [ような気がする]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 235, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 235, p: [2]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 250, p: [!ruby/object:RPG::SE {name: Sound1, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 401, p: [好感度が上がった]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 122, p: [15, 15, 1, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 5, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [1, '花束を贈るif(s[31]) ']}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 126, p: [19, 1, 0, 1]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [1, 15, 0, 5, 4]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [これを私に？ 似合うとも思えんが……]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 235, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 250, p: [!ruby/object:RPG::SE {name: Sound1, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [微妙な反応だ……]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [ちょっとだけ好感度が上がった]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 122, p: [15, 15, 1, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 111, p: [1, 15, 0, 10, 4]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 231, p: [1, ノエル服微笑み, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: &27 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [きれいな花だな]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: *27}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [……私にだって 花を愛でる心くらいあるぞ？]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 235, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 250, p: [!ruby/object:RPG::SE {name: Sound1, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [そこそこ喜んでくれたようだ]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [好感度が上がった]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 122, p: [15, 15, 1, 0, 3]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [私にこんなのが似合うと？]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [……そうか……]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 231, p: [1, ノエル服微笑み, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 231, p: [2, ノエル照れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [こういうのは もっと可愛い女に渡したほうがいいぞ]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [ふふふ]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 235, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 235, p: [2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 250, p: [!ruby/object:RPG::SE {name: Sound1, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [とても喜んでくれているようだ]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [好感度が上がった]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 122, p: [15, 15, 1, 0, 4]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [2, '香水を贈るif(s[32]) ']}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 126, p: [20, 1, 0, 1]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [1, 15, 0, 5, 4]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: &28 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [香水？ う うむ ありがとう……]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 231, p: [1, ノエル服やれやれ, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: *28}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [（これで体臭を消せということか？]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [臭っているのだろうか……くんくん）]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 235, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 250, p: [!ruby/object:RPG::SE {name: Down3, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [どうやら あまり喜ばれなかったらしい]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 122, p: [15, 15, 1, 0, 1]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 111, p: [1, 15, 0, 10, 4]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [柑橘系の香りだな]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [嫌いじゃないぞ]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 235, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 250, p: [!ruby/object:RPG::SE {name: Sound1, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [そこそこ喜んでくれたようだ]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [ちょっとだけ好感度が上がった]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 122, p: [15, 15, 1, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 231, p: [1, ノエル服微笑み, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [こういうのが君の好みなのか ふむ……]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [……いや 深い意味はないぞ？]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 235, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 250, p: [!ruby/object:RPG::SE {name: Sound1, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [そこそこ喜んでくれたようだ]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [ちょっとだけ好感度が上がった]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 122, p: [15, 15, 1, 0, 3]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [3, 'イヤリングを贈るif(s[33]) ']}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 126, p: [21, 1, 0, 1]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [1, 15, 0, 5, 4]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [すまない]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [私はもう防御効果のあるイヤリングを装備しているんだ]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [せっかくもらっても これはつけられない]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [いつか戦士を引退したときにでもつけさせてもらうよ]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 235, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [一応 受け取ってもらえたが]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [特に好感度は変化しなかったようだ]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 111, p: [1, 15, 0, 10, 4]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: &29 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [ん……キレイなイヤリングだな]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [私に似合うだろうか？]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 235, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: *29}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [ノエルはイヤリングを身に着けた]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: *29}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [やはり少し気恥ずかしいな……]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [オシャレが必要になったら着けさせてもらうよ]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 235, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 250, p: [!ruby/object:RPG::SE {name: Sound1, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: *29}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [そこそこ喜んでくれたようだ]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [ちょっとだけ好感度が上がった]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 122, p: [15, 15, 1, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 231, p: [2, ノエル照れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: &31 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [わ 私にか]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [ううむ……可愛すぎる気もするが……]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [いや 文句などない が……着飾るのは慣れていなくてな]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: &30 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [そうだ]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [君の前でだけ着ければ恥ずかしくないじゃないか]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: *30}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [うん そうしよう！]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [どうだ似合うか？]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 235, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 235, p: [2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 250, p: [!ruby/object:RPG::SE {name: Sound1, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: *31}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [なかなか喜んでくれたらしい]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [好感度が上がった]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 122, p: [15, 15, 1, 0, 4]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 404, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 102, p: [['髪飾りを贈るif(s[34]) ', '保存食を贈るif(s[35]) '], 0]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [0, '髪飾りを贈るif(s[34]) ']}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 126, p: [22, 1, 0, 1]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [1, 15, 0, 5, 4]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: &32 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [いかにも女の子っぽい髪飾りだな……]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [私には似合わないぞ]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: *32}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [だが 気持ちは嬉しい]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [ありがとう]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 235, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [一応 受け取ってもらえたが]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [特に好感度は変化しなかったようだ]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 111, p: [1, 15, 0, 10, 4]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [髪をまとめるのに使えそうだな]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [鬱陶しくなってきたから ちょうどいい]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 235, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 250, p: [!ruby/object:RPG::SE {name: Sound1, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [そこそこ喜んでくれたようだ]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [ちょっとだけ好感度が上がった]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 122, p: [15, 15, 1, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 231, p: [1, ノエル服エロ, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 231, p: [2, ノエル照れ, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [あまり女の子扱いするのは止めてほしいものだな]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [まったく 年上をからかいおって……]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 235, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 235, p: [2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [ノエルは顔を赤くしながらぶつくさ文句を言った]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 250, p: [!ruby/object:RPG::SE {name: Sound1, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [とても喜んでくれているようだ]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [好感度が上がった]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 122, p: [15, 15, 1, 0, 4]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [1, '保存食を贈るif(s[35]) ']}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 126, p: [23, 1, 0, 1]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [1, 15, 0, 5, 4]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [おっ これはなかなか美味いやつだぞ]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [長い旅の途中でよくお世話になるんだ！]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 235, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 250, p: [!ruby/object:RPG::SE {name: Sound1, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [とても喜んでくれているようだ]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [好感度が上がった]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 122, p: [15, 15, 1, 0, 3]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 111, p: [1, 15, 0, 10, 4]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 231, p: [1, ノエル服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [これがあれば間違いない]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [旅の必需品だ！]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 235, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 250, p: [!ruby/object:RPG::SE {name: Sound1, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [とても喜んでくれているようだ]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [好感度が上がった]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 122, p: [15, 15, 1, 0, 4]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 231, p: [1, ノエル服やれやれ, 0, 0, 0, 0, 100, 100, 255, 0]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [ああ……ありがとう]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [しかしこれは……早く旅に出ろと言うことなのか？]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 235, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 250, p: [!ruby/object:RPG::SE {name: Down3, pitch: 100, volume: 80}]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [どうやら喜ばれなかったらしい]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 404, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 404, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  id: 11
+- !ruby/object:RPG::CommonEvent
+  trigger: 0
+  name: CG消し
+  switch_id: 1
+  list:
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [3]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [4]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [5]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [6]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [7]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [8]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [9]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [10]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [11]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  id: 12
+- !ruby/object:RPG::CommonEvent
+  trigger: 0
+  name: CG消し1以外
+  switch_id: 1
+  list:
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [3]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [4]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [5]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [6]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [7]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [8]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [9]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [10]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [11]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  id: 13
+- !ruby/object:RPG::CommonEvent
+  trigger: 0
+  name: スワッピング選択
+  switch_id: 1
+  list:
+  - !ruby/object:RPG::EventCommand {i: 0, c: 111, p: [0, 23, 0]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ジョニー】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [ちぇっ じゃあおまえが決めていいぜ]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [誰と誰が どうするんだ？]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [誰と]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 102, p: [[自分と, ジョニーと], 0]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [0, 自分と]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 122, p: [30, 30, 1, 0, 1]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [1, ジョニーと]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 122, p: [30, 30, 1, 0, 10]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 404, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [誰が]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 102, p: [[マリーが, ノエルが], 0]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [0, マリーが]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 122, p: [30, 30, 1, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [1, ノエルが]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 122, p: [30, 30, 1, 0, 3]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 404, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [なにする？]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 102, p: [[キス, フェラ, セックス], 0]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [0, キス]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [1, 30, 0, 3, 0]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 108, p: [主人公とマリー]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [1, 30, 0, 4, 0]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 108, p: [主人公とノエル]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [1, 30, 0, 12, 0]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 108, p: [ジョニーとマリー]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [1, 30, 0, 13, 0]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 108, p: [ジョニーとノエル]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [1, フェラ]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [1, 30, 0, 3, 0]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 108, p: [主人公とマリー]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [1, 30, 0, 4, 0]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 108, p: [主人公とノエル]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [1, 30, 0, 12, 0]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 108, p: [ジョニーとマリー]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [1, 30, 0, 13, 0]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 108, p: [ジョニーとノエル]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [2, セックス]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [1, 30, 0, 3, 0]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 108, p: [主人公とマリー]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [1, 30, 0, 4, 0]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 108, p: [主人公とノエル]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [1, 30, 0, 12, 0]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 108, p: [ジョニーとマリー]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [1, 30, 0, 13, 0]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 108, p: [ジョニーとノエル]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 404, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ジョニー】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [へっへっへ じゃあ俺が決めるぞ！]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [そうだな～……]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 122, p: [31, 31, 0, 2, 1, 4]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 111, p: [1, 31, 0, 1, 0]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 122, p: [30, 30, 0, 0, 3]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [【ジョニー】]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\N[1]とマリーが……']}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [1, 31, 0, 2, 0]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 122, p: [30, 30, 0, 0, 4]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [【ジョニー】]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: ['\N[1]と師匠が……']}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 111, p: [1, 31, 0, 3, 0]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 122, p: [30, 30, 0, 0, 12]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [【ジョニー】]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [俺とマリーが……]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 122, p: [30, 30, 0, 0, 13]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [【ジョニー】]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [俺と師匠が……]}
+  - !ruby/object:RPG::EventCommand {i: 4, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 108, p: [３キス　５フェラ　７セックス]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 122, p: [31, 31, 0, 2, 1, 3]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 111, p: [1, 31, 0, 1, 0]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 122, p: [30, 30, 1, 0, 3]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 108, p: [キス]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [1, 31, 0, 2, 0]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 122, p: [30, 30, 1, 0, 5]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 108, p: [フェラ]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 411, p: []}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 122, p: [30, 30, 1, 0, 7]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 108, p: [セックス]}
+  - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 111, p: [1, 30, 0, 6, 0]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 108, p: [主人公とマリーがキス]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 111, p: [1, 30, 0, 7, 0]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 108, p: [主人公とノエルがキス]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 111, p: [1, 30, 0, 15, 0]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 108, p: [ジョニーとマリーがキス]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 111, p: [1, 30, 0, 16, 0]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 108, p: [ジョニーとノエルがキス]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 111, p: [1, 30, 0, 8, 0]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 108, p: [主人公とマリーがフェラ]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 111, p: [1, 30, 0, 9, 0]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 108, p: [主人公とノエルがフェラ]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 111, p: [1, 30, 0, 17, 0]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 108, p: [ジョニーとマリーがフェラ]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 111, p: [1, 30, 0, 18, 0]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 108, p: [ジョニーとノエルがフェラ]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 111, p: [1, 30, 0, 10, 0]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 108, p: [主人公とマリーがセックス]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 111, p: [1, 30, 0, 11, 0]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 108, p: [主人公とノエルがセックス]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 111, p: [1, 30, 0, 19, 0]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 108, p: [ジョニーとマリーがセックス]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 111, p: [1, 30, 0, 20, 0]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 108, p: [ジョニーとノエルがセックス]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  id: 14
+- !ruby/object:RPG::CommonEvent
+  trigger: 0
+  name: ノエルとセックスパイズリ
+  switch_id: 1
+  list:
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &33 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルが服を脱いでいる姿をじーっと見る]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *33}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [正確には 揺れるオッパイをじーっと見ている]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *33}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['ん？ どうした\N[1]']}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [胸が気になるのか？]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *33}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: […………]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *33}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルは服を畳んで置き 鏡で前髪をチェックしてから]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ベッドにやってくると 何の気なしに呟いた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *33}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [挟んでやろうか？]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 102, p: [[お願いします！！, ひゃっほおおおお！！], 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [0, お願いします！！]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [久しぶりに敬語だな……]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [尊敬するってことか 胸に]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [1, ひゃっほおおおお！！]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: &34 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [こらこら 落ち着け]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *34}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [たしなめられてしまった]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 404, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &35 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [まあ……別に胸でするくらい よくあるが]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そう言えば君にはしてなかったか…… あっ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *35}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [言ってから 過去の性体験を吐露したことに気付いて]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [気恥ずかしくなってしまう]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 102, p: [[詳しく聞かせてほしい, 誰にしたの？], 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [0, 詳しく聞かせてほしい]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: &36 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [……どうして目が輝いているんだ……]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *36}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [詳しくと言っても 別にな……]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [君の知らない場所で 知らないやつにした話なんて]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [聞いても楽しくもないだろう]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [あっ ザウバーの話はしないぞ]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [あいつは別枠だ いくら君が喜ぶとしても嫌だ]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [どうやらザウバーにはしたことがあるらしい]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [だが 当然 嫌がるようなことを聞くことはしない]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [1, 誰にしたの？]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [君の知らない相手ばかりだよ]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [そんなのでも寝取られ趣味というのは興奮するのか？]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 102, p: [[知らないと興奮は半減だ, 昔の男に嫉妬なんかしない], 0]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [0, 知らないと興奮は半減だ]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [なら聞いても仕方ないだろうに]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [1, 昔の男に嫉妬なんかしない]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [そのへんの感覚は普通というか 大らかなんだな]}
+  - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 404, p: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [あっ ザウバーの話はしないぞ]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [あいつは別枠だ いくら君が喜ぶとしても嫌だ]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [どうやらザウバーにはしたことがあるらしい]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [だが 当然 嫌がるようなことを聞くことはしない]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 404, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [まあ そんなどうでもいい話は置いておこう]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふふふ いっぱい気持ちよくしてあげるぞ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &37 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダランと垂れたペニスが胸の間に挟まれる]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *37}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [左右の胸が交互に擦り合わされると]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [亀頭を中心に甘い快感がじんわりと広がって]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ムクムクと大きくなっていった]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [反り返る力がすごいな]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [思い切り抑えないと 胸から飛び出してしまいそうだ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ギュッと押さえつけながら胸を動かすノエル]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &38 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ん……ふぅ………んん？]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *38}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [だが 何か気がかりなことでもあるのか]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [不意に首を傾げて 奉仕がおざなりになってしまう]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 102, p: [[どうしたの？, 胸が止まってるよ], 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [0, どうしたの？]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [うむ……この反り返る感じ……]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [1, 胸が止まってるよ]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [手じゃないのか]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [いや……なにか思い出しそうで……]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 404, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &39 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あっ そうか……あいつだ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *39}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [胸のつかえが取れたのか スッキリした顔で]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [奉仕を続けるノエル]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [しばらくの間 無言のパイズリが続いた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *39}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [……………]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *39}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [なあ さっきの話だが……]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [君が知っている相手に私が胸で奉仕したとしたら]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [君は興奮するのか？]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *39}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [コクリと頷く]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ノエルは少しだけ考え込んで やがて意を決するように]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [口を開いた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [実はな ひとりだけ君の知っている相手に]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [こうして挟んでやったことがある]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 102, p: [[誰？, いつ？], 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [0, 誰？]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: &40 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [名前は知らないかもしれないが……]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [君たちをテストした時のことを覚えてるか？]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *40}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [あのとき テストに協力してもらったオークがいただろう]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *40}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [……あいつだ]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [1, いつ？]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: &41 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [君たちの師匠を引き受けて最初に 森と洞窟を抜けて]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [私のところまでたどり着くというテストをしただろう？]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *41}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [あの時……というか あのテストのすぐ後だ]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *41}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [テストに協力してくれたオークを相手にな]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 404, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 211, p: [0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 201, p: [0, 183, 10, 6, 0, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [オークパイズリへ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [まあ……あの時点では あれしか方法がなかったんだよ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 102, p: [[自分たちがもっと強ければ……, 本当に運のいいやつだ], 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [0, 自分たちがもっと強ければ……]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [そうだな 君たちがもう少しだけ強ければ]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [あんなテストをせずに すぐに技の修行にはいったかもな]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [1, 本当に運のいいやつだ]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [あの時期だからこそ やつに白羽の矢が立った]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [そう考えると 少しでも時期がずれていれば]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [私のパイズリはなかったろうな]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 404, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [悔しさに体が震える]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [妻になる女性が 自分の無力さが原因で]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [オークのペニスなどに奉仕していたのだ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &42 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [だが……]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *42}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふふふ すごい効果だな]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [さっきよりもガチガチになっているぞ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *42}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [とてつもなく興奮してもいたのだ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そこに重量感たっぷりの暖かな乳房に挟まれ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [しっとりと吸い付く肌の感触がまとわりつく]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いつ発射してもおかしくないほどだった]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &43 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふふふ やつのを思い出す熱さだ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あれはもっとグロテスクだったが……]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *43}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [たくみに体重を移動して胸の重みを押し付けてくる]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *43}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [亀頭が埋まるほど柔らかいのに 摩擦もしっかりとあり]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [上下にずられるとカリが肉を引っ掛けて弾き]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [痺れが走った]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &44 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふう♡ ふふっ 気持ちいいか？]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いつでも出していいぞ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [君のザーメンなら 全部飲み干してやるからな……ん♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [唇が亀頭に吸い付き]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [鈴口をチロチロと舐められて射精を促される]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *44}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [んちゅっ んふふっ 出せ ぴゅーって精子だして]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ちゅっ ちゅばっ れろれろ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [竿を包み込む乳圧と 亀頭を攻める舌の快感に]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [我慢の限界が訪れた]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 224, p: [!ruby/object:Color {r: 255.0, g: 255.0, b: 255.0, a: 255.0}, 60, true]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &45 ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あっ うっ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *45}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [目を閉じてジッと構え 吐き出される精子を浴びるノエル]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [見る見る髪や顔が白く汚されていく]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *45}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふう……♡ 終わったか？]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [たくさん出たな]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *45}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [顔にかかった精子を手で拭い 口元に持っていくと]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [くちゅくちゅと撹拌してから飲み込んだ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *45}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [くはぁっ♡ すまないな]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [全部飲むと言ったが こうも巻き散らかされては難しそうだ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *45}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あのオークよりは全然量は少ないんだが……]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *45}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ふふふ♡ そう落ち込むな]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [君が勝っているところだってあるぞ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *45}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【ノエル】]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それは催淫効果だ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [やつの精子より 君のほうがかけられるだけで]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [何倍も興奮するんだ♡]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そう言ってノエルは]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [精液をすくい取って舐めながら微笑んだ]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  id: 15
+- !ruby/object:RPG::CommonEvent
+  trigger: 0
+  name: 回想部屋へ戻る
+  switch_id: 1
+  list:
+  - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [43, 43, 0, 0, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [12]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 211, p: [1]}
+  - !ruby/object:RPG::EventCommand
+    i: 0
+    c: 205
+    p:
+    - -1
+    - !ruby/object:RPG::MoveRoute
+      repeat: false
+      skippable: false
+      wait: true
+      list:
+      - &46 !ruby/object:RPG::MoveCommand {code: 38, parameters: []}
+      - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*46]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 201, p: [1, 47, 44, 45, 8, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 111, p: [1, 46, 0, 4, 0]}
+  - !ruby/object:RPG::EventCommand
+    i: 1
+    c: 205
+    p:
+    - -1
+    - !ruby/object:RPG::MoveRoute
+      repeat: false
+      skippable: false
+      wait: true
+      list:
+      - &47 !ruby/object:RPG::MoveCommand {code: 17, parameters: []}
+      - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 505, p: [*47]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 111, p: [1, 46, 0, 2, 0]}
+  - !ruby/object:RPG::EventCommand
+    i: 1
+    c: 205
+    p:
+    - -1
+    - !ruby/object:RPG::MoveRoute
+      repeat: false
+      skippable: false
+      wait: true
+      list:
+      - &48 !ruby/object:RPG::MoveCommand {code: 16, parameters: []}
+      - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 505, p: [*48]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 111, p: [1, 46, 0, 6, 0]}
+  - !ruby/object:RPG::EventCommand
+    i: 1
+    c: 205
+    p:
+    - -1
+    - !ruby/object:RPG::MoveRoute
+      repeat: false
+      skippable: false
+      wait: true
+      list:
+      - &49 !ruby/object:RPG::MoveCommand {code: 18, parameters: []}
+      - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 505, p: [*49]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 111, p: [1, 46, 0, 8, 0]}
+  - !ruby/object:RPG::EventCommand
+    i: 1
+    c: 205
+    p:
+    - -1
+    - !ruby/object:RPG::MoveRoute
+      repeat: false
+      skippable: false
+      wait: true
+      list:
+      - &50 !ruby/object:RPG::MoveCommand {code: 19, parameters: []}
+      - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 505, p: [*50]}
+  - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 412, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  id: 16
+- !ruby/object:RPG::CommonEvent
+  trigger: 0
+  name: 現在位置セット
+  switch_id: 1
+  list:
+  - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [44, 44, 0, 3, 5, -1, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [45, 45, 0, 3, 5, -1, 1]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [46, 46, 0, 3, 5, -1, 2]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [47, 47, 0, 3, 7, 0, 0]}
+  - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  id: 17
+- !ruby/object:RPG::CommonEvent
+  trigger: 0
+  name: ''
+  switch_id: 1
+  list:
+  - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  id: 18
+- !ruby/object:RPG::CommonEvent
+  trigger: 0
+  name: ''
+  switch_id: 1
+  list:
+  - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  id: 19
+- !ruby/object:RPG::CommonEvent
+  trigger: 0
+  name: ''
+  switch_id: 1
+  list:
+  - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  id: 20

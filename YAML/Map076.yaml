@@ -1,0 +1,616 @@
+--- !ruby/object:RPG::Map
+parallax_name: ''
+height: 20
+events:
+  1: !ruby/object:RPG::Event
+    id: 1
+    name: EV001
+    x: 9
+    y: 8
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: People1
+        character_index: 7
+        direction: 2
+        pattern: 1
+      move_type: 0
+      move_speed: 4
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 3
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 111, p: [0, 41, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [今度こそお願いね]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [3人は毒状態になった]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 313, p: [0, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 201, p: [0, 75, 1, 6, 6, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 411, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [41, 41, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [ずいぶんとお若い人たちが来なすったねえ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ジョニー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [やる気だけは 誰にも負けないっすよ！]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: &1 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [まあまあ 若いっていいわねえ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *1}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [私たちは何をすればいいんですか？]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *1}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [この奥の森でね 薬の材料になる毒草を育ててるんだけど]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [足腰が弱ってしまって 採集に行くのが億劫なんだよ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *1}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [代わりに毒草を採ってくればいいのね]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *1}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [そうそう 簡単でしょう？]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *1}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [はい まかせてください！]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *1}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [じゃ お願いね]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *1}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [ああ それから……]}
+      - !ruby/object:RPG::EventCommand
+        i: 1
+        c: 205
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &2 !ruby/object:RPG::MoveCommand {code: 3, parameters: []}
+          - &3 !ruby/object:RPG::MoveCommand {code: 3, parameters: []}
+          - &4 !ruby/object:RPG::MoveCommand {code: 19, parameters: []}
+          - &5 !ruby/object:RPG::MoveCommand {code: 15, parameters: [5]}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 505, p: [*2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 505, p: [*3]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 505, p: [*4]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 505, p: [*5]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 122, p: [22, 22, 0, 0, 1]}
+      - !ruby/object:RPG::EventCommand
+        i: 1
+        c: 205
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &6 !ruby/object:RPG::MoveCommand {code: 2, parameters: []}
+          - &7 !ruby/object:RPG::MoveCommand {code: 2, parameters: []}
+          - &8 !ruby/object:RPG::MoveCommand {code: 16, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 505, p: [*6]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 505, p: [*7]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 505, p: [*8]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [これを飲んでちょうだい]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [渡された液体を飲み干した]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [シュワーッと爽やかなのどごしが駆け巡る]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [美味しい！]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: &9 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ジョニー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [ぷはーっ ウマイ！]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [こんなに美味しいジュース 飲んだことないわ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [ほっほっほ そうかい？]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [まあ それ毒なんだけどね]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 213, p: [-1, 1, false]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 213, p: [2, 1, false]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 213, p: [3, 1, false]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ジョニー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [ぶーーっ！！？]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服不安, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [ど 毒！？ な なんで]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [奥の森はね 毒草ばっかり育てたせいで]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [完全に毒の森になっちゃってるんだよ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [普通の人間が足を踏み入れたら]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [3秒で中毒死しちゃうんだよねえ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [だから あらかじめ他の毒をカラダに入れて]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [耐性をつけてからでないと 入れないんだよ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [でも これも毒なんですよね！？]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [ほっとくと死ぬくらいの効果はあるから]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [帰りはうちで解毒剤を飲んで行きなさい]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ジョニー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [げ 解毒剤があるのか……安心したけど]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [いい気分はしないな……はやく帰ってこようぜ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [採ってきて欲しい毒草は 赤くて大きな花をつけてるから]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [見ればわかると思うよ それじゃあ気をつけてね]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *9}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [3人は毒状態になった]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 313, p: [0, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 201, p: [0, 75, 1, 6, 6, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 412, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: true
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 22
+        variable_value: 2
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: People1
+        character_index: 7
+        direction: 2
+        pattern: 1
+      move_type: 0
+      move_speed: 4
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 3
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: &10 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [まあ これよこれ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [この赤黒くて肉厚の花弁がよく効くのよ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: *10}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [どうもありがとう お礼は なにを差し上げましょうかしら]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [水虫の特効薬なんかどうかしら]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 102, p: [[強力な毒が欲しい, 精力増強の薬がほしい], 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [0, 強力な毒が欲しい]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: &11 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [あらまあ 毒？]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [う～ん 専門家として 一般の人にそう簡単に]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [あげるのは ちょっとね～]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *11}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [やっぱり そう簡単にはいかないか……]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *11}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [でもまあいいわ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [あげちゃう！]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *11}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ジョニー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [いいんすか！？]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [だって せっかく解毒剤の材料を採ってきてくれたんですもの]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [毒に侵される人がいないと 解毒剤の使いみちがないものねえ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *11}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ジョニー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [この婆さん……思ったより怖い人だぞ……]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [1, 精力増強の薬がほしい]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: &12 ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ジョニー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [いや！ そうじゃねえだろ！？]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [俺も欲しいけど！]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服叫び, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [きゃー！ ジョニーのエッチ！]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [そんなもの使うつもりなの！？]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *12}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [若いっていいわねえ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *12}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ジョニー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [そ そうじゃなくて！]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *12}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【ジョニー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [俺たち 強力な毒薬が欲しいんです！]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *12}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [あら 毒？]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *12}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [毒なら腐るほどあるから どれでも好きなのを]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [持っていってちょうだい]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *12}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [そんなにあっさり……いいんですか？]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [危険物なのに……]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *12}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [この子達は危険物なんかじゃないわ！]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [1, マリー服普通, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *12}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【マリー】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [……え？]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *12}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [私にとっては かわいい子どもたちなのよ！]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *12}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [それを 世間の奴らは 危険だのなんだの……]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [まるで毒を悪いものみたいに！]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *12}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [【薬師】]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [許せないわ！ 毒も薬も同じじゃないの！]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [差別よ！ 訴えてやる！]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: *12}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [薬師のスイッチが入ってしまったようだ]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 404, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [強力毒薬を手に入れた！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 121, p: [40, 40, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 313, p: [0, 0, 1, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 211, p: [0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 201, p: [0, 67, 7, 7, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  2: !ruby/object:RPG::Event
+    id: 2
+    name: ジョニー
+    x: 10
+    y: 9
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: 相棒
+        character_index: 0
+        direction: 8
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  3: !ruby/object:RPG::Event
+    id: 3
+    name: マリー
+    x: 8
+    y: 9
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ヒロイン
+        character_index: 0
+        direction: 8
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  4: !ruby/object:RPG::Event
+    id: 4
+    name: EV004
+    x: 11
+    y: 7
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 558
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: true
+      through: false
+      priority_type: 0
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: true
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 22
+        variable_value: 1
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+parallax_sx: 0
+bgm: !ruby/object:RPG::BGM {name: 【BGM】のんびりした感じアウトボード, volume: 70, pitch: 100}
+tileset_id: 20
+encounter_step: 30
+width: 20
+data: !ruby/object:Table
+  dim: 3
+  x: 20
+  y: 20
+  z: 4
+  data:
+  - 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760
+  - 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760
+  - 1760 1760 1760 1760 1764 177c 177c 177c 177c 177c 177c 177c 177c 177c 177c 1768 1760 1760 1760 1760
+  - 1760 1760 1760 1760 1778 19d2 19d2 19d2 19d2 19d2 19d2 19d2 19d2 19d2 19d2 1770 1760 1760 1760 1760
+  - 1760 1760 1760 1760 1778 19d8 19d8 19d8 19d8 19d8 19d8 19d8 19d8 19d8 19d8 1770 1760 1760 1760 1760
+  - 1760 1760 1760 1760 1778 0cd2 0cc4 0cc4 0cc4 0cc4 0cc4 0cc4 0cc4 0cc4 0cd4 1770 1760 1760 1760 1760
+  - 1760 1760 1760 1760 1778 0cc0 0cb0 0cb0 0cb0 0cb0 0cb0 0cb0 0cb0 0cb0 0cc8 1770 1760 1760 1760 1760
+  - 1760 1760 1760 1760 1778 0cc0 0cb0 0cb0 0cb0 0cb0 0cb0 0cb0 0cb0 0cb0 0cc8 1770 1760 1760 1760 1760
+  - 1760 1760 1760 1760 1778 0cc0 0cb0 0cb0 0cb0 0cb0 0cb0 0cb0 0cb0 0cb0 0cc8 1770 1760 1760 1760 1760
+  - 1760 1760 1760 1760 1778 0cc0 0cb0 0cb0 0cb0 0cb0 0cb0 0cb0 0cb0 0cb0 0cc8 1770 1760 1760 1760 1760
+  - 1760 1760 1760 1760 1778 0cc0 0cb0 0cb0 0cb0 0cb0 0cb0 0cb0 0cb0 0cb0 0cc8 1770 1760 1760 1760 1760
+  - 1760 1760 1760 1760 1778 0cc0 0cb0 0cb0 0cb0 0cb0 0cb0 0cb0 0cb0 0cb0 0cc8 1770 1760 1760 1760 1760
+  - 1760 1760 1760 1760 1778 0cd8 0ccc 0ccc 0ccc 0cbc 0ccc 0ccc 0ccc 0ccc 0cd6 1770 1760 1760 1760 1760
+  - 1760 1760 1760 1760 1762 1774 1774 1774 1784 0cdc 1782 1774 1774 1774 1774 1761 1760 1760 1760 1760
+  - 1760 1760 1760 1760 1760 1760 1760 1760 1762 1774 1761 1760 1760 1760 1760 1760 1760 1760 1760 1760
+  - 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760
+  - 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760
+  - 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760
+  - 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760
+  - 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760 1760
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0c7a 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0c7c 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 03a8 03a9 0248 0249 026f 03f6 03ed 03b4 03b5 03b1 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0392 0393 0250 0251 0000 03fe 0000 03bc 03bd 03b9 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 039a 039b 03c9 02d3 02d4 02d5 0000 03c4 03c5 03c1 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 039e 0395 03c8 02db 02dc 02dd 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0396 0000 0000 02e3 02e4 02e5 0000 0000 03b7 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 039f 0000 0000 0000 0000 0000 0000 0000 03ae 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 03a7 0000 0000 0000 0386 0387 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 02d6 0000 0000 0000 038e 038f 0000 0000 03b6 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 02de 0000 0000 0000 0000 0000 0000 0000 03be 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 03a1 03a1 0000 0000 0000 0000 0000 0000 03c6 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+bgs: !ruby/object:RPG::BGS {name: '', volume: 80, pitch: 100}
+parallax_loop_y: false
+autoplay_bgm: true
+encounter_list: []
+autoplay_bgs: false
+parallax_show: false
+scroll_type: 0
+parallax_loop_x: false
+disable_dashing: false
+parallax_sy: 0
+display_name: ''
+specify_battleback: false
+note: ''
+battleback1_name: ''
+battleback2_name: ''
