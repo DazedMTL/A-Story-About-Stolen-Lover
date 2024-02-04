@@ -58,7 +58,7 @@
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '412', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['選択肢位置(230,240)']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['はじめから', 'if(s[102])つづきから ', 'おわる'], !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['Start from the beginning', 'if(s[102])Continue', 'Quit'], !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '402', 'p': [!!int '0', 'はじめから']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '122', 'p': [!!int '109', !!int '109', !!int '0', !!int '0', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '355', 'p': ['GameManager.new_game']}
@@ -129,7 +129,7 @@
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '108', 'p': ['カーソル記憶(109)']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '412', 'p': []}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['はじめから', 'if(s[102])つづきから ', '回想部屋', '背景切り替え'], !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['From the beginning', 'if(s[102])Continue', 'Recollection Room', 'Change Background'], !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '402', 'p': [!!int '0', 'はじめから']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '122', 'p': [!!int '109', !!int '109', !!int '0', !!int '0', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '355', 'p': ['GameManager.new_game']}
@@ -169,7 +169,7 @@
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '412', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '404', 'p': []}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['おわる'], !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['End'], !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '402', 'p': [!!int '0', 'おわる']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '355', 'p': ['GameManager.shutdown']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '0', 'p': []}

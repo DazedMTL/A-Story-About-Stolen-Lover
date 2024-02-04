@@ -47,8 +47,8 @@
       'list':
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '1', 'ノエル服普通', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【ノエル】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['ここペンペンシティは 南部では一番大きな街だ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【Noel】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Penpen City here is the largest city in the southern part.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '235', 'p': [!!int '1']}
       - !ruby/object:RPG::EventCommand
         'i': !!int '0'
@@ -155,19 +155,21 @@
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '505', 'p': [*13]}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '1', 'マリー服普通', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['マリー: わ～！ おっきい塀ね！教会の屋根より高いわ！']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【マリー】わ～！ おっきい塀ね！教会の屋根より高いわ！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Marie: Wow! What a huge wall! It''s even taller than the
+
+            church roof!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '235', 'p': [!!int '1']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['女たちは元気だな...俺はもうクタクタだよ']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['楽しそうで何より', 'はやく休みたい'], !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['The ladies sure are energetic... I''m completely worn out.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['Glad you''re having fun', 'I want to rest soon'], !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '402', 'p': [!!int '0', '楽しそうで何より']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': &14 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['ジョニー: ...まあ そうだなマリ-が喜んでるなら 連れてきた甲斐があったよ']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ジョニー】……まあ そうだなマリーが喜んでるなら 連れてきた甲斐があったよ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Johnny: ...Well, if Marie is happy, then it was worth
+
+            bringing her along.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *14}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ジョニー】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Johnny】']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['...']}
       - !ruby/object:RPG::EventCommand
         'i': !!int '1'
@@ -183,13 +185,15 @@
           - !ruby/object:RPG::MoveCommand {'code': !!int '0', 'parameters': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '505', 'p': [*15]}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *14}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['ジョニー: べ 別に深い意味はないぞ！?文句言われても困るしな！']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ジョニー】べ 別に深い意味はないぞ！?文句言われても困るしな！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Johnny: It''s not like it means anything special! I''d be in
+
+            trouble if you complained!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '402', 'p': [!!int '1', 'はやく休みたい']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['ジョニー: まったくだぜ...柔らかいベッドで泥のように眠りたいよ...']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ジョニー】まったくだぜ……柔らかいベッドで泥のように眠りたいよ……']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Johnny: Seriously... I just want to sleep like a log in a
+
+            soft bed...']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '404', 'p': []}
       - !ruby/object:RPG::EventCommand
@@ -286,16 +290,16 @@
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '505', 'p': [*28]}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '1', 'ノエル服普通', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【ノエル】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['そんなことでは 立派な戦士にはなれんぞ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【Noel】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['With that attitude, you''ll never become a splendid warrior.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '235', 'p': [!!int '1']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['師匠は いつもこんな旅をしているんですか?']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Master, do you always travel like this?']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '1', 'ノエル服普通', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【ノエル】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['まあな']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【Noel】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Pretty much.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '235', 'p': [!!int '1']}
       - !ruby/object:RPG::EventCommand
         'i': !!int '0'
@@ -338,41 +342,45 @@
           - !ruby/object:RPG::MoveCommand {'code': !!int '0', 'parameters': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '505', 'p': [*37]}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['兵士: 戦士のパスポ-トかこの街を訪れた目的は?']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【兵士】戦士のパスポートかこの街を訪れた目的は?']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Soldier: Your warrior''s passport or the purpose of your
+
+            visit to this city?']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '1', 'ノエル服普通', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['ノエル: 初心者が多いから ここを拠点に活動したいこの街は安全だし 仕事も多いからな']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【ノエル】初心者が多いから ここを拠点に活動したいこの街は安全だし 仕事も多いからな']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Noel: Since there are many beginners here, we want to use
+
+            this city as a base. It''s safe and there''s plenty of work.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '235', 'p': [!!int '1']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【兵士】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['ふ-ん...じろじろ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【Soldier】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Hmm... *stares*']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '1', 'ノエル服普通', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【ノエル】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['なんだ?']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【Noel】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['What is it?']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '235', 'p': [!!int '1']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【兵士】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['念のために身体検査をさせてもらおうかな']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【Soldier】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Just to be sure, let''s conduct a body check.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '1', 'ノエル服睨み', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['ノエル: 三下役人と遊んでる暇はないみんな疲れているんだ']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【ノエル】三下役人と遊んでる暇はないみんな疲れているんだ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Noel: We don''t have time to play with petty officials;
+
+            everyone is tired.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '235', 'p': [!!int '1']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['兵士: いい宿に泊まりたいだろワンランク上のパスを発行してやるぞ']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【兵士】いい宿に泊まりたいだろワンランク上のパスを発行してやるぞ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Soldier: You want to stay at a good inn, right? I''ll issue
+
+            you a higher-ranked pass.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['おい...なんか 変な雰囲気じゃないか?']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['成り行きを見守る', '役人を止める'], !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Hey... isn''t this atmosphere kind of weird?']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['Just watch what happens', 'Stop the official'], !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '402', 'p': [!!int '0', '成り行きを見守る']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '231', 'p': [!!int '1', 'ノエル服普通', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ノエル】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['そうだな...それなら悪くない取引だ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Noel】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Indeed... but it''s not a bad deal.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '235', 'p': [!!int '1']}
       - !ruby/object:RPG::EventCommand
         'i': !!int '1'
@@ -391,92 +399,138 @@
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '231', 'p': [!!int '1', '002c', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '232', 'p': [!!int '1', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '60', !!bool 'true']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': &39 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['むにゅ ぐにゅ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['*squish* *grope*']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['返事を聞くなり 門番の兵士はノエルの胸に手を伸ばして乱暴に揉みしだいた']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Upon hearing the response, the gatekeeper soldier reached
+
+            out and roughly groped Noel''s breasts.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '231', 'p': [!!int '1', '002c', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *39}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ノエル】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Noel】']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['...']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['ノエルは抵抗せずされるがまま 直立不動で胸を揉まれ続けている']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Noel stood still without resisting, letting her breasts be
+
+            continuously fondled.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '213', 'p': [!!int '5', !!int '5', !!bool 'false']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *39}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['お おい！ なにしてんだ！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Hey! What are you doing!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['いきなりのことに面食らい固まっていたジョニ-が声を荒げて詰め寄ろうとするも 当のノエルがそれを制する']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Johnny, who was taken aback by the sudden event, raised his
+
+            voice and tried to confront the soldier, but Noel stopped
+
+            him.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '231', 'p': [!!int '1', '002b', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ノエル】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['ジョニ- 大人しくしていろ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Noel】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Johnny, stay calm.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': &40 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['で でも...']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['But...']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '231', 'p': [!!int '1', '002', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['ノエル: ただの身体検査だ騒ぐと街に入れなくなるぞ']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ノエル】ただの身体検査だ騒ぐと街に入れなくなるぞ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Noel: It''s just a body check. If you make a fuss, we won''t
+
+            be allowed into the city.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *40}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['門番の手によって ノエルの乳房が押しつぶされ変形し ブルンと弾ける']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['The gatekeeper''s hands crushed Noel''s breasts, deforming
+
+            them before they bounced back.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *40}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['手のひらで上下に擦られると ユサユサと音が聞こえてきそうな勢いで 大きく揺れた']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['As the palms rubbed up and down, her breasts swayed so
+
+            vigorously it seemed like you could hear them jiggling.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '231', 'p': [!!int '1', '002c', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': &41 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ノエル】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Noel】']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['...']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *41}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['それでもノエルは微動だにせず 門番の気が済むのを待った']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Still, Noel did not move an inch and waited for the
+
+            gatekeeper to be satisfied.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['兵士: なんだこの重み...ズッシリしてやがる手のひらを押し返してくる弾力もすげぇ...']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【兵士】なんだこの重み……ズッシリしてやがる手のひらを押し返してくる弾力もすげぇ……']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Soldier: What''s this weight... It''s so heavy and the
+
+            resilience pushing back against my palm is amazing...']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *41}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['門番が感心したように呟く']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['The gatekeeper muttered as if impressed.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *41}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['無抵抗かつ無反応なのがつまらなかったがただ揉んでいるだけでも 時間を忘れさせてくれそうな最高のオモチャを手に入れた気分だった']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Though he found her non-resistance and lack of reaction
+
+            boring, he felt like he had found the best toy that could
+
+            make him forget about time just by fondling it.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['服の上からまさぐっていた門番の手がインナ-をずりあげて 乳房を露出させる']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['The gatekeeper''s hand that had been groping over her clothes
+
+            now lifted her inner garment to expose her breasts.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '231', 'p': [!!int '1', '002e', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【兵士】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['へへへ 邪魔なもんは取っちまおうぜ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Soldier】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Hehehe, let''s get rid of anything in the way.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '231', 'p': [!!int '2', '002l', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': &42 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['真っ先に乳首を探し当て 強くつまんでねじりあげる何度も何度も乳首をつねられ ノエルの口から小さく苦痛を感じさせる声が漏れた']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['He immediately found her nipples and pinched them hard,
+
+            twisting them up. Noel let out a small voice of pain as her
+
+            nipples were pinched over and over again.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *42}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['兵士: おっと 痛かったか?つまみがいのあるデケえ乳首だったもんで ついな']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【兵士】おっと 痛かったか?つまみがいのあるデケえ乳首だったもんで ついな']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Soldier: Oops, did that hurt? You''ve got such big nipples
+
+            that are easy to grab, I just couldn''t help myself.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '235', 'p': [!!int '2']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '231', 'p': [!!int '1', '002k', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *42}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['今度は指の腹を使って擦り始めたヒリヒリと痛む乳首が 上下左右に転がされまたキュッと摘んで引っ張られる']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['This time he began rubbing with the pads of his fingers. The
+
+            sore nipples were rolled around in all directions and then
+
+            pinched and pulled again.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['兵士: 慣れてるって感じだな～いつも後ろの兄ちゃん達にいじめられてるのか?']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【兵士】慣れてるって感じだな～いつも後ろの兄ちゃん達にいじめられてるのか?']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Soldier: You seem used to this... Are you always getting
+
+            teased by the guys behind you?']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['下卑た笑いを浮かべながらノエルの顔を覗き込む真一文字に結ばれていた口は 徐々に形を歪ませていき鼻息も音が聞こえるほど大きくなっていた']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['While sporting a lewd smile, the soldier peered into Noel''s
+
+            face, which had been tightly shut but now gradually began to
+
+            distort as her breathing became audibly heavier.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '231', 'p': [!!int '1', '002i', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *42}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ノエル】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['...っ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Noel】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['...']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['ノエルの吐息がどんどん荒くなっていく往来で辱めを受けているという羞恥心と被虐感を煽られ 性的な興奮が高まっていく']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Noel''s breaths grew increasingly ragged amidst the public
+
+            humiliation, fueling her sense of shame and masochistic
+
+            pleasure, and sexual excitement began to rise.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ノエル】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['（...こんなことで...馬鹿馬鹿しい...）']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Noel】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['(...To be aroused by something like this... It''s
+
+            ridiculous...)']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *42}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['頭ではそう思っていても 身体が感じることを止めるすべはない']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Even though her mind thought so, her body couldn''t stop
+
+            feeling.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *42}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['最悪の気分ながらも 乳首はしっかり反応し大きく勃起していた']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Despite feeling terrible, her nipples were firmly erect.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '235', 'p': [!!int '1']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '213', 'p': [!!int '4', !!int '6', !!bool 'false']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *42}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【マリー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['あ...う...あう...']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Marie】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Ah...uh...ah uh...']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *42}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['その様子を 目を丸くしてマリ-が見ていた見てはいけないと思いつつも 顔を覆った両手の隙間からチラチラと見てしまう']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Marie watched with wide eyes, knowing she shouldn''t look but
+
+            still peeking through the gaps between her covered hands.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *42}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['そして もう一人の兵士が そんなマリ-に忍び寄っていく']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Then another soldier began to creep up on Marie.']}
       - !ruby/object:RPG::EventCommand
         'i': !!int '1'
         'c': !!int '205'
@@ -492,8 +546,8 @@
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '505', 'p': [*43]}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '213', 'p': [!!int '2', !!int '4', !!bool 'false']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': &45 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【兵士】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['へっへっへ...お嬢さんは俺が検査してあげるよ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Soldier】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Heh heh heh... I''ll inspect you, miss.']}
       - !ruby/object:RPG::EventCommand
         'i': !!int '1'
         'c': !!int '205'
@@ -509,25 +563,31 @@
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '505', 'p': [*44]}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '231', 'p': [!!int '1', 'マリー服不安', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *45}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【マリー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['え えっ?']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Marie】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Eh, what?']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '235', 'p': [!!int '1']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *45}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['声を上げるより早く 兵士の手がマリ-の身体に触れた']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Before she could raise her voice, the soldier''s hand touched
+
+            Marie''s body.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '213', 'p': [!!int '4', !!int '1', !!bool 'false']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '231', 'p': [!!int '1', 'マリー服叫び', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *45}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【マリー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['きゃ---っ！?']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Marie】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Kyaa---!?']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '235', 'p': [!!int '1']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *45}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['身体をくねらせてもがくマリ-だが体格に勝る兵士は力づくで彼女を抱きしめ上から下から あらゆる場所をまさぐっていく']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Marie writhed and struggled, but the physically superior
+
+            soldier forcefully embraced her, groping all over from top
+
+            to bottom.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '231', 'p': [!!int '1', 'マリー服叫び', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *45}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【マリー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['いや-！ やだ--！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Marie】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['No-! Stop--!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '235', 'p': [!!int '1']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '102', 'p': [['止める', '見てる'], !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '102', 'p': [['Stop', 'Watch'], !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '402', 'p': [!!int '0', '止める']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '402', 'p': [!!int '1', '見てる']}
@@ -535,44 +595,58 @@
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '404', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '213', 'p': [!!int '5', !!int '5', !!bool 'false']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['てめえこの野郎！！ ぶっ殺すぞ！！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['You bastard!! I''ll kill you!!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['どうするか考える間もなく ジョニ-が飛び出した']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Without a moment to think, Johnny lunged forward.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '231', 'p': [!!int '1', '002i', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': &46 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ノエル】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['ジョニ-...']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Noel】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Johnny...']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *46}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['制止するノエルの声が響くその声には 先ほどと違って艶っぽい響きが感じられた']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Noel''s voice echoed with a restraint, which now held a
+
+            sultry tone unlike before.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *46}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['だが 完全に頭に血が上ったジョニ-はその声も聞こえていないように 兵士に殴りかからんとする勢いだ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['But Johnny, completely red with rage, seemed not to hear her
+
+            voice as he was about to strike the soldier.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '231', 'p': [!!int '1', '002j', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *46}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ノエル】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['ジョニ-！！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Noel】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Johnny!!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': &47 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['うっ！?']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Huh!?']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['今度はハッキリと怒気をはらんだ声が轟いたその場にいた全員が一瞬たじろぎ ノエルに向き直る']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['This time a clearly angry voice thundered, causing everyone
+
+            present to flinch for a moment and turn back to Noel.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '231', 'p': [!!int '1', '002h', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *47}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['ノエルは マリ-を抱きかかえていた兵士に向けて努めて穏やかに だがどこか挑発的な眼差しで話しかける']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Noel spoke to the soldier holding Marie, trying to sound
+
+            calm but with a provocative look in her eyes.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ノエル】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['その子は勘弁してやってくれ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Noel】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Please spare that girl.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['ノエル: もし 言うことを聞いてくれたら私がとっておきのサ-ビスをしてやる...ふたりまとめてな']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ノエル】もし 言うことを聞いてくれたら私がとっておきのサービスをしてやる……ふたりまとめてな']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Noel: If you listen to me, I''ll give you a special
+
+            service... both of you together.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *47}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['ゾクッとするような色気たっぷりの口ぶりだった兵士はノエルの成熟された身体を舐め回すように見た後どちらが得かを 猛スピ-ドで計算した']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['The soldier calculated quickly which option was more
+
+            beneficial after leering at Noel''s mature body filled with a
+
+            chilling sensuality.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': &48 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['兵士: よし...いいぜおまえがまとめて相手してくれるんならな']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【兵士】よし……いいぜおまえがまとめて相手してくれるんならな']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Soldier: Alright... I''m in if you''re going to take care of
+
+            both of us.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *48}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ノエル】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['ここは人目につく あそこの物陰で...な']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Noel】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['This place is too exposed. Let''s go behind there...']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '235', 'p': [!!int '1']}
       - !ruby/object:RPG::EventCommand
         'i': !!int '1'
@@ -703,66 +777,69 @@
           - !ruby/object:RPG::MoveCommand {'code': !!int '0', 'parameters': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '505', 'p': [*68]}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': &69 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['マリ-！ 大丈夫か！?']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Marie! Are you okay!?']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '231', 'p': [!!int '1', 'マリー服叫び', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *69}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【マリー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['もうお嫁に行けない～～～！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Marie】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['I can''t get married anymore~~~!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '235', 'p': [!!int '1']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *69}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['ジョニー: だ 大丈夫だって！ ほんの数秒だけだろ！落ちた食い物だって3秒以内に拾えばセ-フだし！']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ジョニー】だ 大丈夫だって！ ほんの数秒だけだろ！落ちた食い物だって3秒以内に拾えばセーフだし！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Johnny: It''s okay! It was only for a few seconds! Food
+
+            that''s dropped is still safe if picked up within three
+
+            seconds!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '231', 'p': [!!int '1', 'マリー服叫び', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['マリー: うええええ-----ん！私はビスケットじゃないよ～！']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【マリー】うええええーーーーーん！私はビスケットじゃないよ～！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Marie: Waaaahhh---! I''m not a biscuit~~!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '235', 'p': [!!int '1']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '102', 'p': [['マリーを慰める', '師匠が心配だ'], !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '102', 'p': [['Comfort Marie', 'I''m worried about the master'], !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '402', 'p': [!!int '0', 'マリーを慰める']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '231', 'p': [!!int '1', 'マリー服不安', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '231', 'p': [!!int '2', 'マリー照れ', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【マリー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['ぐすっ...ひっく...']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Marie】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['*sob*...*hic*...']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【マリー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['じゃあ...もしものときは Taroが貰ってくれる?']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Marie】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['So... if something happens, will Taro take me?']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '235', 'p': [!!int '1']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '235', 'p': [!!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '102', 'p': [['ちゃんと嫁の貰い手はある', 'ノーサンキュー'], !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '102', 'p': [['There''s definitely a suitor for a bride out there', 'No thank you'], !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '402', 'p': [!!int '0', 'ちゃんと嫁の貰い手はある']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '231', 'p': [!!int '1', 'マリー服普通', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '101', 'p': &70 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【マリー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['どうしてそんなに自信満々なのよ...']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【Marie】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['Why are you so confident about it...']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '101', 'p': *70}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【マリー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['でも...慰めてくれてありがと']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【Marie】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['But... thank you for comforting me.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '235', 'p': [!!int '1']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '101', 'p': *70}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['...俺が言っても泣き止まなかったくせに...']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['...Even though my words didn''t stop your crying...']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '231', 'p': [!!int '1', 'マリー服普通', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '101', 'p': *70}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【マリー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['ジョニ-は慰め方が下手なのよ！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【Marie】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['Johnny is just bad at comforting people!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '235', 'p': [!!int '1']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '101', 'p': *70}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['なんだと！ 人がせっかく...']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['What the! I was just trying to...']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '402', 'p': [!!int '1', 'ノーサンキュー']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '231', 'p': [!!int '1', 'マリー服叫び', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '231', 'p': [!!int '2', 'マリー照れ', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '101', 'p': &71 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【マリー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['うわあああ---ん！ ユアウエルカ--ム！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【Marie】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['Waaaahhh---! You''re welcome~~!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '235', 'p': [!!int '1']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '235', 'p': [!!int '2']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '101', 'p': *71}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['ジョニー: おまえ...この状況でよくそんなこと言えたなどうすんだよこれ...']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【ジョニー】Taroおまえ……この状況でよくそんなこと言えたなどうすんだよこれ……']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['Johnny: You... How can you say something like that in this
+
+            situation, what are we going to do now...']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '404', 'p': []}
       - !ruby/object:RPG::EventCommand
@@ -800,23 +877,24 @@
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '241', 'p': [!ruby/object:RPG::BGM {'name': 'ややアダルトな日常風', 'volume': !!int '70', 'pitch': !!int '100'}]}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '231', 'p': [!!int '1', 'ノエル服普通', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ノエル】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['やれやれ...それだけ元気があれば平気そうだな']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Noel】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Good grief... If she''s got that much energy, she''ll be fine.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '235', 'p': [!!int '1']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': &77 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['あっ！ 師匠！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Ah! Master!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': *77}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['あ あの...門番は...']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Uh, about the gatekeeper...']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '231', 'p': [!!int '1', 'ノエル服普通', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['ノエル: ん?そこの物陰で 気持ちよさそうに眠ってるぞ']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ノエル】ん?そこの物陰で 気持ちよさそうに眠ってるぞ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Noel: Hm? He''s over there in the shadows, sleeping quite
+
+            comfortably.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '235', 'p': [!!int '1']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': *77}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['気持ちよさそうに...']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Sleeping comfortably...']}
       - !ruby/object:RPG::EventCommand
         'i': !!int '2'
         'c': !!int '205'
@@ -831,34 +909,38 @@
           - !ruby/object:RPG::MoveCommand {'code': !!int '0', 'parameters': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '505', 'p': [*78]}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': *77}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['ジョニー: （おい 一体何があったと思う?怖くて聞けねえんだけど...）']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】（おい 一体何があったと思う?怖くて聞けねえんだけど……）']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Johnny: (Hey, what do you think happened? I''m too scared to
+
+            ask...)']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': *77}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['（も もしかしなくても エッチなことをしてたのかな?）']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '102', 'p': [['疲れて眠るくらいのこと', 'そんなはずない'], !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['(Could it be... they were doing something erotic?)']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '102', 'p': [['Just tired and sleeping, that''s all', 'No way that''s the case'], !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '402', 'p': [!!int '0', '疲れて眠るくらいのこと']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '101', 'p': &79 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['（だ...だよな...相当激しい運動をしたんだよな）']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['(Yeah... that must be it... they had some intense exercise)']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '101', 'p': *79}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['（それなのにケロッとして...大人の女ってすげえな...！）']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['(And yet she''s acting so nonchalant... Adult women are
+
+            amazing...!)']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '402', 'p': [!!int '1', 'そんなはずない']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['ジョニー: （気持ちはわかるけどよ...俺だって師匠があんな奴らに弄ばれるなんてムカつくぜ）']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【ジョニー】（気持ちはわかるけどよ……俺だって師匠があんな奴らに弄ばれるなんてムカつくぜ）']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['Johnny: (I get how you feel but... It pisses me off too,
+
+            thinking about the master being toyed with by those guys)']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['ジョニー: （でも これも大人の処世術ってやつだよ俺らには まだ理解するのは難しいな）']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【ジョニー】（でも これも大人の処世術ってやつだよ俺らには まだ理解するのは難しいな）']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['Johnny: (But this is also a part of adult diplomacy, it''s
+
+            still difficult for us to understand)']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '404', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '402', 'p': [!!int '1', '師匠が心配だ']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['ジョニー: あ...ああ様子を見てこいよ']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】あ……ああ様子を見てこいよ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Johnny: Ah... Go check on the situation.']}
       - !ruby/object:RPG::EventCommand
         'i': !!int '2'
         'c': !!int '205'
@@ -877,10 +959,12 @@
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '505', 'p': [*81]}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '505', 'p': [*82]}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': &83 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['え...エッチっぽいシ-ンが来たら教えてくれ！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Eh... Let me know if an erotic scene happens!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': *83}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['音を立てないように慎重に顔を出し 物陰の様子を伺ってみた']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Carefully peeking out so as not to make a sound, I observed
+
+            the situation from the shadows.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '213', 'p': [!!int '10', !!int '8', !!bool 'true']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '241', 'p': [!ruby/object:RPG::BGM {'name': 'ややアダルトな日常風', 'volume': !!int '70', 'pitch': !!int '100'}]}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '250', 'p': [!ruby/object:RPG::SE {'name': 'Blow1', 'pitch': !!int '100', 'volume': !!int '80'}]}
@@ -890,7 +974,11 @@
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '250', 'p': [!ruby/object:RPG::SE {'name': 'Damage3', 'pitch': !!int '100', 'volume': !!int '80'}]}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '225', 'p': [!!int '7', !!int '5', !!int '60', !!bool 'true']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['口に石を詰め込まれた兵士たちがボッコボコにされていた事務的に痛みを与えるノエルの姿に戦慄する']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['The sight of Noel methodically inflicting pain on soldiers
+
+            who had been stuffed with stones in their mouths and beaten
+
+            to a pulp sent shivers down my spine.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '213', 'p': [!!int '10', !!int '6', !!bool 'true']}
       - !ruby/object:RPG::EventCommand
         'i': !!int '2'
@@ -925,29 +1013,31 @@
           - !ruby/object:RPG::MoveCommand {'code': !!int '0', 'parameters': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '505', 'p': [*88]}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['ど どうだった? エロかった?']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '102', 'p': [['地獄が広がっていた', 'とても口に出せない'], !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['How was it? Was it erotic?']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '102', 'p': [['Hell was spread out before me', 'It''s too indecent to say out loud'], !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '402', 'p': [!!int '0', '地獄が広がっていた']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['地獄！? なにそれ? 絶頂地獄みたいな！?']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['Hell!? What''s that? Like some kind of climax hell!?']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['ジョニ-は激しく興奮している真実を知らせてやらないほうが 彼のためだろう']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['It would be better for Johnny not to know the harsh truth,
+
+            as he is intensely excited.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '402', 'p': [!!int '1', 'とても口に出せない']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '101', 'p': &89 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['お おい なんだよ 言えないほど凄いのか?']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['Hey, what''s up? Is it so amazing you can''t even speak?']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '101', 'p': *89}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['や...ヤベえ...想像したら鼻血が...うっ！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['Damn... Just imagining it makes my nose bleed... Ugh!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '404', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '231', 'p': [!!int '1', 'マリー服叫び', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【マリー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['馬鹿--！ エッチ！ 何考えてるのよ！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Marie】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Idiot--! Pervert! What are you thinking about!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '235', 'p': [!!int '1']}
       - !ruby/object:RPG::EventCommand
         'i': !!int '2'
@@ -964,11 +1054,11 @@
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '505', 'p': [*90]}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '212', 'p': [!!int '5', !!int '1', !!bool 'true']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': &91 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['はぐおぉっ！！?']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Haguohh!!?']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': *91}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['な...なんで俺だけ...']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Wh... Why is it only me...']}
       - !ruby/object:RPG::EventCommand
         'i': !!int '2'
         'c': !!int '205'
@@ -990,26 +1080,28 @@
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '505', 'p': [*95]}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '231', 'p': [!!int '1', 'ノエル服普通', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ノエル】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['やれやれ...それだけ元気があれば平気そうだな']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Noel】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Good grief... If she''s got that much energy, she''ll be fine.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '235', 'p': [!!int '1']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['戻ってきたノエルは普段と変わらない様子で呆れたように呟いた']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['The returning Noel muttered in his usual manner, seemingly
+
+            exasperated.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '404', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '402', 'p': [!!int '1', '役人を止める']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': &96 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['兵士: な なんだ！ 大人の話をしているんだぞ引っ込んでろ！']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【兵士】な なんだ！ 大人の話をしているんだぞ引っ込んでろ！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Soldier: What the! This is an adult conversation, back off!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '231', 'p': [!!int '1', 'ノエル服普通', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *96}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['ノエル: やっぱり返事はノ-だ真面目に仕事をしないと 上司に言いつけるぞ']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【ノエル】やっぱり返事はノーだ真面目に仕事をしないと 上司に言いつけるぞ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Noel: As expected, the answer is no. If you don''t do your
+
+            job seriously, I''ll tell your superior.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '235', 'p': [!!int '1']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '101', 'p': *96}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【兵士】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['うっ...わかったよ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['【Soldier】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '401', 'p': ['Ugh... Understood.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '404', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '16']}

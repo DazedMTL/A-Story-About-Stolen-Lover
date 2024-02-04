@@ -46,8 +46,8 @@
       'trigger': !!int '3'
       'list':
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【店主】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['なにか入り用かい?']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【Shopkeeper】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Need something?']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '355', 'p': ['$game_system.shop_buy_category = [:item]']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '655', 'p': ['$game_system.shop_sell_category = [:item] ']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '302', 'p': [!!int '0', !!int '1', !!int '0', !!int '0', !!bool 'false']}
@@ -145,8 +145,9 @@
       'trigger': !!int '0'
       'list':
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['おじさん: 古傷がなけりゃ あんな奴らに負けねえのに...くっそ～']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【おじさん】古傷がなけりゃ あんな奴らに負けねえのに……くっそ～']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Old Man: If it weren''t for this old wound, I wouldn''t have
+
+            lost to those guys... Damn it...']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
 'parallax_sx': !!int '0'
 'bgm': !ruby/object:RPG::BGM {'name': '', 'volume': !!int '100', 'pitch': !!int '100'}

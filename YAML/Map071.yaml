@@ -46,29 +46,29 @@
       'trigger': !!int '3'
       'list':
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【店主】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['いらっしゃい']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【Shopkeeper】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Welcome!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '118', 'p': ['１']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['武器を鍛える', '道具を買う', '帰る'], !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['Upgrade weapons', 'Buy tools', 'Leave'], !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '402', 'p': [!!int '0', '武器を鍛える']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '111', 'p': [!!int '1', !!int '33', !!int '0', !!int '4', !!int '1']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【店主】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['これ以上強くは出来ないよ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Shopkeeper】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['I can''t make it any stronger than this.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '119', 'p': ['１']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '411', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【店主】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['\V[33]000Gで武器の性能をアップさせるよ\$']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '102', 'p': [['やる', 'やらない'], !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Shopkeeper】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['\V[33]I''ll upgrade your weapon for 000G.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '102', 'p': [['Do it', 'Don''t do it'], !!int '2']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '402', 'p': [!!int '0', 'やる']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '111', 'p': [!!int '1', !!int '33', !!int '0', !!int '1', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '4', 'c': !!int '111', 'p': [!!int '7', !!int '1000', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '125', 'p': [!!int '1', !!int '0', !!int '1000']}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['【店主】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['まいどあり']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['【Shopkeeper】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['Thank you as always!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '221', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '250', 'p': [!ruby/object:RPG::SE {'name': 'Item2', 'pitch': !!int '100', 'volume': !!int '80'}]}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '127', 'p': [!!int '20', !!int '0', !!int '0', !!int '2', !!bool 'false']}
@@ -82,8 +82,8 @@
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '4', 'c': !!int '411', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['【店主】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['お金が足りないよ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['【Shopkeeper】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['You don''t have enough money.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '119', 'p': ['１']}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '4', 'c': !!int '412', 'p': []}
@@ -92,8 +92,8 @@
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '111', 'p': [!!int '1', !!int '33', !!int '0', !!int '2', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '4', 'c': !!int '111', 'p': [!!int '7', !!int '2000', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['【店主】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['まいどあり']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['【Shopkeeper】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['Thank you as always!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '125', 'p': [!!int '1', !!int '0', !!int '2000']}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '221', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '250', 'p': [!ruby/object:RPG::SE {'name': 'Item2', 'pitch': !!int '100', 'volume': !!int '80'}]}
@@ -108,8 +108,8 @@
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '4', 'c': !!int '411', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['【店主】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['お金が足りないよ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['【Shopkeeper】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['You don''t have enough money.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '119', 'p': ['１']}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '4', 'c': !!int '412', 'p': []}
@@ -119,8 +119,8 @@
       - !ruby/object:RPG::EventCommand {'i': !!int '4', 'c': !!int '111', 'p': [!!int '7', !!int '3000', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '125', 'p': [!!int '1', !!int '0', !!int '3000']}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['【店主】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['まいどあり']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['【Shopkeeper】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['Thank you as always!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '221', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '250', 'p': [!ruby/object:RPG::SE {'name': 'Item2', 'pitch': !!int '100', 'volume': !!int '80'}]}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '127', 'p': [!!int '22', !!int '0', !!int '0', !!int '2', !!bool 'false']}
@@ -134,8 +134,8 @@
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '4', 'c': !!int '411', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['【店主】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['お金が足りないよ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['【Shopkeeper】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '401', 'p': ['You don''t have enough money.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '119', 'p': ['１']}
       - !ruby/object:RPG::EventCommand {'i': !!int '5', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '4', 'c': !!int '412', 'p': []}
@@ -202,10 +202,10 @@
       'trigger': !!int '3'
       'list':
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【店主】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['いらっしゃい']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【Shopkeeper】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Welcome!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '118', 'p': ['１']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['道具を買う', '帰る'], !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['Buy items', 'Leave'], !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '402', 'p': [!!int '0', '道具を買う']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '355', 'p': ['$game_system.shop_buy_category = [:item]']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '655', 'p': ['$game_system.shop_sell_category = [:item] ']}

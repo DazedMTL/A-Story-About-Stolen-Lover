@@ -45,7 +45,7 @@
       'priority_type': !!int '0'
       'trigger': !!int '2'
       'list':
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['ノエルと特訓する', 'ショップに行く', 'やめる'], !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['Train with Noel', 'Go to the shop', 'Cancel'], !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '402', 'p': [!!int '0', 'ノエルと特訓する']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '201', 'p': [!!int '0', !!int '24', !!int '19', !!int '11', !!int '4', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '0', 'p': []}
@@ -106,7 +106,7 @@
       'priority_type': !!int '0'
       'trigger': !!int '2'
       'list':
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['ノエルの部屋へ行く', '風呂に入る', 'やめる'], !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['Go to Noel''s room', 'Take a bath', 'Cancel'], !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '402', 'p': [!!int '0', 'ノエルの部屋へ行く']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '201', 'p': [!!int '0', !!int '27', !!int '11', !!int '9', !!int '8', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '0', 'p': []}
@@ -167,7 +167,7 @@
       'priority_type': !!int '0'
       'trigger': !!int '2'
       'list':
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['ノエルと特訓する', 'ショップに行く', 'やめる'], !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['Train with Noel', 'Go to the shop', 'Cancel'], !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '402', 'p': [!!int '0', 'ノエルと特訓する']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '201', 'p': [!!int '0', !!int '30', !!int '13', !!int '6', !!int '4', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '0', 'p': []}
@@ -235,11 +235,12 @@
       'trigger': !!int '3'
       'list':
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': &4 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['いや～ よかったな～ 師匠を引き受けてくれて']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Phew~ I''m glad~ that you agreed to take on the master role.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': *4}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['ジョニー: やっぱり強さを追い求めるのは 男のロマンだしな！どっちがより強くなれるか競争だな！']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【ジョニー】やっぱり強さを追い求めるのは 男のロマンだしな！どっちがより強くなれるか競争だな！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Johnny: After all, pursuing strength is a man''s romance!
+
+            It''s a competition to see who can become stronger!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '221', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '123', 'p': ['A', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '222', 'p': []}

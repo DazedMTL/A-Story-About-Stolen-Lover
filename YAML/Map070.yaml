@@ -178,9 +178,9 @@
       'trigger': !!int '3'
       'list':
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【マスター】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['おまえさんに出来そうな仕事は こんなところだな']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['街の周辺でレベル上げ', '街の周辺でレベル上げ・難', 'if(s[39])伝説の剣を求めて ', 'if(s[40])毒草の森 '], !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['【Master】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Looks like this is the kind of job you guys could handle.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['Leveling up around town', 'Leveling up around town - Hard', 'if(s[39])In search of the legendary sword', 'if(s[40])The Poisonous Plant Forest'], !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '402', 'p': [!!int '0', '街の周辺でレベル上げ']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '201', 'p': [!!int '0', !!int '185', !!int '11', !!int '3', !!int '2', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '0', 'p': []}
@@ -190,44 +190,56 @@
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '402', 'p': [!!int '2', '伝説の剣を求めてif(s[39]) ']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '111', 'p': [!!int '0', !!int '18', !!int '1']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': &1 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['ジョニー: おっ！ なんすかコレ！?伝説の剣って 琴線に触れるフレ-ズっすよ！']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】おっ！ なんすかコレ！?伝説の剣って 琴線に触れるフレーズっすよ！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Johnny: Whoa! What''s this?! "Legendary Sword" sure has a
+
+            nice ring to it!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': *1}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【マスター】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['あ-...それか...']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Master】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Ah... that...']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['マスター: いや 本当に伝説に出てくるような剣ってわけじゃないんだが まあ 多少は誇張ありってところだ']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【マスター】いや 本当に伝説に出てくるような剣ってわけじゃないんだが まあ 多少は誇張ありってところだ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Master: Well, it''s not exactly a sword from legends, but
+
+            let''s just say there''s a bit of an exaggeration involved.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': *1}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['ジョニー: なんすかそれ...がっかりっすどういう依頼なんすか?']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】なんすかそれ……がっかりっすどういう依頼なんすか?']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Johnny: What''s that... kind of disappointing. What''s the
+
+            request about?']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['マスター: 腕利きの鍛冶屋からの依頼でな奴はここから東にある山の麓に住んでるんだが...']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【マスター】腕利きの鍛冶屋からの依頼でな奴はここから東にある山の麓に住んでるんだが……']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Master: It''s a request from a skilled blacksmith who lives
+
+            at the foot of the mountain to the east from here...']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['マスター: あの山は 良質な武具の材料となる 鉱石が採掘できることで有名なんだ']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【マスター】あの山は 良質な武具の材料となる 鉱石が採掘できることで有名なんだ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Master: That mountain is famous for its mines where you can
+
+            extract ores that are perfect for making quality weapons.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': *1}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['マスター: ところが 山にモンスタ-が巣を作っちまって採掘が出来なくなって困ってるらしい']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【マスター】ところが 山にモンスターが巣を作っちまって採掘が出来なくなって困ってるらしい']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Master: However, it seems they''re in trouble because
+
+            monsters have made a nest there and they can''t mine anymore.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': *1}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['ジョニー: ふ～ん...本物の伝説の剣ならともかくただの鍛冶屋の手伝いなら パスかなあ']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】ふ～ん……本物の伝説の剣ならともかくただの鍛冶屋の手伝いなら パスかなあ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Johnny: Hmm... I''d be all in for a real legendary sword, but
+
+            just helping out a blacksmith? I might pass on that.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【マスター】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['そうか? 奴の武具作りの腕前は本物だぞ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Master】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Really? That guy''s craftsmanship is the real deal, you know.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': *1}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['マスター: それこそ 奴の作った武具は 100年後には本物の伝説になっていると言われてるくらいだ']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【マスター】それこそ 奴の作った武具は 100年後には本物の伝説になっていると言われてるくらいだ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Master: In fact, his weapons are said to become the stuff of
+
+            real legends in a hundred years'' time.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['マスター: 気に入った相手にしか作らないことでも有名で超一流の戦士でさえ 奴の武具は喉から手が出るほど欲しがる']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【マスター】気に入った相手にしか作らないことでも有名で超一流の戦士でさえ 奴の武具は喉から手が出るほど欲しがる']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Master: He''s also famous for only making weapons for those
+
+            he likes, and even top-class warriors are dying to get their
+
+            hands on his work.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': *1}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['マスター: お前さんたちの師匠 ノエルもその一人だ断られちまったらしいけどな']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【マスター】お前さんたちの師匠 ノエルもその一人だ断られちまったらしいけどな']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Master: Even your master, Noel, is one of them. Seems he got
+
+            turned down though.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['えっ！? 師匠も欲しがってたの！?']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['What?! Master wanted them too?!']}
       - !ruby/object:RPG::EventCommand
         'i': !!int '2'
         'c': !!int '205'
@@ -242,14 +254,18 @@
           - !ruby/object:RPG::MoveCommand {'code': !!int '0', 'parameters': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '505', 'p': [*2]}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['ここで恩を売れば 俺たちに武具を作ってくれるかも...']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['If we curry favor here, maybe he''ll make weapons for us
+
+            too...']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['ジョニー: いい武具は 強くなるには必須だぜ！引き受けようぜ！']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】いい武具は 強くなるには必須だぜ！引き受けようぜ！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Johnny: Good weapons are essential for getting stronger!
+
+            Let''s take on this job!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['マスター: やってくれるかまあ こんなチャンスはそうそうない がんばれよ']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【マスター】やってくれるかまあ こんなチャンスはそうそうない がんばれよ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Master: You''ll do it? Well, an opportunity like this doesn''t
+
+            come often. Good luck!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '201', 'p': [!!int '0', !!int '73', !!int '10', !!int '12', !!int '8', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '411', 'p': []}
@@ -263,26 +279,30 @@
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '411', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': &3 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['ど 毒草って...えげつねえ響きっすね']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Poisonous plants... that''s got a nasty ring to it.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': *3}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['マスター: そういう毒とか薬の専門家がいてな材料となる毒草を採取してほしいらしい']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【マスター】そういう毒とか薬の専門家がいてな材料となる毒草を採取してほしいらしい']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Master: There''s a specialist in poisons and medicines who
+
+            needs someone to gather poisonous plants for materials.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': *3}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['マスター: うちは そういうのは専門外なんだけどな力でどうこうなる問題でもないし...']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【マスター】うちは そういうのは専門外なんだけどな力でどうこうなる問題でもないし……']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Master: It''s not really our specialty here, and it''s not
+
+            something that can be solved with brute force...']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': *3}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['じゃ なんで紹介してくるんすか...']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Then why are you bringing it up to us...']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': *3}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【マスター】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['ポ-カ-の負け分を これでチャラにしてくれるって...']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Master】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['He said he''d wipe my poker losses clean if I introduced
+
+            someone...']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': *3}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['うわっ 駄目な大人だ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Wow, talk about being irresponsible.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': *3}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['しかし...毒か...']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['But still... poison, huh...']}
       - !ruby/object:RPG::EventCommand
         'i': !!int '2'
         'c': !!int '205'
@@ -297,24 +317,30 @@
           - !ruby/object:RPG::MoveCommand {'code': !!int '0', 'parameters': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '505', 'p': [*4]}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': &5 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['ジョニー: もしかしたら 正面から戦うよりこういう手段で行ったほうが いいかもしれないな！']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】もしかしたら 正面から戦うよりこういう手段で行ったほうが いいかもしれないな！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Johnny: Maybe using tactics like this would be better than
+
+            facing the enemy head-on!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': *5}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['ジョニー: 依頼をこなせば お礼になんか強力な毒薬をもらえるかもしれないぞ！']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】依頼をこなせば お礼になんか強力な毒薬をもらえるかもしれないぞ！']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '102', 'p': [['手段は選ばない', '良心がとがめる'], !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Johnny: If we complete the request, we might get some
+
+            powerful poison as a reward!']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '102', 'p': [['I don''t choose the means', 'My conscience pricks me'], !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '402', 'p': [!!int '0', '手段は選ばない']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['ジョニー: おう！ 敵は俺達より格上だ！正々堂々なんて言ってられないぜ！']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【ジョニー】おう！ 敵は俺達より格上だ！正々堂々なんて言ってられないぜ！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['Johnny: Yeah! Our enemies are stronger than us! We can''t
+
+            afford to play fair and square!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '402', 'p': [!!int '1', '良心がとがめる']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '101', 'p': &6 ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['何いってんだ！ 師匠を助け出すためだぞ！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['What are you talking about! We''re doing this to rescue
+
+            Master!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '101', 'p': *6}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['ジョニー: 師匠の教えを忘れたのか?使えるもんは何でも使えって言ってたろ！']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['【ジョニー】師匠の教えを忘れたのか?使えるもんは何でも使えって言ってたろ！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '401', 'p': ['Johnny: Have you forgotten Master''s teachings? Use whatever
+
+            you can to your advantage!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '3', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '404', 'p': []}
       - !ruby/object:RPG::EventCommand
@@ -331,17 +357,18 @@
           - !ruby/object:RPG::MoveCommand {'code': !!int '0', 'parameters': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '505', 'p': [*7]}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【ジョニー】']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['マスタ-！ このクエスト受けるぜ！']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【Johnny】']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Master! We''ll take on this quest!']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['マスター: お-！ 本当か！助かった...これで今月乗り切れるよ']}
-      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['【マスター】おー！ 本当か！助かった……これで今月乗り切れるよ']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '401', 'p': ['Master: Oh! Really? That helps... Now I can make it through
+
+            this month.']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '201', 'p': [!!int '0', !!int '76', !!int '9', !!int '9', !!int '8', !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '2', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '412', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '0', 'p': []}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '404', 'p': []}
-      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['戻る'], !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '102', 'p': [['Go back'], !!int '0']}
       - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '402', 'p': [!!int '0', '戻る']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '117', 'p': [!!int '6']}
       - !ruby/object:RPG::EventCommand {'i': !!int '1', 'c': !!int '0', 'p': []}
