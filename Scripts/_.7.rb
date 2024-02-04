@@ -74,16 +74,16 @@ module CategorizeShop
   # ◇ カテゴリ名の設定
   #--------------------------------------------------------------------------
   VOCAB_COMMANDS = {}
-  VOCAB_COMMANDS[:item]     = "道具"
-  VOCAB_COMMANDS[:weapon]   = "武器"
-  VOCAB_COMMANDS[:armor]    = "防具"
-  VOCAB_COMMANDS[:key_item] = "宝物"
+  VOCAB_COMMANDS[:item]     = "Item"
+  VOCAB_COMMANDS[:weapon]   = "Weapon"
+  VOCAB_COMMANDS[:armor]    = "Armor"
+  VOCAB_COMMANDS[:key_item] = "Key Item"
   
-  VOCAB_COMMANDS[:etype0]    = "武器"
-  VOCAB_COMMANDS[:etype1]    = "盾"
-  VOCAB_COMMANDS[:etype2]    = "頭"
-  VOCAB_COMMANDS[:etype3]    = "身体"
-  VOCAB_COMMANDS[:etype4]    = "装飾"
+  VOCAB_COMMANDS[:etype0]    = "Weapon"
+  VOCAB_COMMANDS[:etype1]    = "Shield"
+  VOCAB_COMMANDS[:etype2]    = "Head"
+  VOCAB_COMMANDS[:etype3]    = "Body"
+  VOCAB_COMMANDS[:etype4]    = "Accessory"
   
 end # module CategorizeShop
 end # module CAO

@@ -98,7 +98,7 @@ module W_REGULAR
   #VIDの変数IDに格納されている値が0の時
   
   ITEM[0] = [
-  {:icon_id => 0,:name => "残り",:afterword => "週間",:variable_id => 14,:switch_id => 99,:x => 0,:y => 0,:width => 115,:name_c => 16},
+  {:icon_id => 0,:name => "R",:afterword => " Days",:variable_id => 14,:switch_id => 99,:x => 0,:y => 0,:width => 115,:name_c => 16},
     
   ]  
 end
