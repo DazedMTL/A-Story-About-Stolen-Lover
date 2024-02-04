@@ -36,7 +36,7 @@ module Vocab
   Victory         = "Victory for %s!"
   Defeat          = "%s is defeated in battle."
   ObtainExp       = "Gained %s exp!"
-  ObtainGold      = "Obtained %s\\G of money!"
+  ObtainGold      = "Obtained %s\\G"
   ObtainItem      = "Obtained %s!"
   LevelUp         = "%s has leveled up to %s %s!"
   ObtainSkill     = "Learned %s!"

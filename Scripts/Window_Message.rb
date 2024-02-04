@@ -27,7 +27,7 @@ class Window_Message < Window_Base
   # ● ウィンドウ高さの取得
   #--------------------------------------------------------------------------
   def window_height
-    fitting_height(visible_line_number)
+    fitting_height(visible_line_number + 1)
   end
   #--------------------------------------------------------------------------
   # ● インスタンス変数のクリア
